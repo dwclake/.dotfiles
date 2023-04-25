@@ -1,1 +1,1 @@
-/home/dwclake/.zshenv
+. "$HOME/.cargo/env"
