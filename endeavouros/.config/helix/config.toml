@@ -1,0 +1,10 @@
+theme = "mytheme"
+
+[editor]
+line-number = "relative"
+shell = ["/usr/bin/zsh"]
+auto-save = true
+
+[editor.statusline]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding","file-line-ending","file-type"]
