@@ -1,4 +1,7 @@
 window:
+  dimensions:
+    columns: 100
+    lines: 25   
   opacity: 0.96
 font: 
   normal:
@@ -13,8 +16,9 @@ font:
   bold_italic:
     family: Jetbrains Mono Nerd Font
     style: Bold Italic
-  size: 12.0
+  size: 11.0
 mouse: 
   hide_while_typing: true
 shell:                                                                                    
   program: /usr/bin/zsh 
+
