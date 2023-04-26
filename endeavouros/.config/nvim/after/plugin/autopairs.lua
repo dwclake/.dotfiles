@@ -12,8 +12,8 @@ npairs.setup {
     },
     disable_filetype = { "TelescopePrompt" },
 }
-local Rule = require('nvim-autopairs.rule')
-npairs.add_rule(Rule("|", "|"))
+--local Rule = require('nvim-autopairs.rule')
+--npairs.add_rule(Rule("|", "|"))
 
 local cmp_autopairs = require "nvim-autopairs.completion.cmp"
 local cmp_status_ok, cmp = pcall(require, "cmp")

@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias mouseacc="xinput --set-prop 15 330 0.25"
-alias chrome="google-chrome-stable"
 #GRUB_CMDLINE_LINUX_DEFAULT="i8042.dumbkbd=1 i915.enable_psr=0"
 alias bootloaderedit="sudo nvim /etc/default/grub"
 alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
@@ -112,14 +111,30 @@ export EDITOR='/usr/bin/nvim'
 
 [ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
-tmsa() {
-    tmux attach-session -t "$1"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+tmsattach() {
+    tms && tmux attach-session -t "$1"
 }
 
-buildc() {
-    if [ -d "src" ] && [ -d "bin" ]; then
+buildfile() {
+    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
+        if [ -f "src/main.cpp" ]; then
+            g++ -Wall -std=c++20 src/main.cpp -o bin/main.exe
+        else
+            echo "src/main.cpp does not exit, please provide alternative file"
+        fi
+    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
         g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
-    elif [ ! -d "bin" ] && [ -d "src" ]; then
+    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
+        if [ -f "src/main.cpp" ]; then
+            echo "Creating bin directory"
+            mkdir bin
+            g++ -Wall -std=c++20 src/main.cpp -o bin/main.exe
+        else
+            echo "src/main.cpp does not exit, please provide alternative file"
+        fi
+    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
         echo "Creating bin directory"
         mkdir bin
         g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
@@ -128,14 +143,67 @@ buildc() {
     fi
 }
 
-runc() {
-    if [ -d "src" ] && [ -d "bin" ]; then
-        buildc $1 && bin/${1%%.*}.exe
-    elif [ ! -d "bin" ] && [ -d "src" ]; then
+runfile() {
+    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
+        if [ -f "src/main.cpp" ]; then
+            buildfile && bin/main.exe
+        else
+            echo "src/main.cpp does not exit, please provide alternative file"
+        fi
+    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
+        buildfile $1 && bin/${1%%.*}.exe
+    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
+        if [ -f "src/main.cpp" ]; then
+            echo "Creating bin directory"
+            mkdir bin
+            buildfile && bin/main.exe
+        else
+            echo "src/main.cpp does not exit, please provide alternative file"
+        fi
+    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
         echo "Creating bin directory"
         mkdir bin
-        buildc $1 && bin/${1%%.*}.exe
+        buildfile $1 && bin/${1%%.*}.exe
     else
         echo "No source directory"
     fi
 }
+
+buildproject() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake needed."
+    else
+        cmake -S . -B build
+        cmake --build build --parallel 8
+        if [ ! -d "bin" ]; then
+            mkdir bin
+        fi
+        mv ./build/$1 ./bin/$1
+    fi
+}
+
+runproject() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake needed."
+    else
+        buildproject $1
+        bin/$1 $2
+    fi
+}
+
+vivado-run() {
+    cd ~/fpga
+    vivado&
+    cd ~
+}
+
+alias vivado="vivado-run"
+
+# Wasmer
+export WASMER_DIR="/home/dwclake/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

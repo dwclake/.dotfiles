@@ -280,7 +280,7 @@ bindsym $mod+Shift+m exec ~/.screenlayout/desktop.sh
 
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/microsoft-edge-dev
-bindsym $mod+n exec /usr/bin/thunar
+bindsym $mod+n exec /usr/bin/dolphin
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -315,16 +315,16 @@ set $ws10 "10"
 # bind program to workspace and focus to them on startup:
 assign [class="alacritty"] $ws1
 assign [class="(?i)microsoft-edge-dev"] $ws2
-assign [class="Thunar"] $ws3
+assign [class="dolphin"] $ws3
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=alacritty] focus
 for_window [class=(?i)microsoft-edge-dev] focus
-for_window [class=Thunar] focus
+for_window [class=dolphin] focus
 
 # Handle Backlight
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec brightnessctl set +1%
+bindsym XF86MonBrightnessDown exec brightnessctl set 1%-
 
 # Set mouse acceleration
 exec --no-startup-id xinput --set-prop "pointer:PNP0C50:00 06CB:CEC0 Touchpad" "libinput Accel Speed" 0.3
@@ -352,7 +352,7 @@ exec --no-startup-id xinput --set-prop "pointer:PNP0C50:00 06CB:CEC0 Touchpad" "
 # For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf
 # install picom package (yay -S picom)
 # start using default config 
-#exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b
 #
 # for custom config:
 #exec_always --no-startup-id picom --config  ~/.config/picom.conf
@@ -498,11 +498,11 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 bar {
 		font pango: Noto Sans Regular 10
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	    	position top
+	    	position bottom
 	    	#i3bar_command i3bar --transparency
 # it could be that you have no primary display set: set one (xrandr --output <output> --primary)
 # reference: https://i3wm.org/docs/userguide.html#_tray_output
-		    tray_output none
+		    tray_output primary
 		    tray_padding 0
 
 # When strip_workspace_numbers is set to yes,
