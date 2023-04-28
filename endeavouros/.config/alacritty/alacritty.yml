@@ -16,7 +16,7 @@ font:
   bold_italic:
     family: Jetbrains Mono Nerd Font
     style: Bold Italic
-  size: 11.0
+  size: 12.0
 mouse: 
   hide_while_typing: true
 shell:                                                                                    
