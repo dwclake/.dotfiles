@@ -100,23 +100,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-alias compile-src-main="g++ -Wall -std=c++20 src/main.cpp -o bin/main.exe"
-alias run-src-main="compile-src-main && ./bin/main.exe"
 
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 
-[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
+#[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH:~/.zig
 
-tmsattach() {
+tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
@@ -199,6 +197,10 @@ export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
+
+export CC="/usr/bin/gcc-13"
+export CXX="/usr/bin/g++-13"
+
 # Wasmer
 export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
