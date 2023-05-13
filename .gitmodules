@@ -1,0 +1,3 @@
+[submodule "endeavouros/.config/alacritty/themes/rose-pine"]
+	path = endeavouros/.config/alacritty/themes/rose-pine
+	url = https://github.com/rose-pine/alacritty.git
