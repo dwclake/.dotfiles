@@ -112,6 +112,8 @@ export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 
+export PATH="$HOME/bibisco:$PATH"
+
 [ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
