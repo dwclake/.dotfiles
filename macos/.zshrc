@@ -134,18 +134,23 @@ buildfile() {
 }
 
 runfile() {
-    if [ -d "src" ] && [ -d "bin" ]; then
-        buildfile $1 && bin/${1%%.*}.exe
-    elif ! [[ -d "src" ]]; then
-        echo "No src directory"
-    elif ! [[ -d "bin" ]]; then
-        echo "Creating bin directory" 
-        mkdir bin
-        buildfile $1 && bin/${1%%.*}.exe
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced gcc."
+    else
+        
+        if [ -d "src" ] && [ -d "bin" ]; then
+            buildfile $1 && bin/${1%%.*}.exe
+        elif ! [[ -d "src" ]]; then
+            echo "No src directory"
+        elif ! [[ -d "bin" ]]; then
+            echo "Creating bin directory" 
+            mkdir bin
+            buildfile $1 && bin/${1%%.*}.exe
+        fi
     fi
 }
 
-tmsattach() {
+tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
