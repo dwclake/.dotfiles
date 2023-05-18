@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="takashiyoshida"
+ZSH_THEME="takashiyoshida2"
 #ZSH_THEME="bureau"
 #ZSH_THEME="juanghurtado"
 #ZSH_THEME="murilasso"
@@ -111,7 +111,8 @@ export GOROOT=/snap/go/current
 export GOPATH=$HOME/go
 export ZIGPATH=/snap/zig/current
 export NVIMPATH=/snap/nvim/current/usr/bin
-export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ZIGPATH:$PATH
+export NVIDEPATH=/snap/neovide/current/bin
+export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$NVIDEPATH:$ZIGPATH:$PATH
 
 tmsa() {
     tms && tmux attach-session -t "$1"
