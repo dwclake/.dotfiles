@@ -103,11 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-alias mouseacc="xinput --set-prop 15 330 0.25"
 #GRUB_CMDLINE_LINUX_DEFAULT="i8042.dumbkbd=1 i915.enable_psr=0"
-alias bootloaderedit="sudo nvim /etc/default/grub"
-alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-
+#alias bootloaderedit="sudo nvim /etc/default/grub"
+#alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+#timedatectl set-local-rtc 1 --adjust-system-clock
 export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'

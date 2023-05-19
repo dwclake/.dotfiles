@@ -12,6 +12,7 @@ npairs.setup {
     },
     disable_filetype = { "TelescopePrompt" },
 }
+npairs.remove_rule('`')
 --local Rule = require('nvim-autopairs.rule')
 --npairs.add_rule(Rule("|", "|"))
 

@@ -1,0 +1,57 @@
+2023-05-13 08:26:54:560 INFO *** Electron version: 16.2.5
+2023-05-13 08:26:56:641 INFO *** Application path: /home/dwclake/bibisco/resources/app
+2023-05-13 08:26:56:642 INFO *** Bibisco version: 2.4.0-SE
+2023-05-13 08:26:56:643 INFO *** Current version initialized: false
+2023-05-13 08:26:56:644 INFO *** Actual user: dwclake
+2023-05-13 08:26:56:645 INFO *** Locale: en-us
+2023-05-13 08:26:56:645 INFO *** OS: linux
+2023-05-13 08:26:56:646 INFO *** Projects directory: 
+2023-05-13 08:26:56:646 INFO *** Backup directory: 
+2023-05-13 08:26:56:647 INFO *** Dictionaries directory cleaned!
+2023-05-13 08:27:35:672 INFO initializeCurrentVersion: 2.4.0-SE
+2023-05-13 08:28:15:242 INFO Start syncProjectDirectoryWithBibiscoDb
+2023-05-13 08:28:15:243 INFO projectsInBibiscoDb=
+2023-05-13 08:28:15:243 INFO projectsInProjectDirectories=
+2023-05-13 08:28:15:243 INFO projectsToAdd=
+2023-05-13 08:28:15:243 INFO projectsToDelete=
+2023-05-13 08:28:15:244 INFO End syncProjectDirectoryWithBibiscoDb
+2023-05-13 08:28:15:267 INFO Unzipped /home/dwclake/bibisco/resources/app/dictionaries/en-us.zip
+2023-05-13 08:28:15:282 INFO Read /home/dwclake/.config/bibisco/bibiscoDictionaries/en-us.bibidic (121273 words) in 0.015
+2023-05-13 08:28:15:318 INFO Decompress 121273 words in 0.036
+2023-05-13 08:28:15:340 INFO Written /home/dwclake/.config/bibisco/bibiscoDictionaries/en-us.dic in 0.022
+2023-05-13 08:28:15:342 INFO Deleted /home/dwclake/.config/bibisco/bibiscoDictionaries/en-us.bibidic
+2023-05-13 08:28:15:350 INFO Loaded en-us dictionary! in 0.008
+2023-05-13 08:28:15:351 INFO DictionaryService: dictionary en-us loaded!
+2023-05-13 08:28:31:108 INFO Start syncProjectDirectoryWithBibiscoDb
+2023-05-13 08:28:31:109 INFO projectsInBibiscoDb=
+2023-05-13 08:28:31:109 INFO projectsInProjectDirectories=
+2023-05-13 08:28:31:110 INFO projectsToAdd=
+2023-05-13 08:28:31:110 INFO projectsToDelete=
+2023-05-13 08:28:31:110 INFO End syncProjectDirectoryWithBibiscoDb
+2023-05-13 08:28:31:111 INFO Saved preferences:  theme=classic - zoomLevel=100 - language=en-us - projects directory=/home/dwclake/novels/bibisco - backup directory=/home/dwclake/novels/bibisco/backup - max backup number=10 - auto backup frequency=TWO_HOURS - auto backup on exit=true
+2023-05-13 08:28:33:718 INFO bibisco is closing...
+2023-05-15 07:38:20:184 INFO *** Electron version: 16.2.5
+2023-05-15 07:38:21:877 INFO *** Application path: /home/dwclake/bibisco/resources/app
+2023-05-15 07:38:21:878 INFO *** Bibisco version: 2.4.0-SE
+2023-05-15 07:38:21:879 INFO *** Current version initialized: true
+2023-05-15 07:38:21:879 INFO *** Actual user: dwclake
+2023-05-15 07:38:21:880 INFO *** Locale: en-us
+2023-05-15 07:38:21:880 INFO *** OS: linux
+2023-05-15 07:38:21:880 INFO *** Projects directory: /home/dwclake/novels/bibisco/_internal_bibisco2_projects_db_
+2023-05-15 07:38:21:881 INFO *** Backup directory: /home/dwclake/novels/bibisco/backup
+2023-05-15 07:38:21:881 INFO *** Projects directory exists: false
+2023-05-15 07:38:21:882 ERROR *** Projects directory NOT EXISTS, so I clean bibisco db: restart from welcome page!
+2023-05-15 07:38:21:882 INFO *** Backup directory exists: false
+2023-05-15 07:38:21:882 ERROR *** Backup directory NOT EXISTS: restart from welcome page!
+2023-05-15 07:38:50:273 INFO Start syncProjectDirectoryWithBibiscoDb
+2023-05-15 07:38:50:273 INFO -----------------------------------
+2023-05-15 07:38:50:273 INFO Processing 1320ec01-b14b-4fe9-a8ef-a5fe2ae31177
+2023-05-15 07:38:50:273 INFO initProjectDbConnection()
+2023-05-15 07:38:50:274 INFO Database /home/dwclake/OneDrive/Documents/writing/bibisco/_internal_bibisco2_projects_db_/1320ec01-b14b-4fe9-a8ef-a5fe2ae31177/1320ec01-b14b-4fe9-a8ef-a5fe2ae31177.json loaded!
+2023-05-15 07:38:50:274 INFO 1320ec01-b14b-4fe9-a8ef-a5fe2ae31177 is valid.
+2023-05-15 07:38:50:274 INFO projectsInBibiscoDb=
+2023-05-15 07:38:50:275 INFO projectsInProjectDirectories=1320ec01-b14b-4fe9-a8ef-a5fe2ae31177
+2023-05-15 07:38:50:275 INFO projectsToAdd=1320ec01-b14b-4fe9-a8ef-a5fe2ae31177
+2023-05-15 07:38:50:275 INFO projectsToDelete=
+2023-05-15 07:38:50:281 INFO End syncProjectDirectoryWithBibiscoDb
+2023-05-15 07:38:53:277 INFO bibisco is closing...

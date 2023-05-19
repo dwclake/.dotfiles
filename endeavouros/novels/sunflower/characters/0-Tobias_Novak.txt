@@ -1,6 +1,0 @@
-Name:                Tobias Novak
-ID:                  0
-Importance:          2
-POV:                 True
-Color:               #c7bcbe
-Age:                 Value
