@@ -104,15 +104,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 
-export VISUAL='/usr/bin/nvim'
-export EDITOR='/usr/bin/nvim'
 
 export GOROOT=/snap/go/current
 export GOPATH=$HOME/go
-export ZIGPATH=/snap/zig/current
+export ZIGPATH=$HOME/.local/share/zig-linux-x86_64-0.11.0-dev.3301+230ea411f
 export NVIMPATH=/snap/nvim/current/usr/bin
-export NVIDEPATH=/snap/neovide/current/bin
-export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$NVIDEPATH:$ZIGPATH:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ZIGPATH:$PATH
+
+export VISUAL=$NVIMPATH/nvim
+export EDITOR=$NVIMPATH/nvim
 
 tmsa() {
     tms && tmux attach-session -t "$1"
