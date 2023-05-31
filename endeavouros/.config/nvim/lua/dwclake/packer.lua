@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
 
       })
   end}
+  use ('danielo515/nvim-treesitter-reason')
   use ('kdheepak/lazygit.nvim')
     
   use {

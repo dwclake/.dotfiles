@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="takashiyoshida"
+ZSH_THEME="takashiyoshida2"
 #ZSH_THEME="bureau"
 #ZSH_THEME="juanghurtado"
 #ZSH_THEME="murilasso"
@@ -111,7 +111,7 @@ export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 
-export PATH="$HOME/bibisco:$PATH"
+export PATH="$HOME/.local/share/bibisco:$PATH"
 
 #[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
@@ -203,6 +203,9 @@ vivado-run() {
 
 alias vivado="vivado-run"
 
+alias dc="docker-compose"
+alias dc-e="docker-compose exec"
+
 # Wasmer
 export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
@@ -214,3 +217,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 [ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
+
+# opam configuration
+[[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

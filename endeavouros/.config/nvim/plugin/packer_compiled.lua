@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-reason"] = {
+    loaded = true,
+    path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/nvim-treesitter-reason",
+    url = "https://github.com/danielo515/nvim-treesitter-reason"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -202,7 +207,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\nwidth\3P\vheight\3\30\vborder\vcurved\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\vheight\3\30\vborder\vcurved\nwidth\3P\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -222,7 +227,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\nwidth\3P\vheight\3\30\vborder\vcurved\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+try_loadstring("\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\vheight\3\30\vborder\vcurved\nwidth\3P\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
