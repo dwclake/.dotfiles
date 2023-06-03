@@ -202,7 +202,7 @@ vivado-run() {
 }
 
 alias vivado="vivado-run"
-
+alias edge="microsoft-edge-dev"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 
