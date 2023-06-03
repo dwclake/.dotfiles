@@ -55,8 +55,10 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+require'lspconfig'.ocamllsp.setup{}
 lsp.setup()
 
+vim.g.zig_fmt_autosave = 0
 vim.diagnostic.config({
     virtual_text = true,
     signs = true,
