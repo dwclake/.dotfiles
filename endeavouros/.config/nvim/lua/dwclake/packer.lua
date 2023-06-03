@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
 
       })
   end}
-  use ('danielo515/nvim-treesitter-reason')
+  use ('reasonml-editor/vim-reason-plus')
   use ('kdheepak/lazygit.nvim')
     
   use {
