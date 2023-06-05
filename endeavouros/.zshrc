@@ -111,7 +111,7 @@ export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 
-export PATH="$HOME/.local/share/bibisco:$PATH"
+export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.1-SE:$PATH"
 
 #[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
@@ -119,58 +119,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 tmsa() {
     tms && tmux attach-session -t "$1"
-}
-
-buildfile() {
-    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            g++ -Wall -std=c++20 src/main.cpp -o bin/main.exe
-        else
-            echo "src/main.cpp does not exit, please provide alternative file"
-        fi
-    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
-        g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            echo "Creating bin directory"
-            mkdir bin
-            g++ -Wall -std=c++20 src/main.cpp -o bin/main.exe
-        else
-            echo "src/main.cpp does not exit, please provide alternative file"
-        fi
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
-        echo "Creating bin directory"
-        mkdir bin
-        g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
-    else
-        echo "No source directory"
-    fi
-}
-
-runfile() {
-    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            buildfile && bin/main.exe
-        else
-            echo "src/main.cpp does not exit, please provide alternative file"
-        fi
-    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
-        buildfile $1 && bin/${1%%.*}.exe
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            echo "Creating bin directory"
-            mkdir bin
-            buildfile && bin/main.exe
-        else
-            echo "src/main.cpp does not exit, please provide alternative file"
-        fi
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
-        echo "Creating bin directory"
-        mkdir bin
-        buildfile $1 && bin/${1%%.*}.exe
-    else
-        echo "No source directory"
-    fi
 }
 
 buildproject() {
@@ -203,6 +151,7 @@ vivado-run() {
 
 alias vivado="vivado-run"
 alias edge="microsoft-edge-dev"
+alias chrome="google-chrome-stable"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 
