@@ -48,16 +48,13 @@ font:
     sytle: Medium
   bold:
     family: IntelOneMono Nerd Font Mono
-    style: Bold
   italic:
     family: IntelOneMono Nerd Font Mono
-    sytle: Italic
   bold_italic:
     family: IntelOneMono Nerd Font Mono
-    style: Bold Italic
   size: 11.5
   offset:
-    y: -3
+    y: -2
 ## Live config reload
 live_config_reload: true
 
