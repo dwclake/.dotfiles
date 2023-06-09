@@ -13,7 +13,7 @@
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-    background-color: @background;
+    background-color: transparent;
 	color: @background;
     transition-property: background-color;
     transition-duration: .5s;
