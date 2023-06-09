@@ -3,7 +3,7 @@
 */
 
 /** ********** Colors ********** **/
-@define-color background 	  rgba(30, 30, 46, 55);
+@define-color background 	  rgba(30, 30, 46, 1);
 @define-color background-alt  #3C3C44;
 @define-color foreground 	  #d9e0ee;
 @define-color black 	 	  #000000;
