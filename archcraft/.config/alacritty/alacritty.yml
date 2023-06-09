@@ -52,7 +52,7 @@ font:
     family: IntelOneMono Nerd Font Mono
   bold_italic:
     family: IntelOneMono Nerd Font Mono
-  size: 11.5
+  size: 12
   offset:
     y: -2
 ## Live config reload

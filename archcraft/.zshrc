@@ -147,7 +147,7 @@ alias chrome="google-chrome-stable"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 
-export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.1-SE:$PATH"
+export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.1-SE:$HOME/.cargo/bin:$PATH"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
