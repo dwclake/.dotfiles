@@ -8,12 +8,12 @@
 /** ********** Fonts ********** **/
 * {
     font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-    background-color: transparent;
+    background-color: @background;
 	color: @background;
     transition-property: background-color;
     transition-duration: .5s;
