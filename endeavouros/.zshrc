@@ -111,7 +111,7 @@ export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 
-export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.1-SE:$PATH"
+export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.2-SE:$PATH"
 
 #[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
@@ -151,7 +151,6 @@ vivado-run() {
 
 alias vivado="vivado-run"
 alias edge="microsoft-edge-dev"
-alias chrome="google-chrome-stable"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 
@@ -159,13 +158,10 @@ alias dc-e="docker-compose exec"
 export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
-export WASMTIME_HOME="$HOME/.wasmtime"
-
-export PATH="$WASMTIME_HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
+export SHELL="/usr/bin/zsh"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
