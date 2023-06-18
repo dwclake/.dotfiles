@@ -32,7 +32,7 @@ window:
   multiplier: 3
 
 ## Background opacity
-  opacity: 0.85
+  opacity: 0.80
 
 ## Cursor
 cursor:
@@ -45,16 +45,17 @@ cursor:
 font: 
   normal:
     family: IntelOneMono Nerd Font Mono
-    sytle: Medium
+    style: normal
   bold:
     family: IntelOneMono Nerd Font Mono
   italic:
     family: IntelOneMono Nerd Font Mono
   bold_italic:
     family: IntelOneMono Nerd Font Mono
-  size: 12
+  size: 12.5
   offset:
     y: -2
+draw_bold_text_with_bright_colors: true
 ## Live config reload
 live_config_reload: true
 
