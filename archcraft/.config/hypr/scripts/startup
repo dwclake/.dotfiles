@@ -18,8 +18,8 @@ if [[ ! `pidof xfce-polkit` ]]; then
 fi
 
 # Set wallpaper
-swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.jpg &
-
+#swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.jpg &
+~/.config/hypr/wallpapers/random_wallpapers.sh &
 # Apply themes
 ~/.config/hypr/scripts/gtkthemes &
 
