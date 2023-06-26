@@ -165,3 +165,5 @@ export SHELL="/usr/bin/zsh"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+source "/opt/asdf-vm/asdf.sh"
