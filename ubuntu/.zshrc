@@ -8,9 +8,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="takashiyoshida2"
+#ZSH_THEME="takashiyoshida2"
 #ZSH_THEME="bureau"
-#ZSH_THEME="juanghurtado"
+ZSH_THEME="juanghurtado2"
 #ZSH_THEME="murilasso"
 
 # Set list of themes to pick from when loading at random
@@ -202,6 +202,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export CC="/usr/bin/gcc-13"
 export CXX="/usr/bin/g++-13"
 
+export BROWSER='/mnt/c/Windows/explorer.exe'
+alias open='explorer.exe'
+
 # Wasmer
 export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
@@ -210,3 +213,9 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+. "$HOME/.asdf/asdf.sh"
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
