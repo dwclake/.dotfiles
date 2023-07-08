@@ -1,5 +1,5 @@
 require('rose-pine').setup({
-	--disable_italics = true
+	disable_italics = true
 })
 
 function ColorMyPencils(color)

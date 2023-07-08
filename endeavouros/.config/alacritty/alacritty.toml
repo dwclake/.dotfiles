@@ -5,16 +5,19 @@ size = 12
 
 [font.bold]
 family = "IntelOneMono Nerd Font Mono"
+style = "Bold"
 
 [font.bold_italic]
 family = "IntelOneMono Nerd Font Mono"
+style = "Bold Italic"
 
 [font.italic]
 family = "IntelOneMono Nerd Font Mono"
+style = "Italic"
 
 [font.normal]
 family = "IntelOneMono Nerd Font Mono" 
-style = "Medium"
+style = "Regular"
 
 [font.offset]
 y = -2
