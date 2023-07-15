@@ -108,7 +108,7 @@ alias dc-e="docker-compose exec"
 
 export GOROOT=/snap/go/current
 export GOPATH=$HOME/go
-export ZIGPATH=$HOME/.local/share/zig-linux-x86_64-0.11.0-dev.3301+230ea411f
+export ZIGPATH=$HOME/.local/share/zig
 export NVIMPATH=/snap/nvim/current/usr/bin
 export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ZIGPATH:$PATH
 
