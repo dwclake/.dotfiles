@@ -20,7 +20,7 @@ family = "IntelOneMono Nerd Font Mono"
 style = "Regular"
 
 [font.offset]
-y = -3
+y = -2
 
 [shell]
 program = "/usr/bin/zsh"
