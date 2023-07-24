@@ -149,6 +149,14 @@ vivado-run() {
     cd ~
 }
 
+vmrss() {
+    output=($(grep 'VmRSS' "/proc/$1/status"))
+    memory=$(echo "scale=2;${output[2]}/1024" | bc)
+    output[2]=$memory
+    output[3]="MB"
+    echo $output
+}
+
 alias vivado="vivado-run"
 alias edge="microsoft-edge-dev"
 alias dc="docker-compose"
