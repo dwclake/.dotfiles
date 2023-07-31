@@ -110,6 +110,7 @@ alias vim="nvim"
 export BROWSER='/usr/bin/microsoft-edge-dev'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
+PROMPT_EOL_MARK=
 
 export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.2-SE:$PATH"
 
