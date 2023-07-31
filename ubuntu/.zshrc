@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
+PROMPT_EOL_MARK=
 
 export GOROOT=/snap/go/current
 export GOPATH=$HOME/go
