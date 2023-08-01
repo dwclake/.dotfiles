@@ -8,6 +8,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<CR>")
 
+vim.keymap.set("n", "<leader>.", ":tabnext<CR>")
+vim.keymap.set("n", "<leader>,", ":tabprevious<CR>")
+
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
