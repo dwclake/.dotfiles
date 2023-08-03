@@ -16,4 +16,3 @@ export PATH="$PATH:/Users/devon/Library/Application Support/JetBrains/Toolbox/sc
 
 export EMSDK_QUIET=1
 source ~/emsdk/emsdk_env.sh
-

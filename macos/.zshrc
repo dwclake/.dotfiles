@@ -158,7 +158,7 @@ buildproject() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        cmake -S . -B build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-12
+        cmake -S . -B build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13
         cmake --build build --parallel 8
         if [ ! -d "bin" ]; then
             mkdir bin
@@ -176,9 +176,24 @@ runproject() {
     fi
 }
 
+export ZIGPATH="$HOME/.local/share/zig"
+
 export WASMTIME_HOME="$HOME/.wasmtime"
 
-export PATH="$WASMTIME_HOME/bin:$PATH"
+export PATH="$WASMTIME_HOME/bin:$ZIGPATH:$PATH"
 # Wasmer
 export WASMER_DIR="/Users/devon/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# opam configuration
+[[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+. $HOME/.asdf/asdf.sh
+
+vmrss() {
+    output=($(grep 'VmRSS' "/proc/$1/status"))
+    memory=$(echo "scale=2;${output[2]}/1024" | bc)
+    output[2]=$memory
+    output[3]="MB"
+    echo $output
+}

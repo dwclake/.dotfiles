@@ -38,7 +38,17 @@ return require('packer').startup(function(use)
 
       })
   end}
+  use ('reasonml-editor/vim-reason-plus')
   use ('kdheepak/lazygit.nvim')
+
+  use({
+      "kylechui/nvim-surround",
+      tag = "*",
+      config = function() require("nvim-surround").setup({
+
+      })
+    end
+  })
 
   use {
       'VonHeikemen/lsp-zero.nvim',
