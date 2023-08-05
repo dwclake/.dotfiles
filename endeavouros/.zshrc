@@ -176,3 +176,4 @@ export SHELL="/usr/bin/zsh"
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 source "/opt/asdf-vm/asdf.sh"
+export PATH=/home/dwclake/.nimble/bin:$PATH
