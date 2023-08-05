@@ -228,3 +228,5 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+
+export PATH=/home/dwclake/.nimble/bin:$PATH
