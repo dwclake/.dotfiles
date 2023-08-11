@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
   end}
   use ('reasonml-editor/vim-reason-plus')
   use ('kdheepak/lazygit.nvim')
+  use ('alaviss/nim.nvim')
+  use ('jlcrochet/vim-crystal')
 
   use({
       "kylechui/nvim-surround",
