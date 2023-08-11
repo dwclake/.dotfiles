@@ -57,6 +57,7 @@ end)
 
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
+require'lspconfig'.crystalline.setup{}
 
 lsp.setup()
 vim.g.zig_fmt_autosave = 0

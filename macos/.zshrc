@@ -197,3 +197,4 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
+export PATH="/Users/devon/.nimble/bin:$PATH"
