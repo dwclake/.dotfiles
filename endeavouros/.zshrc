@@ -177,3 +177,7 @@ export SHELL="/usr/bin/zsh"
 
 source "/opt/asdf-vm/asdf.sh"
 export PATH=/home/dwclake/.nimble/bin:$PATH
+
+DEVKITPRO=/opt/devkitpro
+DEVKITARM=/opt/devkitpro/devkitARM
+DEVKITPPC=/opt/devkitpro/devkitPPC
