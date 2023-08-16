@@ -2,4 +2,5 @@ search_paths = [
     '/home/dwclake/education',
     '/home/dwclake/work',
     '/home/dwclake/personal',
+    '/home/dwclake/decompiles'
 ]
