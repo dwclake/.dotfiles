@@ -198,3 +198,5 @@ vmrss() {
     echo $output
 }
 export PATH="/Users/devon/.nimble/bin:$PATH"
+export DEVKITPRO="/opt/devkitpro"
+export DEVKITARM="$DEVKITPRO/devkitARM"
