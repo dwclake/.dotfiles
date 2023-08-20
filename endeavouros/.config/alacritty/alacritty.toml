@@ -27,7 +27,7 @@ program = "/usr/bin/zsh"
 
 [window]
 decorations = "none"
-opacity = 0.70
+opacity = 0.75
 
 [window.dimensions]
 columns = 100
