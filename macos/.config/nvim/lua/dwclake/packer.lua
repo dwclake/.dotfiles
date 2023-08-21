@@ -42,6 +42,8 @@ return require('packer').startup(function(use)
   use ('kdheepak/lazygit.nvim')
   use ('alaviss/nim.nvim')
   use ('jlcrochet/vim-crystal')
+  
+  --use {'neoclide/coc.nvim', branch = 'release'}
 
   use({
       "kylechui/nvim-surround",

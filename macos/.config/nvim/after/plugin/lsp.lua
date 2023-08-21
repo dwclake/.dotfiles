@@ -57,7 +57,9 @@ end)
 
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
-require'lspconfig'.crystalline.setup{}
+require'lspconfig'.crystalline.setup{
+    cmd = {"/opt/homebrew/bin/crystalline"}
+}
 
 lsp.setup()
 vim.g.zig_fmt_autosave = 0
