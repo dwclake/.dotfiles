@@ -99,6 +99,10 @@ export EDITOR="nvim"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export CXX=/opt/homebrew/bin/g++-13
+export C=/opt/homebrew/bin/gcc-13
+
 alias vim="nvim"
 [ -f "/Users/devon/.ghcup/env" ] && source "/Users/devon/.ghcup/env" # ghcup-env
 
