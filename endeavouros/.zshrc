@@ -122,7 +122,7 @@ tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
-buildproject() {
+build() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake needed."
     else
@@ -135,7 +135,7 @@ buildproject() {
     fi
 }
 
-runproject() {
+run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake needed."
     else
