@@ -106,59 +106,11 @@ export C=/opt/homebrew/bin/gcc-13
 alias vim="nvim"
 [ -f "/Users/devon/.ghcup/env" ] && source "/Users/devon/.ghcup/env" # ghcup-env
 
-#buildc() {
- #   DIR=${PWD##*/}
-  #  DIR=${DIR:-/}
-  #  SRC="src"
-
-   # if [[ "$DIR" == "$SRC" ]]; 
-    #    then
-     #       if [ -d "../bin" ]; then
-      #          g++ -Wall -std=c++20 $1 -o ../bin/${1%%.*}.exe
-       #     else
-        #        echo "Creating bin directory";
-         #       mkdir ../bin
-          #      g++ -Wall -std=c++20 $1 -o ../bin/${1%%.*}.exe
-           # fi
-   # else
-    #    echo "Not in a src directory"
-   # fi
-#}
-
-buildfile() {
-    if [ -d "src" ] && [ -d "bin" ]; then
-        g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
-    elif ! [[ -d "src" ]]; then
-        echo "No src directory"
-    elif ! [[ -d "bin" ]]; then
-        echo "Creating bin directory"
-        mkdir bin
-        g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe
-    fi
-}
-
-runfile() {
-    if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced gcc."
-    else
-        
-        if [ -d "src" ] && [ -d "bin" ]; then
-            buildfile $1 && bin/${1%%.*}.exe
-        elif ! [[ -d "src" ]]; then
-            echo "No src directory"
-        elif ! [[ -d "bin" ]]; then
-            echo "Creating bin directory" 
-            mkdir bin
-            buildfile $1 && bin/${1%%.*}.exe
-        fi
-    fi
-}
-
 tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
-buildproject() { 
+build() { 
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
@@ -171,11 +123,11 @@ buildproject() {
     fi
 }
 
-runproject() {
+run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        buildproject $1
+        build $1
         bin/$1 $2
     fi
 }
