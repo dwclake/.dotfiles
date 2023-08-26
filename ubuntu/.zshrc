@@ -120,59 +120,7 @@ tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
-buildfile() {
-    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            g++ -std=c++20 src/main.cpp -o bin/main.exe
-        else
-            echo "src/main.cpp does not exit, please provide alternative file" 
-        fi
-    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
-        g++ -Wall -std=c++20 src/$1 -o bin/${1%%.*}.exe 
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            echo "Creating bin directory"
-            mkdir bin 
-            g++ -std=c++20 src/main.cpp -o bin/main.exe 
-        else
-            echo "src/main.cpp does not exit, please provide alternative file" 
-        fi
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
-        echo "Creating bin directory"
-        mkdir bin 
-        g++ -std=c++20 src/$1 -o bin/${1%%.*}.exe 
-    else 
-        echo "No source directory"
-    fi
-}
-
-runfile() {
-    if [ -d "src" ] && [ -d "bin" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            buildfile && bin/main.exe 
-        else
-            echo "src/main.cpp does not exit, please provide alternative file" 
-        fi
-    elif [ -d "src" ] && [ -d "bin" ] && [ ! "$1" = "" ]; then
-        buildfile $1 && bin/${1%%.*}.exe 
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ "$1" = "" ]; then
-        if [ -f "src/main.cpp" ]; then
-            echo "Creating bin directory"
-            mkdir bin 
-            buildfile && bin/main.exe 
-        else
-            echo "src/main.cpp does not exit, please provide alternative file" 
-        fi
-    elif [ ! -d "bin" ] && [ -d "src" ] && [ ! "$1" = "" ]; then
-        echo "Creating bin directory"
-        mkdir bin 
-        buildfile $1 && bin/${1%%.*}.exe 
-    else 
-        echo "No source directory"
-    fi
-}
-
-buildproject() { 
+build() { 
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
@@ -185,7 +133,7 @@ buildproject() {
     fi
 }
 
-runproject() {
+run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
