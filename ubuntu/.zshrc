@@ -137,7 +137,7 @@ run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        buildproject $1
+        build $1
         bin/$1 $2
     fi
 }
