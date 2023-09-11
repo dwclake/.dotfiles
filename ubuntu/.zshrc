@@ -116,6 +116,10 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ZIGPATH:$PATH
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
 
+vs() {
+    cd /mnt/c/Users/devon/source/repos
+}
+
 tmsa() {
     tms && tmux attach-session -t "$1"
 }
