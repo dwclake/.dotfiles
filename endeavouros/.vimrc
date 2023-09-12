@@ -132,6 +132,6 @@ endif
 " ## end of OPAM user-setup addition for vim / ocp-indent ## keep this line
 
 "autocmd Filetype cpp setlocal tabstop=4
-set tabstop=2
-set shiftwidth=2
-set expandtab
+"autocmd! Filetype rust setlocal tabstop=2
+"autocmd! Filetype rust setlocal shiftwidth=2
+"autocmd! Filetype rust setlocal expandtab
