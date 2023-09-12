@@ -130,3 +130,8 @@ if count(s:opam_available_tools,"ocp-indent") == 0
   source "/home/dwclake/.opam/5.0.0/share/ocp-indent/vim/indent/ocaml.vim"
 endif
 " ## end of OPAM user-setup addition for vim / ocp-indent ## keep this line
+
+"autocmd Filetype cpp setlocal tabstop=4
+set tabstop=2
+set shiftwidth=2
+set expandtab
