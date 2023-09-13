@@ -2,6 +2,16 @@ require('rose-pine').setup({
 	disable_italics = true
 })
 
+require('kanagawa').setup({
+	keywordStyle = { italic = false },
+    typeStle = { italic = false },
+    functionStyle = { italic = false },
+    statementStyle = { italic = false, bold = false },
+    commentStyle = { italic = true },
+    undercurl = false
+})
+
+
 function ColorMyPencils(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
@@ -27,4 +37,4 @@ function ColorMyPencils(color)
     vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
 end
 
-ColorMyPencils()
+ColorMyPencils("kanagawa")
