@@ -4,11 +4,12 @@ require('rose-pine').setup({
 
 require('kanagawa').setup({
 	keywordStyle = { italic = false },
-    typeStle = { italic = false },
-    functionStyle = { italic = false },
-    statementStyle = { italic = false, bold = false },
-    commentStyle = { italic = true },
-    undercurl = false
+  typeStle = { italic = false },
+  functionStyle = { italic = false },
+  statementStyle = { italic = false, bold = false },
+  commentStyle = { italic = true },
+  undercurl = false,
+  transparent = true
 })
 
 
@@ -19,6 +20,7 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     vim.cmd(":highlight SignColumn guibg=none")	
+    vim.cmd(":highlight LineNr guibg=none")	
     vim.cmd(":highlight GitSignsAdd guibg=none")	
     vim.cmd(":highlight GitSignsDelete guibg=none")	
     vim.cmd(":highlight GitSignsChange guibg=none")	
