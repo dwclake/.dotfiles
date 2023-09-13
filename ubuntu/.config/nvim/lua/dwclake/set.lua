@@ -33,4 +33,5 @@ vim.opt.colorcolumn = "90"
 vim.diagnostic.config({
   virtual_text = true, -- Turn off inline diagnostics
 })
+
 vim.cmd('filetype plugin indent off')
