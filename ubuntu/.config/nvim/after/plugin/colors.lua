@@ -11,6 +11,18 @@ require('rose-pine').setup({
     disable_italics = true
 })
 
+require('nordic').setup({
+  bold_keywords = false,
+  italic_keywords = false,
+  italic_comments = false,
+  transparent_bg = true,
+  reduce_blue = true,
+  cursorline = {
+    bold = false,
+    bold_number = false
+  }
+})
+
 function ColorMyPencils(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
