@@ -1,26 +1,34 @@
-require('kanagawa').setup({
-	keywordStyle = { italic = false },
-    typeStle = { italic = false },
-    functionStyle = { italic = false },
-    statementStyle = { italic = false, bold = false },
-    commentStyle = { italic = true },
-    undercurl = false
-})
-
 require('rose-pine').setup({
     disable_italics = true
 })
 
+require('kanagawa').setup({
+	keywordStyle = { italic = false },
+  typeStle = { italic = false },
+  functionStyle = { italic = false },
+  statementStyle = { italic = false, bold = false },
+  commentStyle = { italic = true },
+  undercurl = false,
+  transparent = true
+})
+
 require('nordic').setup({
+  on_palette = function(palette)
+    palette.white0 = '#D8DEE9'
+    palette.red.dim = palette.red.bright
+    palette.red.base = palette.red.bright
+    palette.orange.dim = palette.orange.bright
+    palette.orange.base = palette.orange.bright
+    palette.cyan.dim = palette.cyan.bright
+    palette.cyan.base = palette.cyan.bright
+    palette.cyan.dim = palette.cyan.bright
+    palette.cyan.base = palette.cyan.bright
+    return palette
+  end,
   bold_keywords = false,
-  italic_keywords = false,
   italic_comments = false,
   transparent_bg = true,
-  reduce_blue = true,
-  cursorline = {
-    bold = false,
-    bold_number = false
-  }
+  reduce_blue = true
 })
 
 function ColorMyPencils(color)
@@ -48,4 +56,4 @@ function ColorMyPencils(color)
     vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
 end
 
-ColorMyPencils("rose-pine")
+ColorMyPencils("nordic")
