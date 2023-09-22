@@ -57,4 +57,4 @@ function ColorMyPencils(color)
     vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
 end
 
-ColorMyPencils("rose-pine")
+ColorMyPencils("nordic")
