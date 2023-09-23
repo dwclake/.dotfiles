@@ -110,8 +110,9 @@ PROMPT_EOL_MARK=
 export GOROOT=/snap/go/current
 export GOPATH=$HOME/go
 export ZIGPATH=$HOME/.local/share/zig
+export ODINPATH=$HOME/.local/share/odin
 export NVIMPATH=/snap/nvim/current/usr/bin
-export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ZIGPATH:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:$NVIMPATH:$ODINPATH:$ZIGPATH:$PATH
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
@@ -155,7 +156,6 @@ vmrss() {
 }
 
 export WASMTIME_HOME="$HOME/.wasmtime"
-
 export PATH="$WASMTIME_HOME/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
