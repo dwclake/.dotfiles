@@ -101,8 +101,8 @@ PROMPT_EOL_MARK=
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export CXX=/opt/homebrew/bin/g++-13
-export C=/opt/homebrew/bin/gcc-13
+#export CXX=/opt/homebrew/bin/g++-13
+#export C=/opt/homebrew/bin/gcc-13
 
 alias vim="nvim"
 [ -f "/Users/devon/.ghcup/env" ] && source "/Users/devon/.ghcup/env" # ghcup-env
@@ -134,6 +134,7 @@ run() {
 }
 
 export ZIGPATH="$HOME/.local/share/zig"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$PATH"
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
