@@ -14,21 +14,25 @@ require('kanagawa').setup({
 
 require('nordic').setup({
   on_palette = function(palette)
-    palette.white0 = '#D8DEE9'
+    palette.white0 = '#d5dbeb'
     palette.red.dim = palette.red.bright
     palette.red.base = palette.red.bright
-    palette.orange.dim = palette.orange.bright
-    palette.orange.base = palette.orange.bright
-    palette.cyan.dim = palette.cyan.bright
-    palette.cyan.base = palette.cyan.bright
-    palette.cyan.dim = palette.cyan.bright
-    palette.cyan.base = palette.cyan.bright
+    palette.yellow.base = '#fcdb97'
+    palette.yellow.dim = palette.yellow.base
+    palette.orange.dim = '#e3977c'
+    palette.orange.base = palette.orange.dim
+    palette.cyan.dim = '#9dddee'
+    palette.cyan.base = palette.cyan.dim
+    palette.green.dim = palette.green.bright
+    palette.green.base = palette.green.bright
+    palette.magenta.base = '#a78aad'
+    palette.magenta.dim = palette.magenta.base
     return palette
   end,
   bold_keywords = false,
   italic_comments = false,
   transparent_bg = true,
-  reduce_blue = true
+  reduce_blue = false
 })
 
 function ColorMyPencils(color)
