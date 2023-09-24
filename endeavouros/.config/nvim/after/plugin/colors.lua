@@ -15,7 +15,7 @@ require('kanagawa').setup({
 require('nordic').setup({
   on_palette = function(palette)
     palette.white0 = '#d5dbeb'
-    palette.red.dim = palette.red.bright
+    palette.red.dim = '#db7f88'
     palette.red.base = palette.red.bright
     palette.yellow.base = '#fcdb97'
     palette.yellow.dim = palette.yellow.base
