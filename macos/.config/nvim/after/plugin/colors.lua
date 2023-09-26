@@ -31,11 +31,19 @@ require('nordic').setup({
 })
 
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "rose-pine-moon"
 	vim.cmd.colorscheme(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    vim.cmd(":highlight SignColumn guibg=none")	
+    vim.cmd(":highlight SignColumn guibg=none ctermbg=none")	
+    vim.cmd(":highlight StatusLine guibg=none ctermbg=none")	
+    vim.cmd(":highlight LineNr guibg=none")	
+    vim.cmd(":highlight WarningMsg guibg=none")	
+    vim.cmd(":highlight Error guibg=none")	
+    vim.cmd(":highlight DiffAdd guibg=none ctermbg=none")	
+    vim.cmd(":highlight DiffChange guibg=none ctermbg=none")	
+    vim.cmd(":highlight DiffDelete guibg=none ctermbg=none")	
+    vim.cmd(":highlight DiffText guibg=none ctermbg=none")	
     vim.cmd(":highlight GitSignsAdd guibg=none")	
     vim.cmd(":highlight GitSignsDelete guibg=none")	
     vim.cmd(":highlight GitSignsChange guibg=none")	
@@ -52,6 +60,8 @@ function ColorMyPencils(color)
     vim.cmd(":highlight GitSignsChangeLn guibg=none")	
     vim.cmd(":highlight GitSignsChangedeleteLn guibg=none")	
     vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
+    vim.g.nord_italic = false
+    vim.g.nord_bold = false
 end
 
-ColorMyPencils("meh")
+ColorMyPencils("nord")
