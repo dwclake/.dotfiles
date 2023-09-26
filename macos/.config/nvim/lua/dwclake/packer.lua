@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
 	  end
   })
   use ('AlexvZyl/nordic.nvim')
+  use ('rakr/vim-two-firewatch')
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/playground')
