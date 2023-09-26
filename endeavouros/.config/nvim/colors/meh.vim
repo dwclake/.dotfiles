@@ -22,9 +22,9 @@ hi! dkoPopupBlank       guibg=#2a2a2f guifg=#2a2a2f
 
 hi! dkoDecorations                    guifg=#505a6a
 hi! dkoRegex                          guifg=#cc99cc
-hi! dkoReturn                         guifg=#cc8877 gui=italic
-hi! dkoQuote                          guifg=#77aa88 gui=italic
-hi! dkoType                           guifg=#60687a gui=italic
+hi! dkoReturn                         guifg=#cc8877 gui=NONE
+hi! dkoQuote                          guifg=#77aa88 gui=NONE
+hi! dkoType                           guifg=#60687a gui=NONE
 hi! dkoWarningText      guibg=#2c2b2a guifg=#ddaa66 gui=bold
 hi! dkoNormalKey                      guifg=#ccccbb
 
@@ -53,10 +53,10 @@ hi! Boolean                           guifg=#cccccc gui=None
 hi! Comment                           guifg=#70788a gui=None              ctermfg=240
 hi! Constant                          guifg=NONE    gui=None
 hi! Delimiter                         guifg=#cc99cc                       ctermfg=139
-hi! DiffAdd             guibg=#2a332a guifg=#668844           ctermbg=235 ctermfg=22
-hi! DiffChange          guibg=#2c2b2a guifg=#7f6030           ctermbg=235 ctermfg=94
-hi! DiffDelete          guibg=#4a2a2a guifg=#aa6666           ctermbg=235 ctermfg=52
-hi! DiffText            guibg=#4a2a2a
+hi! DiffAdd             guibg=NONE guifg=#668844           ctermbg=235 ctermfg=22
+hi! DiffChange          guibg=NONE guifg=#7f6030           ctermbg=235 ctermfg=94
+hi! DiffDelete          guibg=NONE guifg=#aa6666           ctermbg=235 ctermfg=52
+hi! DiffText            guibg=NONE
 hi! Error               guibg=NONE    guifg=#ee6666           ctermbg=NONE ctermfg=160
 hi! Function                          guifg=NONE
 hi! link Identifier dkoTextLight
@@ -84,10 +84,10 @@ hi! String                            guifg=#88aabb                         cter
 hi! link Title dkoTextLight
 hi! Todo                guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type                              guifg=#dddddd gui=NONE  ctermfg=253
-hi! Underlined                        guifg=#88aaee gui=underline           ctermfg=110
+hi! Underlined                        guifg=#88aaee gui=NONE          ctermfg=110
 hi! Visual              guibg=#afa08f guifg=#1f1f1f
 hi! WarningMsg                        guifg=#ccaa88
-hi! Whitespace          guibg=#1c1c1c guifg=#40485a gui=bold
+hi! Whitespace          guibg=#1c1c1c guifg=#40485a gui=NONE
 hi! Folded              guibg=#24252a guifg=#88aabb           ctermbg=236   ctermfg=110
 hi! TabLineSel          guifg=#cc8877
 hi! link TabLine Folded

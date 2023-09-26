@@ -5,17 +5,22 @@ require('rose-pine').setup({
 require('nordic').setup({
   on_palette = function(palette)
     palette.white0 = '#d5dbeb'
+    palette.gray5 = '#7f8ba1'
     palette.red.dim = '#db7f88'
-    palette.red.base = palette.red.bright
-    palette.yellow.base = '#fcdb97'
+    palette.red.base = palette.red.dim
+    palette.red.bright = palette.red.dim
+    palette.yellow.base = '#facd73'
     palette.yellow.dim = palette.yellow.base
-    palette.orange.dim = '#e3977c'
+    palette.orange.dim = '#8791a3' --'#e3977c'
     palette.orange.base = palette.orange.dim
     palette.cyan.dim = '#9dddee'
+    palette.cyan.bright = palette.cyan.dim
     palette.cyan.base = palette.cyan.dim
+    palette.green.bright = '#76cfb4'
     palette.green.dim = palette.green.bright
     palette.green.base = palette.green.bright
-    palette.magenta.base = '#a78aad'
+    palette.magenta.bright = palette.yellow.dim
+    palette.magenta.base = palette.yellow.dim --'#a78aad'
     palette.magenta.dim = palette.magenta.base
     return palette
   end,
@@ -52,6 +57,5 @@ function ColorMyPencils(color)
 end
 
 --ColorMyPencils("rose-pine")
---ColorMyPencils("nordic")
-ColorMyPencils("meh")
---ColorMyPencils("iceberg")
+ColorMyPencils("nordic")
+--ColorMyPencils("meh")
