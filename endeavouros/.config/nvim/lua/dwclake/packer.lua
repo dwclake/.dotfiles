@@ -22,10 +22,8 @@ return require('packer').startup(function(use)
         vim.cmd('colorscheme rose-pine')
       end
   })
-  --use ({'rebelot/kanagawa.nvim'})
   use ({'AlexvZyl/nordic.nvim'})
-  --use ({'catppuccin/nvim', as = 'catppuccin'})
-  --use ('davidosomething/vim-colors-meh')
+  use ('rakr/vim-two-firewatch')
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/nvim-treesitter-context')
