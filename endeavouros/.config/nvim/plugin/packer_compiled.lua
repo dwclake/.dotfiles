@@ -125,11 +125,6 @@ _G.packer_plugins = {
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["iceberg.vim"] = {
-    loaded = true,
-    path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/iceberg.vim",
-    url = "https://github.com/cocopon/iceberg.vim"
-  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
@@ -228,7 +223,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\vborder\vcurved\nwidth\3P\vheight\3\30\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\nwidth\3P\vheight\3\30\vborder\vcurved\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -237,11 +232,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-colors-meh"] = {
-    loaded = true,
-    path = "/home/dwclake/.local/share/nvim/site/pack/packer/start/vim-colors-meh",
-    url = "https://github.com/davidosomething/vim-colors-meh"
   },
   ["vim-crystal"] = {
     loaded = true,
@@ -267,7 +257,7 @@ try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B
 time([[Config for nvim-surround]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\vborder\vcurved\nwidth\3P\vheight\3\30\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+try_loadstring("\27LJ\2\nt\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\0\1\0\3\nwidth\3P\vheight\3\30\vborder\vcurved\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
