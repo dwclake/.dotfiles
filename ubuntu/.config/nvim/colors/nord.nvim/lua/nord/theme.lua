@@ -20,9 +20,9 @@ theme.loadSyntax = function()
 		Number = { fg = nord.nord15_gui }, -- a number constant: 5
 		Boolean = { fg = nord.nord9_gui }, -- a boolean constant: TRUE, false
 		Float = { fg = nord.nord15_gui }, -- a floating point constant: 2.3e10
-		Statement = { fg = nord.nord9_gui }, -- any statement
+		Statement = { fg = nord.nord6_gui }, -- any statement
 		Label = { fg = nord.nord9_gui }, -- case, default, etc.
-		Operator = { fg = nord.nord9_gui }, -- sizeof", "+", "*", etc.
+		Operator = { fg = nord.nord6_gui }, -- sizeof", "+", "*", etc.
 		Exception = { fg = nord.nord9_gui }, -- try, catch, throw
 		PreProc = { fg = nord.nord9_gui }, -- generic Preprocessor
 		Include = { fg = nord.nord9_gui }, -- preprocessor #include
@@ -56,7 +56,7 @@ theme.loadSyntax = function()
 		Comment = { fg = nord.nord3_gui_bright, style = italic }, -- italic comments
 		Conditional = { fg = nord.nord9_gui, style = italic }, -- italic if, then, else, endif, switch, etc.
 		Function = { fg = nord.nord8_gui, style = italic }, -- italic funtion names
-		Identifier = { fg = nord.nord9_gui, style = italic }, -- any variable name
+		Identifier = { fg = nord.nord6_gui, style = italic }, -- any variable name
 		Keyword = { fg = nord.nord9_gui, style = italic }, -- italic for, do, while, etc.
 		Repeat = { fg = nord.nord9_gui, style = italic }, -- italic any other keyword
 		String = { fg = nord.nord14_gui, style = italic }, -- any string
@@ -245,7 +245,7 @@ theme.loadTreeSitter = function()
 		TSFuncMacro = { fg = nord.nord7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
-		TSOperator = { fg = nord.nord9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
+		TSOperator = { fg = nord.nord6_gui }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter = { fg = nord.nord10_gui }, -- For parameters of a function.
 		TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
 		TSPunctDelimiter = { fg = nord.nord8_gui }, -- For delimiters ie: `.`
@@ -273,7 +273,7 @@ theme.loadTreeSitter = function()
 		["@funtion.macro"] = { fg = nord.nord7_gui },
 		["@include"] = { fg = nord.nord9_gui },
 		["@label"] = { fg = nord.nord15_gui },
-		["@operator"] = { fg = nord.nord9_gui },
+		["@operator"] = { fg = nord.nord6_gui },
 		["@parameter"] = { fg = nord.nord10_gui },
 		["@punctuation.delimiter"] = { fg = nord.nord8_gui },
 		["@punctuation.bracket"] = { fg = nord.nord8_gui },
@@ -306,15 +306,15 @@ theme.loadTreeSitter = function()
 		-- @string.special
 	}
 
-	treesitter.TSVariableBuiltin = { fg = nord.nord4_gui, style = bold }
+	treesitter.TSVariableBuiltin = { fg = nord.nord6_gui, style = bold }
 	treesitter.TSBoolean = { fg = nord.nord9_gui, style = bold }
 	treesitter.TSConstBuiltin = { fg = nord.nord7_gui, style = bold }
 	treesitter.TSConstMacro = { fg = nord.nord7_gui, style = bold }
-	treesitter.TSVariable = { fg = nord.nord4_gui, style = bold }
+	treesitter.TSVariable = { fg = nord.nord6_gui, style = bold }
 	treesitter.TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = bold }
-	treesitter["@variable"] = { fg = nord.nord4_gui, style = bold }
-	treesitter["@variable.builtin"] = { fg = nord.nord4_gui, style = bold }
-	treesitter["@variable.global"] = { fg = nord.nord4_gui, style = bold }
+	treesitter["@variable"] = { fg = nord.nord6_gui, style = bold }
+	treesitter["@variable.builtin"] = { fg = nord.nord6_gui, style = bold }
+	treesitter["@variable.global"] = { fg = nord.nord6_gui, style = bold }
 	treesitter["@boolean"] = { fg = nord.nord9_gui, style = bold }
 	treesitter["@constant.builtin"] = { fg = nord.nord7_gui, style = bold }
 	treesitter["@constant.macro"] = { fg = nord.nord7_gui, style = bold }
@@ -330,7 +330,7 @@ theme.loadTreeSitter = function()
 	treesitter.TSFuncBuiltin = { fg = nord.nord8_gui, style = italic }
 	-- Namespaces and property accessors
 	treesitter.TSNamespace = { fg = nord.nord4_gui, style = italic } -- For identifiers referring to modules and namespaces.
-	treesitter.TSField = { fg = nord.nord4_gui, style = italic } -- For fields.
+	treesitter.TSField = { fg = nord.nord6_gui, style = italic } -- For fields.
 	treesitter.TSProperty = { fg = nord.nord10_gui, style = italic } -- Same as `TSField`, but when accessing, not declaring.
 	-- Language keywords
 	treesitter.TSKeyword = { fg = nord.nord9_gui, style = italic } -- For keywords that don't fall in other categories.
@@ -350,7 +350,7 @@ theme.loadTreeSitter = function()
 	treesitter["@method"] = { fg = nord.nord8_gui, style = italic }
 	treesitter["@function.builtin"] = { fg = nord.nord8_gui, style = italic }
 	treesitter["@namespace"] = { fg = nord.nord4_gui, style = italic }
-	treesitter["@field"] = { fg = nord.nord4_gui, style = italic }
+	treesitter["@field"] = { fg = nord.nord6_gui, style = italic }
 	treesitter["@property"] = { fg = nord.nord10_gui, style = italic }
 	treesitter["@keyword"] = { fg = nord.nord9_gui, style = italic }
 	treesitter["@keyword.function"] = { fg = nord.nord8_gui, style = italic }
