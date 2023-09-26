@@ -2,15 +2,33 @@ require('rose-pine').setup({
     disable_italics = true
 })
 
-require('kanagawa').setup({
-	keywordStyle = { italic = false },
-  typeStle = { italic = false },
-  functionStyle = { italic = false },
-  statementStyle = { italic = false, bold = false },
-  commentStyle = { italic = true },
-  undercurl = false,
-  transparent = true
-})
+--require('nordic').setup({
+--    on_palette = function(palette)
+--      palette.white0 = '#d5dbeb'
+--      palette.gray5 = '#7f8ba1'
+--      palette.red.dim = '#db7f88'
+--      palette.red.base = palette.red.dim
+--      palette.red.bright = palette.red.dim
+--      palette.yellow.base = '#facd73'
+--      palette.yellow.dim = palette.yellow.base
+--      palette.orange.dim = '#8791a3' --'#e3977c'
+--      palette.orange.base = palette.orange.dim
+--      palette.cyan.dim = '#9dddee'
+--      palette.cyan.bright = palette.cyan.dim
+--      palette.cyan.base = palette.cyan.dim
+--      palette.green.bright = '#76cfb4'
+--      palette.green.dim = palette.green.bright
+--      palette.green.base = palette.green.bright
+--      palette.magenta.bright = palette.yellow.dim
+--      palette.magenta.base = palette.yellow.dim --'#a78aad'
+--      palette.magenta.dim = palette.magenta.base
+--      return palette
+--    end,
+--  bold_keywords = false,
+--  italic_comments = false,
+--  transparent_bg = true,
+--  reduce_blue = false
+--})
 
 require('nordic').setup({
   on_palette = function(palette)
@@ -60,4 +78,4 @@ function ColorMyPencils(color)
     vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
 end
 
-ColorMyPencils("nordic")
+ColorMyPencils("nord")
