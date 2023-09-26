@@ -57,5 +57,5 @@ function ColorMyPencils(color)
 end
 
 --ColorMyPencils("rose-pine")
-ColorMyPencils("nordic")
---ColorMyPencils("meh")
+--ColorMyPencils("nordic")
+ColorMyPencils("meh")
