@@ -22,7 +22,7 @@ theme.loadSyntax = function()
 		Float = { fg = nord.nord15_gui }, -- a floating point constant: 2.3e10
 		Statement = { fg = nord.nord6_gui }, -- any statement
 		Label = { fg = nord.nord9_gui }, -- case, default, etc.
-		Operator = { fg = nord.nord6_gui }, -- sizeof", "+", "*", etc.
+		Operator = { fg = nord.nord8_gui }, -- sizeof", "+", "*", etc.
 		Exception = { fg = nord.nord9_gui }, -- try, catch, throw
 		PreProc = { fg = nord.nord9_gui }, -- generic Preprocessor
 		Include = { fg = nord.nord9_gui }, -- preprocessor #include
@@ -245,7 +245,7 @@ theme.loadTreeSitter = function()
 		TSFuncMacro = { fg = nord.nord11_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
-		TSOperator = { fg = nord.nord6_gui }, -- For any operator: `+`, but also `->` and `*` in C.
+		TSOperator = { fg = nord.nord8_gui }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter = { fg = nord.nord10_gui }, -- For parameters of a function.
 		TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
 		TSPunctDelimiter = { fg = nord.nord6_gui }, -- For delimiters ie: `.`
@@ -273,7 +273,7 @@ theme.loadTreeSitter = function()
 		["@funtion.macro"] = { fg = nord.nord11_gui },
 		["@include"] = { fg = nord.nord9_gui },
 		["@label"] = { fg = nord.nord15_gui },
-		["@operator"] = { fg = nord.nord6_gui },
+		["@operator"] = { fg = nord.nord8_gui },
 		["@parameter"] = { fg = nord.nord10_gui },
 		["@punctuation.delimiter"] = { fg = nord.nord6_gui },
 		["@punctuation.bracket"] = { fg = nord.nord6_gui },
