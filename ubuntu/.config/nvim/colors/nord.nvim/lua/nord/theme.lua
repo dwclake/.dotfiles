@@ -248,8 +248,8 @@ theme.loadTreeSitter = function()
 		TSOperator = { fg = nord.nord6_gui }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter = { fg = nord.nord10_gui }, -- For parameters of a function.
 		TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
-		TSPunctDelimiter = { fg = nord.nord8_gui }, -- For delimiters ie: `.`
-		TSPunctBracket = { fg = nord.nord8_gui }, -- For brackets and parens.
+		TSPunctDelimiter = { fg = nord.nord6_gui }, -- For delimiters ie: `.`
+		TSPunctBracket = { fg = nord.nord6_gui }, -- For brackets and parens.
 		TSPunctSpecial = { fg = nord.nord8_gui }, -- For special punctutation that does not fall in the catagories before.
 		TSSymbol = { fg = nord.nord15_gui }, -- For identifiers referring to symbols or atoms.
 		TSType = { fg = nord.nord9_gui }, -- For types.
