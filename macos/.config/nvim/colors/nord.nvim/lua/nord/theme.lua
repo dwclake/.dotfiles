@@ -27,7 +27,7 @@ theme.loadSyntax = function()
 		PreProc = { fg = nord.nord9_gui }, -- generic Preprocessor
 		Include = { fg = nord.nord9_gui }, -- preprocessor #include
 		Define = { fg = nord.nord9_gui }, -- preprocessor #define
-		Macro = { fg = nord.nord9_gui }, -- same as Define
+		Macro = { fg = nord.nord11_gui }, -- same as Define
 		Typedef = { fg = nord.nord9_gui }, -- A typedef
 		PreCondit = { fg = nord.nord13_gui }, -- preprocessor #if, #else, #endif, etc.
 		Special = { fg = nord.nord4_gui }, -- any special symbol
@@ -241,8 +241,8 @@ theme.loadTreeSitter = function()
 		TSNumber = { fg = nord.nord15_gui }, -- For all number
 		TSAttribute = { fg = nord.nord15_gui }, -- (unstable) TODO: docs
 		TSError = { fg = nord.nord11_gui }, -- For syntax/parser errors.
-		TSException = { fg = nord.nord15_gui }, -- For exception related keywords.
-		TSFuncMacro = { fg = nord.nord7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+		TSException = { fg = nord.nord11_gui }, -- For exception related keywords.
+		TSFuncMacro = { fg = nord.nord11_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSOperator = { fg = nord.nord6_gui }, -- For any operator: `+`, but also `->` and `*` in C.
@@ -250,7 +250,7 @@ theme.loadTreeSitter = function()
 		TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
 		TSPunctDelimiter = { fg = nord.nord6_gui }, -- For delimiters ie: `.`
 		TSPunctBracket = { fg = nord.nord6_gui }, -- For brackets and parens.
-		TSPunctSpecial = { fg = nord.nord8_gui }, -- For special punctutation that does not fall in the catagories before.
+		TSPunctSpecial = { fg = nord.nord6_gui }, -- For special punctutation that does not fall in the catagories before.
 		TSSymbol = { fg = nord.nord15_gui }, -- For identifiers referring to symbols or atoms.
 		TSType = { fg = nord.nord9_gui }, -- For types.
 		TSTypeBuiltin = { fg = nord.nord9_gui }, -- For builtin types.
@@ -269,15 +269,15 @@ theme.loadTreeSitter = function()
 		["@number"] = { fg = nord.nord15_gui },
 		["@attribute"] = { fg = nord.nord15_gui },
 		["@error"] = { fg = nord.nord11_gui },
-		["@exception"] = { fg = nord.nord15_gui },
-		["@funtion.macro"] = { fg = nord.nord7_gui },
+		["@exception"] = { fg = nord.nord11_gui },
+		["@funtion.macro"] = { fg = nord.nord11_gui },
 		["@include"] = { fg = nord.nord9_gui },
 		["@label"] = { fg = nord.nord15_gui },
 		["@operator"] = { fg = nord.nord6_gui },
 		["@parameter"] = { fg = nord.nord10_gui },
-		["@punctuation.delimiter"] = { fg = nord.nord8_gui },
-		["@punctuation.bracket"] = { fg = nord.nord8_gui },
-		["@punctuation.special"] = { fg = nord.nord8_gui },
+		["@punctuation.delimiter"] = { fg = nord.nord6_gui },
+		["@punctuation.bracket"] = { fg = nord.nord6_gui },
+		["@punctuation.special"] = { fg = nord.nord6_gui },
 		["@symbol"] = { fg = nord.nord15_gui },
 		["@type"] = { fg = nord.nord9_gui },
 		["@type.builtin"] = { fg = nord.nord9_gui },
