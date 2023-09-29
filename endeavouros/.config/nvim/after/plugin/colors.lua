@@ -58,4 +58,5 @@ end
 
 --ColorMyPencils("rose-pine")
 --ColorMyPencils("nordic")
+--ColorMyPencils("nord")
 ColorMyPencils("meh")
