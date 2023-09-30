@@ -1,7 +1,8 @@
-import = ["/home/dwclake/.config/alacritty/themes/rose-pine/dist/rose-pine-moon.toml"]
+#import = ["/home/dwclake/.config/alacritty/themes/rose-pine/dist/rose-pine-moon.toml"]
+import = ["/home/dwclake/.config/alacritty/themes/nord/nord.toml"]
 
 [font]
-size = 12
+size = 11
 
 [font.bold]
 family = "IntelOneMono Nerd Font Mono"
@@ -20,7 +21,7 @@ family = "IntelOneMono Nerd Font Mono"
 style = "Regular"
 
 [font.offset]
-y = -3
+y = -4
 
 [shell]
 program = "/usr/bin/zsh"
