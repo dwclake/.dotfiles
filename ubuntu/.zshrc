@@ -107,8 +107,8 @@ alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 PROMPT_EOL_MARK=
 
-export GOROOT=/snap/go/current
-export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/.go
 export ZIGPATH=$HOME/.local/share/zig
 export ODINPATH=$HOME/.local/share/odin
 export NVIMPATH=/snap/nvim/current/usr/bin
@@ -182,3 +182,10 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
 export PATH=/home/dwclake/.nimble/bin:$PATH
+
+# bun completions
+[ -s "/home/dwclake/.bun/_bun" ] && source "/home/dwclake/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
