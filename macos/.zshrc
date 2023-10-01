@@ -158,3 +158,10 @@ vmrss() {
 export PATH="/Users/devon/.nimble/bin:$PATH"
 export DEVKITPRO="/opt/devkitpro"
 export DEVKITARM="$DEVKITPRO/devkitARM"
+
+# bun completions
+[ -s "/Users/devon/.bun/_bun" ] && source "/Users/devon/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
