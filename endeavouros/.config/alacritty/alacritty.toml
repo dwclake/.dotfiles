@@ -2,7 +2,8 @@
 import = ["/home/dwclake/.config/alacritty/themes/nord/nord.toml"]
 
 [font]
-size = 11
+#size = 11
+size = 12
 
 [font.bold]
 family = "IntelOneMono Nerd Font Mono"
@@ -21,7 +22,8 @@ family = "IntelOneMono Nerd Font Mono"
 style = "Regular"
 
 [font.offset]
-y = -4
+#y = -4
+y = -3
 
 [shell]
 program = "/usr/bin/zsh"

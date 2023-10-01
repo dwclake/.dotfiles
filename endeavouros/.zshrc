@@ -181,3 +181,10 @@ export PATH=/home/dwclake/.nimble/bin:$PATH
 DEVKITPRO=/opt/devkitpro
 DEVKITARM=/opt/devkitpro/devkitARM
 DEVKITPPC=/opt/devkitpro/devkitPPC
+
+# bun completions
+[ -s "/home/dwclake/.bun/_bun" ] && source "/home/dwclake/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
