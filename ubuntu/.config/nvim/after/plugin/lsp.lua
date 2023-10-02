@@ -55,6 +55,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+require'lspconfig'.gopls.setup({
+  templateExtensions = "tmpl"
+})
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
 lsp.setup()
