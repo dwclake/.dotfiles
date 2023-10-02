@@ -8,19 +8,22 @@
             {
                 "action": "copy",
                 "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+c"
+            }
         },
         {
             "command": "unbound",
             "keys": "ctrl+v"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
             "command": "paste"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -30,17 +33,13 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{8c701c6d-1341-546d-84ae-1a1fb3a809ed}",
     "experimental.rendering.forceFullRepaint": false,
-    "focusFollowMouse": false,
+    "focusFollowMouse": true,
     "newTabMenu": 
     [
         {
@@ -51,10 +50,11 @@
     {
         "defaults": 
         {
-            "antialiasingMode": "grayscale",
+            "adjustIndistinguishableColors": "never",
+            "antialiasingMode": "cleartype",
             "backgroundImage": null,
-            "backgroundImageOpacity": 0.1,
-            "backgroundImageStretchMode": "uniformToFill",
+            "backgroundImageOpacity": 0.39,
+            "backgroundImageStretchMode": "uniform",
             "closeOnExit": "always",
             "colorScheme": "Nord",
             "cursorShape": "filledBox",
@@ -71,6 +71,7 @@
             },
             "intenseTextStyle": "all",
             "opacity": 100,
+            "scrollbarState": "hidden",
             "useAcrylic": true,
             "useAtlasEngine": true
         },
@@ -90,15 +91,16 @@
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
                 "guid": "{8c701c6d-1341-546d-84ae-1a1fb3a809ed}",
                 "hidden": false,
-                "name": "Ubuntu (Preview)",
-                "source": "CanonicalGroupLimited.UbuntuPreview_79rhkp1fndgsc"
+                "name": "linux",
+                "source": "CanonicalGroupLimited.UbuntuPreview_79rhkp1fndgsc",
+                "tabTitle": "linux"
             },
             {
                 "guid": "{491fa895-2dca-5d90-ba62-3da4b59cffe2}",
@@ -110,7 +112,8 @@
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "gba",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
+                "tabTitle": "gba"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -119,16 +122,22 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{1b30c476-b71a-5ac0-a8ae-8751c62c096e}",
-                "hidden": false,
+                "guid": "{1a1852f3-cc82-5c88-8109-a24acbaa62d6}",
+                "hidden": true,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{76b68ed8-bd64-58cf-8c81-0939ab9fc8f9}",
-                "hidden": false,
+                "guid": "{dcaaa05f-1946-5121-8380-4de596f24d7f}",
+                "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
             }
         ]
     },
@@ -227,7 +236,30 @@
             "yellow": "#F9E2AF"
         },
         {
-            "background": "#242A35",
+            "background": "#1F1F28",
+            "black": "#090618",
+            "blue": "#7E9CD8",
+            "brightBlack": "#727169",
+            "brightBlue": "#7FB4CA",
+            "brightCyan": "#7AA89F",
+            "brightGreen": "#98BB6C",
+            "brightPurple": "#938AA9",
+            "brightRed": "#E82424",
+            "brightWhite": "#DCD7BA",
+            "brightYellow": "#E6C384",
+            "cursorColor": "#C8C093",
+            "cyan": "#6A9589",
+            "foreground": "#DCD7BA",
+            "green": "#76946A",
+            "name": "Kanagawa",
+            "purple": "#957FB8",
+            "red": "#C34043",
+            "selectionBackground": "#2D4F67",
+            "white": "#C8C093",
+            "yellow": "#C0A36E"
+        },
+        {
+            "background": "#242a36",
             "black": "#3B4252",
             "blue": "#81A1C1",
             "brightBlack": "#4C566A",
@@ -514,7 +546,7 @@
             "brightRed": "#EB6F92",
             "brightWhite": "#E0DEF4",
             "brightYellow": "#F6C177",
-            "cursorColor": "#413D50",
+            "cursorColor": "#59546D",
             "cyan": "#EA9A97",
             "foreground": "#E0DEF4",
             "green": "#3E8FB0",
@@ -526,6 +558,5 @@
             "yellow": "#F6C177"
         }
     ],
-    "themes": [],
-    "useAcrylicInTabRow": false
+    "themes": []
 }
