@@ -169,6 +169,7 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$(go env GOPATH)/bin:$PATH"
 
 export SHELL="/usr/bin/zsh"
 
