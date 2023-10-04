@@ -115,7 +115,10 @@ build() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        cmake -S . -B build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13
+        cmake -S . -B build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
+          -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
+          -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
+          -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
         cmake --build build --parallel 8
         if [ ! -d "bin" ]; then
             mkdir bin
@@ -133,6 +136,8 @@ run() {
     fi
 }
 
+export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
+export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
 export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$PATH"
