@@ -133,8 +133,9 @@ run() {
     fi
 }
 
+export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$PATH"
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
