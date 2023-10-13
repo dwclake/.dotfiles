@@ -64,4 +64,4 @@ function ColorMyPencils(color)
     vim.g.nord_bold = false
 end
 
-ColorMyPencils("meh")
+ColorMyPencils("rose-pine-moon")
