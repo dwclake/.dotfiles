@@ -126,7 +126,7 @@ build() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake needed."
     else
-        cmake -S . -B build
+        cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
         cmake --build build --parallel 8
         if [ ! -d "bin" ]; then
             mkdir bin
