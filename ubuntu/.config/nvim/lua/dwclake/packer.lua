@@ -23,10 +23,6 @@ return require('packer').startup(function(use)
 	  end
   })
   use ('AlexvZyl/nordic.nvim')
-  use ('rakr/vim-two-firewatch')
-  use ('cocopon/iceberg.vim')
-  use ('kyazdani42/blue-moon')
-  use ('shaunsingh/nord.nvim')
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/nvim-treesitter-context')
