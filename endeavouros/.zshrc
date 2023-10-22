@@ -107,7 +107,7 @@ alias vim="nvim"
 #alias bootloaderedit="sudo nvim /etc/default/grub"
 #alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #timedatectl set-local-rtc 1 --adjust-system-clock
-export BROWSER='/usr/bin/google-chrome-stable'
+export BROWSER='/usr/bin/firefox'
 export VISUAL='/usr/bin/nvim'
 export EDITOR='/usr/bin/nvim'
 PROMPT_EOL_MARK=
