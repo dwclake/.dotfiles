@@ -109,10 +109,9 @@ PROMPT_EOL_MARK=
 
 export GO=/usr/local/go
 export ZIGPATH=$HOME/.local/share/zig
-export ZLSPATH=$HOME/.local/share/zls
 export ODINPATH=$HOME/.local/share/odin
 export NVIMPATH=/snap/nvim/current/usr/bin
-export PATH=$HOME/.local/go/bin:$GO/bin:$NVIMPATH:$ODINPATH:$ZIGPATH:$ZLSPAH:$PATH
+export PATH=$HOME/.local/go/bin:$GO/bin:$NVIMPATH:$ODINPATH:$ZIGPATH:$PATH
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
