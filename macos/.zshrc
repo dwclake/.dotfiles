@@ -140,7 +140,8 @@ export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$PATH"
+export ZLSPATH="$HOME/.local/share"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$PATH"
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
