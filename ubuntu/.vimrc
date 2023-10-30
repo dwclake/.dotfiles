@@ -133,4 +133,3 @@ let g:zig_fmt_autosave = 0
 autocmd BufRead,BufNewFile *.nim set foldlevel=100
 autocmd BufRead,BufNewFile *.nim set foldmethod=manual
 autocmd FileType nim setlocal foldmethod=manual
-
