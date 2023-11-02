@@ -61,6 +61,14 @@ require'lspconfig'.crystalline.setup{
     cmd = {"/opt/homebrew/bin/crystalline"}
 }
 
+require'lspconfig'.nim_langserver.setup{
+  settings = {
+    nim = {
+      nimsuggestPath = "~/.nimble/bin/nimlangserver"
+    }
+  }
+}
+
 lsp.setup()
 vim.g.zig_fmt_autosave = 0
 vim.diagnostic.config({
