@@ -190,3 +190,5 @@ DEVKITPPC=/opt/devkitpro/devkitPPC
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+#tar --gzip --exclude="lattice/zig-cache" --exclude="lattice/zig-out" --exclude="lattice/.git" -cvf 0.0.1-alpha.tar.gz ./lattice
