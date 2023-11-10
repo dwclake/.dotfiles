@@ -114,6 +114,7 @@ endfunction
 let s:opam_configuration['merlin'] = function('OpamConfMerlin')
 
 let g:zig_fmt_autosave = 0
+let g:zig_enable_autofix = 0
 
 let s:opam_packages = ["ocp-indent", "ocp-index", "merlin"]
 let s:opam_check_cmdline = ["opam list --installed --short --safe --color=never"] + s:opam_packages
