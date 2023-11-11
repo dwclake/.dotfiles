@@ -63,6 +63,7 @@ require'lspconfig'.elixirls.setup{}
 lsp.setup()
 
 vim.g.zig_fmt_autosave = 0
+vim.g.zig_enable_autofix = 0
 
 vim.diagnostic.config({
     virtual_text = true,

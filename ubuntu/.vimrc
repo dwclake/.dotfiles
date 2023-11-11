@@ -129,6 +129,7 @@ if count(s:opam_available_tools,"ocp-indent") == 0
 endif
 " ## end of OPAM user-setup addition for vim / ocp-indent ## keep this line
 let g:zig_fmt_autosave = 0
+let g:zig_enable_autofix = 0
 
 autocmd BufRead,BufNewFile *.nim set foldlevel=100
 autocmd BufRead,BufNewFile *.nim set foldmethod=manual
