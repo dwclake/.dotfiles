@@ -60,6 +60,10 @@ require'lspconfig'.gopls.setup({
 })
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
+require'lspconfig'.sourcekit.setup{
+    filetypes = {"swift"},
+    cmd = {"sourcekit-lsp"}
+}
 lsp.setup()
 
 vim.g.zig_fmt_autosave = 0
