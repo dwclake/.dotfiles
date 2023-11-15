@@ -60,10 +60,7 @@ require'lspconfig'.elixirls.setup{}
 require'lspconfig'.crystalline.setup{
     cmd = {"/opt/homebrew/bin/crystalline"}
 }
-require'lspconfig'.sourcekit.setup{
-    filetypes = {"swift"},
-    cmd = {"sourcekit-lsp"}
-}
+require'lspconfig'.sourcekit.setup{}
 
 require'lspconfig'.nim_langserver.setup{
   settings = {

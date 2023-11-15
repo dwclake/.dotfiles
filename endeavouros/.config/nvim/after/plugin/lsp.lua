@@ -61,10 +61,7 @@ require'lspconfig'.ocamllsp.setup({})
 require'lspconfig'.gopls.setup({
   templateExtensions = "tmpl"
 })
-require'lspconfig'.sourcekit.setup{
-    filetypes = {"swift"},
-    cmd = {"sourcekit-lsp"}
-}
+require'lspconfig'.sourcekit.setup{}
 
 lsp.setup()
 
