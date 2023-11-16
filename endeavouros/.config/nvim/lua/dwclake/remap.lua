@@ -4,9 +4,9 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
---vim.keymap.set("n", "<leader>cmp", ":!g++ -o %<.exe % && %<.exe<CR>")
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<CR>")
+vim.keymap.set("n", "<leader>g", ":lua vim.diagnostic.open_float(0, {scope=\"line\"})<CR>")
 
 vim.keymap.set("n", ".", ":tabnext<CR>")
 vim.keymap.set("n", ",", ":tabprevious<CR>")
