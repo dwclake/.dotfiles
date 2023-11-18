@@ -160,8 +160,8 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export CC="/usr/bin/gcc-12"
-export CXX="/usr/bin/g++-12"
+export CC="/usr/bin/gcc-13"
+export CXX="/usr/bin/g++-13"
 
 export BROWSER='/mnt/c/Windows/explorer.exe'
 alias open='explorer.exe'
