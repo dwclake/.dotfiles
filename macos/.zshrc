@@ -136,19 +136,13 @@ run() {
     fi
 }
 
+export NVIM="$HOME/.local/share/nvim-macos"
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
 export ZLSPATH="$HOME/.local/share"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$PATH"
-
-export WASMTIME_HOME="$HOME/.wasmtime"
-
-export PATH="$WASMTIME_HOME/bin:$ZIGPATH:$PATH"
-# Wasmer
-export WASMER_DIR="/Users/devon/.wasmer"
-[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bin:$PATH"
 
 # opam configuration
 [[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
@@ -162,7 +156,7 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
-export PATH="/Users/devon/.nimble/bin:$PATH"
+
 export DEVKITPRO="/opt/devkitpro"
 export DEVKITARM="$DEVKITPRO/devkitARM"
 
@@ -172,5 +166,3 @@ export DEVKITARM="$DEVKITPRO/devkitARM"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-export TOOLCHAINS=swift
