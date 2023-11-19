@@ -165,3 +165,5 @@ export DEVKITARM="$DEVKITPRO/devkitARM"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export TOOLCHAINS=swift
