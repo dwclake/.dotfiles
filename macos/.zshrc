@@ -105,7 +105,6 @@ PROMPT_EOL_MARK=
 #export C=/opt/homebrew/bin/gcc-13
 
 alias vim="nvim"
-[ -f "/Users/devon/.ghcup/env" ] && source "/Users/devon/.ghcup/env" # ghcup-env
 
 tmsa() {
     tms && tmux attach-session -t "$1"
