@@ -105,6 +105,7 @@ PROMPT_EOL_MARK=
 #export C=/opt/homebrew/bin/gcc-13
 
 alias vim="nvim"
+alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
 tmsa() {
     tms && tmux attach-session -t "$1"
