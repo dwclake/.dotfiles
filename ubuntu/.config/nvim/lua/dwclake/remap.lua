@@ -6,8 +6,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<CR>")
-vim.keymap.set("n", "gl", ":lua vim.diagnostic.open_float()<CR>")
-vim.keymap.set("n", "K", ":lua vim.lsp.buf.hover()<CR>")
+--vim.keymap.set("n", "gl", ":lua vim.diagnostic.open_float()<CR>")
+--vim.keymap.set("n", "K", ":lua vim.lsp.buf.hover()<CR>")
 
 vim.keymap.set("n", ".", ":tabnext<CR>")
 vim.keymap.set("n", ",", ":tabprevious<CR>")

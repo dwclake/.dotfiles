@@ -155,9 +155,6 @@ vmrss() {
     echo $output
 }
 
-export WASMTIME_HOME="$HOME/.wasmtime"
-export PATH="$WASMTIME_HOME/bin:$PATH"
-
 export PATH="$HOME/.local/bin:$PATH"
 
 export CC="/usr/bin/gcc-13"
@@ -165,12 +162,6 @@ export CXX="/usr/bin/g++-13"
 
 export BROWSER='/mnt/c/Windows/explorer.exe'
 alias open='explorer.exe'
-
-# Wasmer
-export WASMER_DIR="/home/dwclake/.wasmer"
-[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
-
-[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
@@ -180,8 +171,6 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
-
-export PATH=/home/dwclake/.nimble/bin:$PATH
 
 # bun completions
 [ -s "/home/dwclake/.bun/_bun" ] && source "/home/dwclake/.bun/_bun"
