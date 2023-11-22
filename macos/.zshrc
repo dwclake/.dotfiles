@@ -168,3 +168,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export TOOLCHAINS=swift
+
+# bun completions
+[ -s "/Users/dwclake/.bun/_bun" ] && source "/Users/dwclake/.bun/_bun"

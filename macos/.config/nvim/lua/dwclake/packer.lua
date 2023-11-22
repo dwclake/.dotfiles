@@ -28,7 +28,6 @@ return require('packer').startup(function(use)
   use ('nvim-treesitter/playground')
   use ('theprimeagen/harpoon')
   use ('mbbill/undotree')
-  use ('tpope/vim-fugitive')
   use {"akinsho/toggleterm.nvim", tag = "*", config = function() 
       require("toggleterm").setup({
         float_opts = {
@@ -41,7 +40,6 @@ return require('packer').startup(function(use)
   end}
   use ('reasonml-editor/vim-reason-plus')
   use ('kdheepak/lazygit.nvim')
-  use ('alaviss/nim.nvim')
   use ('jlcrochet/vim-crystal')
   
   --use {'neoclide/coc.nvim', branch = 'release'}
