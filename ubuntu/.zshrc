@@ -105,14 +105,15 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
-PROMPT_EOL_MARK=
+#PROMPT_EOL_MARK=
 
-export GO=/usr/local/go
+export GOROOT=$HOME/.local/share/go
+export GOPATH=$HOME/.local/state/go
 export ZIGPATH=$HOME/.local/share/zig
 export ODINPATH=$HOME/.local/share/odin
 export NVIMPATH=/snap/nvim/current/usr/bin
 export SWIFTPATH=$HOME/.local/share/swift/usr/bin
-export PATH=$HOME/.local/go/bin:$GO/bin:$SWIFTPATH:$NVIMPATH:$ODINPATH:$ZIGPATH:$PATH
+export PATH=$HOME/.local/go/bin:$GOROOT/bin:$SWIFTPATH:$NVIMPATH:$ODINPATH:$ZIGPATH:$PATH
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
