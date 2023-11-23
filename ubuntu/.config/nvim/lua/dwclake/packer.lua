@@ -40,7 +40,6 @@ return require('packer').startup(function(use)
       })
   end}
   use ('kdheepak/lazygit.nvim')
-  use ('alaviss/nim.nvim')
   use ('jlcrochet/vim-crystal')
   use ('reasonml-editor/vim-reason-plus')
 
