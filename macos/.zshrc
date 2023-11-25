@@ -144,6 +144,9 @@ export ZIGPATH="$HOME/.local/share/zig"
 export ZLSPATH="$HOME/.local/share"
 export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bin:$PATH"
 
+export CC="/opt/homebrew/bin/gcc-13"
+export CXX="/opt/homebrew/bin/g++-13"
+
 # opam configuration
 [[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
