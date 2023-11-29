@@ -57,19 +57,14 @@ end)
 
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
+require'lspconfig'.gopls.setup({
+  templateExtensions = "tmpl"
+})
 require'lspconfig'.crystalline.setup{
     cmd = {"/opt/homebrew/bin/crystalline"}
 }
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
-}
-
-require'lspconfig'.nim_langserver.setup{
-  settings = {
-    nim = {
-      nimsuggestPath = "~/.nimble/bin/nimlangserver"
-    }
-  }
 }
 
 lsp.setup()
