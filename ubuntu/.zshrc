@@ -179,3 +179,10 @@ autoload -Uz compinit && compinit
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# Onyx config
+export ONYX_PATH="/home/dwclake/.onyx"
+export PATH="$ONYX_PATH/bin:$PATH"
+
+# Wasmer
+export WASMER_DIR="/home/dwclake/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
