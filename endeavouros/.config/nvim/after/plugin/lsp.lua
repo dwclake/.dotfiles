@@ -64,6 +64,22 @@ require'lspconfig'.gopls.setup({
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
 }
+require'lspconfig.configs'.onyx = {
+    default_config = {
+        cmd = { "onyx", "lsp" },
+        filetypes = { "onyx" },
+        root_dir = function(filename)
+            local utils = require'lspconfig.util'
+            return utils.search_ancestors(filename, function(path)
+                if utils.path.is_file(utils.path.join(path, "onyx-pkg.kdl")) then
+                    return path
+                end
+            end)
+        end;
+        settings = {}
+    }
+}
+require'lspconfig'.onyx.setup {}
 
 lsp.setup()
 

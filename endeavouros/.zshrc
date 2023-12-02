@@ -190,3 +190,6 @@ DEVKITPPC=/opt/devkitpro/devkitPPC
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# Onyx config
+export ONYX_PATH="/home/dwclake/.onyx"
+export PATH="$ONYX_PATH/bin:$PATH"
