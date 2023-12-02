@@ -174,3 +174,10 @@ export TOOLCHAINS=swift
 
 # bun completions
 [ -s "/Users/dwclake/.bun/_bun" ] && source "/Users/dwclake/.bun/_bun"
+# Onyx config
+export ONYX_PATH="/Users/dwclake/.onyx"
+export PATH="$ONYX_PATH/bin:$PATH"
+
+# Wasmer
+export WASMER_DIR="/Users/dwclake/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
