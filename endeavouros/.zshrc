@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 #GRUB_CMDLINE_LINUX_DEFAULT="i8042.dumbkbd=1 i915.enable_psr=0"
 #alias bootloaderedit="sudo nvim /etc/default/grub"
 #alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
@@ -170,7 +171,8 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/.local/share/go"
-export PATH="$(go env GOPATH)/bin:$PATH"
+export SWIFTPATH=$HOME/.local/share/swift/usr/bin
+export PATH="$(go env GOPATH)/bin:$SWIFTPATH:$PATH"
 
 export SHELL="/usr/bin/zsh"
 

@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
+alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 #PROMPT_EOL_MARK=
 
 export GOROOT=$HOME/.local/share/go
