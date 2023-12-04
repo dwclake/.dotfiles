@@ -106,7 +106,7 @@ alias vim="nvim"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
-#PROMPT_EOL_MARK=
+alias open='explorer.exe'
 
 export GOROOT=$HOME/.local/share/go
 export GOPATH=$HOME/.local/state/go
@@ -118,6 +118,15 @@ export PATH=$HOME/.local/go/bin:$GOROOT/bin:$SWIFTPATH:$NVIMPATH:$ODINPATH:$ZIGP
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
+
+export PATH="$HOME/.local/bin:$PATH"
+
+export CC="/usr/bin/gcc-13"
+export CXX="/usr/bin/g++-13"
+
+export BROWSER='/mnt/c/Windows/explorer.exe'
+
+#PROMPT_EOL_MARK=
 
 vs() {
     cd /mnt/c/Users/devon/source/repos
@@ -133,10 +142,6 @@ build() {
     else
         cmake -S . -B .build 
         cmake --build .build --parallel 8
-        if [ ! -d "bin" ]; then
-            mkdir bin
-        fi
-        mv ./.build/$1 ./bin/$1
     fi
 }
 
@@ -145,7 +150,7 @@ run() {
         echo "Argument required: name of executable produced by cmake."
     else
         build $1
-        bin/$1 $2
+        .build/$1 $2
     fi
 }
 
@@ -156,14 +161,6 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
-
-export PATH="$HOME/.local/bin:$PATH"
-
-export CC="/usr/bin/gcc-13"
-export CXX="/usr/bin/g++-13"
-
-export BROWSER='/mnt/c/Windows/explorer.exe'
-alias open='explorer.exe'
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

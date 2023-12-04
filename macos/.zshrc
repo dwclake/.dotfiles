@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="takashiyoshida"
+ZSH_THEME="takashiyoshida2"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,8 +77,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR="nvim"
-PROMPT_EOL_MARK=
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -101,11 +99,22 @@ PROMPT_EOL_MARK=
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#export CXX=/opt/homebrew/bin/g++-13
-#export C=/opt/homebrew/bin/gcc-13
-
 alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
+
+export NVIM="$HOME/.local/share/nvim-macos"
+export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
+export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+export GOPATH=$HOME/.local/go
+export ZIGPATH="$HOME/.local/share/zig"
+export ZLSPATH="$HOME/.local/share"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bin:$PATH"
+
+export EDITOR="nvim"
+export CC="/opt/homebrew/bin/gcc-13"
+export CXX="/opt/homebrew/bin/g++-13"
+
+#PROMPT_EOL_MARK=
 
 tmsa() {
     tms && tmux attach-session -t "$1"
@@ -120,10 +129,6 @@ build() {
           -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
           -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
         cmake --build .build --parallel 8
-        if [ ! -d "bin" ]; then
-            mkdir bin
-        fi
-        mv ./.build/$1 ./bin/$1
     fi
 }
 
@@ -132,25 +137,9 @@ run() {
         echo "Argument required: name of executable produced by cmake."
     else
         build $1
-        bin/$1 $2
+        .build/$1 $2
     fi
 }
-
-export NVIM="$HOME/.local/share/nvim-macos"
-export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
-export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
-export GOPATH=$HOME/.local/go
-export ZIGPATH="$HOME/.local/share/zig"
-export ZLSPATH="$HOME/.local/share"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bin:$PATH"
-
-export CC="/opt/homebrew/bin/gcc-13"
-export CXX="/opt/homebrew/bin/g++-13"
-
-# opam configuration
-[[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-. $HOME/.asdf/asdf.sh
 
 vmrss() {
     output=($(grep 'VmRSS' "/proc/$1/status"))
@@ -159,6 +148,11 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
+
+# opam configuration
+[[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+. $HOME/.asdf/asdf.sh
 
 export DEVKITPRO="/opt/devkitpro"
 export DEVKITARM="$DEVKITPRO/devkitARM"
