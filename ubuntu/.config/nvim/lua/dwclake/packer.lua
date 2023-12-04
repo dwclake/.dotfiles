@@ -28,7 +28,11 @@ return require('packer').startup(function(use)
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/nvim-treesitter-context')
   use ('nvim-treesitter/playground')
-  use ('theprimeagen/harpoon')
+  use {
+      'theprimeagen/harpoon',
+      branch = "harpoon2",
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
   use ('mbbill/undotree')
   use {"akinsho/toggleterm.nvim", tag = "*", config = function() 
       require("toggleterm").setup({
