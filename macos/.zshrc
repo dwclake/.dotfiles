@@ -115,15 +115,15 @@ build() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        cmake -S . -B build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
+        cmake -S . -B .build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
           -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
           -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
           -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
-        cmake --build build --parallel 8
+        cmake --build .build --parallel 8
         if [ ! -d "bin" ]; then
             mkdir bin
         fi
-        mv ./build/$1 ./bin/$1
+        mv ./.build/$1 ./bin/$1
     fi
 }
 

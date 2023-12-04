@@ -131,12 +131,12 @@ build() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
-        cmake -S . -B build 
-        cmake --build build --parallel 8
+        cmake -S . -B .build 
+        cmake --build .build --parallel 8
         if [ ! -d "bin" ]; then
             mkdir bin
         fi
-        mv ./build/$1 ./bin/$1
+        mv ./.build/$1 ./bin/$1
     fi
 }
 
