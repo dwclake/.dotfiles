@@ -113,6 +113,7 @@ export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bi
 export EDITOR="nvim"
 export CC="/opt/homebrew/bin/gcc-13"
 export CXX="/opt/homebrew/bin/g++-13"
+export TOOLCHAINS=swift
 
 #PROMPT_EOL_MARK=
 
@@ -150,7 +151,7 @@ vmrss() {
 }
 
 # opam configuration
-[[ ! -r /Users/devon/.opam/opam-init/init.zsh ]] || source /Users/devon/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r /Users/dwclake/.opam/opam-init/init.zsh ]] || source /Users/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 . $HOME/.asdf/asdf.sh
 
@@ -158,20 +159,16 @@ export DEVKITPRO="/opt/devkitpro"
 export DEVKITARM="$DEVKITPRO/devkitARM"
 
 # bun completions
-[ -s "/Users/devon/.bun/_bun" ] && source "/Users/devon/.bun/_bun"
+[ -s "/Users/dwclake/.bun/_bun" ] && source "/Users/dwclake/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export TOOLCHAINS=swift
-
-# bun completions
-[ -s "/Users/dwclake/.bun/_bun" ] && source "/Users/dwclake/.bun/_bun"
-# Onyx config
-export ONYX_PATH="/Users/dwclake/.onyx"
-export PATH="$ONYX_PATH/bin:$PATH"
-
 # Wasmer
 export WASMER_DIR="/Users/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# Onyx config
+export ONYX_PATH="/Users/dwclake/.onyx"
+export PATH="$ONYX_PATH/bin:$PATH"
