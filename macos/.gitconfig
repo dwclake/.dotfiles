@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = clake.dw@gmail.com
+	name = dwclake
+[core]
+	excludesfile = ~/.gitignore_global

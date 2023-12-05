@@ -102,14 +102,14 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
-export NVIM="$HOME/.local/share/nvim-macos"
-export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
-export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+#export NVIM="$HOME/.local/share/nvim-macos"
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
 export ZLSPATH="$HOME/.local/share"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$NVIM/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$PATH"
 
+export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
+export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export EDITOR="nvim"
 export CC="/opt/homebrew/bin/gcc-13"
 export CXX="/opt/homebrew/bin/g++-13"
