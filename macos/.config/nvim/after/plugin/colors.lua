@@ -2,6 +2,10 @@ require('rose-pine').setup({
 	disable_italics = true
 })
 
+require('ruka').setup({
+	disable_italics = true
+})
+
 require('nordic').setup({
     on_palette = function(palette)
       palette.white0 = '#d5dbeb'
