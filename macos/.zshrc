@@ -106,7 +106,7 @@ alias swift-test="swift test --enable-experimental-swift-testing --disable-xctes
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
 export ZLSPATH="$HOME/.local/share"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZLSPATH:$PATH"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZIGPATH:$ZLSPATH:$PATH"
 
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
