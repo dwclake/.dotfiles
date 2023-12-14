@@ -139,19 +139,15 @@ tmsa() {
 }
 
 build() {
-    if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced by cmake needed."
-    else
-        cmake -S . -B .build
-        cmake --build .build --parallel 8
-    fi
+    cmake -S . -B .build
+    cmake --build .build --parallel 8
 }
 
 run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake needed."
     else
-        build $1
+        build
         .build/$1 $2
     fi
 }
