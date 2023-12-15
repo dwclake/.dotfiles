@@ -129,11 +129,37 @@ build() {
     cmake --build .build --parallel 8
 }
 
+buildc() { 
+    rm -rf ./.build
+    cmake -S . -B .build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
+      -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
+      -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
+      -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
+    cmake --build .build --parallel 8
+}
+
 run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
     else
+        .build/$1 $2
+    fi
+}
+
+runb() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake."
+    else
         build
+        .build/$1 $2
+    fi
+}
+
+runbc() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake."
+    else
+        buildc
         .build/$1 $2
     fi
 }
