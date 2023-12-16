@@ -58,6 +58,9 @@ end)
 require'lspconfig'.gopls.setup({
   templateExtensions = "tmpl"
 })
+require'lspconfig'.clangd.setup{
+    filetypes = {"c", "cpp"}
+}
 require'lspconfig'.ocamllsp.setup{}
 require'lspconfig'.elixirls.setup{}
 require'lspconfig'.sourcekit.setup{
