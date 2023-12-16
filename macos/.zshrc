@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
+alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
 
 #export NVIM="$HOME/.local/share/nvim-macos"
 export GOPATH=$HOME/.local/go
@@ -114,7 +115,6 @@ export EDITOR="nvim"
 export CC="/opt/homebrew/bin/gcc-13"
 export CXX="/opt/homebrew/bin/g++-13"
 export TOOLCHAINS=swift
-
 #PROMPT_EOL_MARK=
 
 tmsa() {
