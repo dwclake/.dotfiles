@@ -108,7 +108,9 @@ source $ZSH/oh-my-zsh.sh
 #alias bootloaderedit="sudo nvim /etc/default/grub"
 #alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #timedatectl set-local-rtc 1 --adjust-system-clock
-#xxd exec | less -> view binary
+#xxd executable | less -> view binary
+#strings executable | less -> view strings in binary
+#objdump -d -Mintel .build/rex-c | less -> diassemble binary
 
 alias vim="nvim"
 alias vivado="vivado-run"
