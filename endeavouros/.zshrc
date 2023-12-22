@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 #alias bootloaderedit="sudo nvim /etc/default/grub"
 #alias bootloaderupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #timedatectl set-local-rtc 1 --adjust-system-clock
+#xxd exec | less -> view binary
 
 alias vim="nvim"
 alias vivado="vivado-run"
