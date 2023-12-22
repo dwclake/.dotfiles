@@ -138,16 +138,39 @@ tmsa() {
     tms && tmux attach-session -t "$1"
 }
 
-build() {
-    cmake -S . -B .build
+buildc() { 
+    rm -rf ./.build
+    cmake -S . -B .build 
     cmake --build .build --parallel 8
+}
+
+build() { 
+    cmake -S . -B .build 
+    cmake --build .build --parallel 8
+}
+
+runbc() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake."
+    else
+        buildc
+        .build/$1 $2
+    fi
+}
+
+runb() {
+    if [ "$1" = "" ]; then
+        echo "Argument required: name of executable produced by cmake."
+    else
+        build
+        .build/$1 $2
+    fi
 }
 
 run() {
     if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced by cmake needed."
+        echo "Argument required: name of executable produced by cmake."
     else
-        build
         .build/$1 $2
     fi
 }
