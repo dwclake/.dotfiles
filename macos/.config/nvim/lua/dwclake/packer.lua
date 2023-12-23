@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
   use ('github/copilot.vim')
   use ('onyx-lang/onyx.vim')
+  use ('reasonml-editor/vim-reason-plus')
+  use ('jlcrochet/vim-crystal')
 
   use ({
 	  'rose-pine/neovim',
@@ -44,9 +46,7 @@ return require('packer').startup(function(use)
 
       })
   end}
-  use ('reasonml-editor/vim-reason-plus')
   use ('kdheepak/lazygit.nvim')
-  use ('jlcrochet/vim-crystal')
   
   --use {'neoclide/coc.nvim', branch = 'release'}
 

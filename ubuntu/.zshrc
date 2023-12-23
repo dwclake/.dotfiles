@@ -119,7 +119,7 @@ export PATH=$HOME/.local/go/bin:$GOROOT/bin:$SWIFTPATH:$NVIMPATH:$ODINPATH:$ZIGP
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/share/bin:$PATH"
 
 export CC="/usr/bin/gcc-13"
 export CXX="/usr/bin/g++-13"
