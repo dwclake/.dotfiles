@@ -103,7 +103,6 @@ alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
 
-#export NVIM="$HOME/.local/share/nvim-macos"
 export GOPATH=$HOME/.local/go
 export ZIGPATH="$HOME/.local/share/zig"
 export ZLSPATH="$HOME/.local/share"
@@ -122,7 +121,8 @@ tmsa() {
 }
 
 build() { 
-    cmake -S . -B .build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
+    cmake -S . -B .build \
+      #-DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
       -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
       -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
       -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
@@ -131,7 +131,8 @@ build() {
 
 buildc() { 
     rm -rf ./.build
-    cmake -S . -B .build -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
+    cmake -S . -B .build \
+      #-DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
       -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
       -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
       -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
