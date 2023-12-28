@@ -99,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 # diskutil list
 # diskutil erasevolume free none disk0s4
 # diskutil apfs deletecontainer disk0s4
@@ -126,16 +125,10 @@ tmsa() {
 }
 
 build() { 
-    cmake -S . -B .build \
-        -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
-        -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
-        -DCMAKE_OSX_SYSROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
-        -DCMAKE_EXE_LINKER_FLAGS="-no-pie -ld_classic"
-    cmake --build .build --parallel 8
-}
+    if [ "$1" = "--clean" ]; then
+        rm -rf ./.build
+    fi
 
-buildc() { 
-    rm -rf ./.build
     cmake -S . -B .build \
         -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 \
         -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 \
@@ -147,26 +140,14 @@ buildc() {
 run() {
     if [ "$1" = "" ]; then
         echo "Argument required: name of executable produced by cmake."
-    else
-        .build/$1 $2
-    fi
-}
-
-runb() {
-    if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced by cmake."
-    else
+    elif [ "$2" = "--build" ]; then
         build
-        .build/$1 $2
-    fi
-}
-
-runbc() {
-    if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced by cmake."
-    else
-        buildc
-        .build/$1 $2
+        .build/$1 $3 $4
+    elif [ "$2" = "--clean" ]; then
+        build --clean
+        .build/$1 $3 $4
+    else 
+        .build/$1 $2 $3
     fi
 }
 
