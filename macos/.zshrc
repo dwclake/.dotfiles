@@ -99,6 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+# diskutil list
+# diskutil erasevolume free none disk0s4
+# diskutil apfs deletecontainer disk0s4
+
 alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
