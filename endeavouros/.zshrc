@@ -151,16 +151,16 @@ build() {
 }
 
 run() {
-    if [ "$1" = "" ]; then
-        echo "Argument required: name of executable produced by cmake."
-    elif [ "$2" = "--build" ]; then
+    exe=${PWD##*/}
+
+    if [ "${@[1]}" = "--build" ]; then
         build
-        .build/$1 $3 $4
-    elif [ "$2" = "--clean" ]; then
+        .build/$exe "${@:2}"
+    elif [ "${@[1]}" = "--clean" ]; then
         build --clean
-        .build/$1 $3 $4
+        .build/$exe "${@:2}"
     else 
-        .build/$1 $2 $3
+        .build/$exe "$@"
     fi
 }
 
