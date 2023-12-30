@@ -107,7 +107,7 @@ alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
-export GOROOT=usr/local/go
+export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
 export ZIGPATH=$HOME/.local/share/zig
 export ODINPATH=$HOME/.local/share/odin
@@ -120,8 +120,8 @@ export EDITOR=$NVIMPATH/nvim
 
 export PATH="$HOME/.local/share/bin:$PATH"
 
-export CC="/usr/bin/gcc-13"
-export CXX="/usr/bin/g++-13"
+export CC="/usr/bin/gcc-12"
+export CXX="/usr/bin/g++-12"
 
 #PROMPT_EOL_MARK=
 
