@@ -125,6 +125,11 @@ tmsa() {
 }
 
 build() { 
+    if ! [ -f ${PWD}/CMakeLists.txt ]; then
+        echo "Error: Current directory missing CMakeLists.txt"
+        return 1
+    fi 
+
     if [ "$1" = "--clean" ]; then
         rm -rf ./.build
     fi
@@ -137,7 +142,25 @@ build() {
     cmake --build .build --parallel 8
 }
 
+test() {
+    if ! [ -f ${PWD}/CMakeLists.txt ]; then
+        echo "Error: Current directory missing CMakeLists.txt"
+        return 1
+    fi 
+
+    build --clean
+    cd .build 
+    clear -x
+    ctest
+    cd ..
+}
+
 run() {
+    if ! [ -f ${PWD}/CMakeLists.txt ]; then
+        echo "Error: Current directory missing CMakeLists.txt"
+        return 1
+    fi 
+
     exe=${PWD##*/}
 
     if [ "${@[1]}" = "--build" ]; then
