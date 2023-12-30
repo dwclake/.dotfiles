@@ -156,9 +156,9 @@ test() {
         return 1
     fi 
 
-    build --clean
+    build $1
     cd .build 
-    clear -x
+    echo ""
     ctest
     cd ..
 }
