@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Vivado
+Type=Application
+StartupNotify=true
+Comment=Launch Vivado
+Exec=/home/dwclake/fpga/vivado.sh
+Icon=/tools/Xilinx/Vivado/2023.1/doc/images/vivado_logo.png
+StartupWMClass=vivado
