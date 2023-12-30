@@ -1,5 +1,13 @@
-search_paths = [
-    '/home/dwclake/personal',
-    '/home/dwclake/work',
-    '/home/dwclake/education',
-]
+search_paths = []
+
+[[search_dirs]]
+path = '/home/dwclake/work'
+depth = 10
+
+[[search_dirs]]
+path = '/home/dwclake/learning'
+depth = 10
+
+[[search_dirs]]
+path = '/home/dwclake/personal'
+depth = 10
