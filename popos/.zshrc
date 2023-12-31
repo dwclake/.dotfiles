@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# sudo kernelstub -a "i8042.dumbkbd=1 i915.enable_psr=0"
+
 alias vim="nvim"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
