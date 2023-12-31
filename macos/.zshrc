@@ -107,17 +107,18 @@ alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
 
-export GOPATH=$HOME/.local/go
-export ZIGPATH="$HOME/.local/share/zig"
-export ZLSPATH="$HOME/.local/share"
-export PATH="/opt/homebrew/opt/llvm@14/bin:$HOME/.local/go/bin:$ZIGPATH:$ZLSPATH:$PATH"
+export GOPATH="$HOME/.local/share/go"
+export OSSCADSUITEPATH="$HOME/.local/oss-cad-suite/bin"
+export ZIGPATH="$HOME/.local/zig"
+export ZLSPATH="$HOME/.local"
+export PATH="/opt/homebrew/opt/llvm@14/bin:$GOPATH/bin:$OSSCADSUITEPATH:$ZIGPATH:$ZLSPATH:$PATH"
 
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export EDITOR="nvim"
 export CC="/opt/homebrew/bin/gcc-13"
 export CXX="/opt/homebrew/bin/g++-13"
-export TOOLCHAINS=swift
+export TOOLCHAINS="swift"
 #PROMPT_EOL_MARK=
 
 tmsa() {
