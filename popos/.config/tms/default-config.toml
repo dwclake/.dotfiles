@@ -5,6 +5,10 @@ path = '/home/dwclake/work'
 depth = 10
 
 [[search_dirs]]
+path = '/home/dwclake/fpga'
+depth = 10
+
+[[search_dirs]]
 path = '/home/dwclake/learning'
 depth = 10
 
