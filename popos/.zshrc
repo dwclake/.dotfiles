@@ -113,10 +113,11 @@ alias swift-test="swift test --enable-experimental-swift-testing --disable-xctes
 export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
 export ZIGPATH=$HOME/.local/zig
+export OSSCADPATH=$HOME/.local/oss-cad-suite
 export ODINPATH=$HOME/.local/odin
 export NVIMPATH=$HOME/.local/nvim/bin
 export SWIFTPATH=$HOME/.local/swift/usr/bin
-export PATH=$HOME/.local/go/bin:$GOROOT/bin:$SWIFTPATH:$NVIMPATH:$ODINPATH:$ZIGPATH:$PATH
+export PATH=$HOME/.local/go/bin:$GOROOT/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$PATH
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
