@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # sudo kernelstub -a "i8042.dumbkbd=1 i915.enable_psr=0"
 
 alias vim="nvim"
-alias vivado="vivado-run"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
@@ -190,12 +189,6 @@ vmrss() {
     output[2]=$memory
     output[3]="MB"
     echo $output
-}
-
-vivado-run() {
-    cd ~/fpga
-    vivado&
-    cd ~
 }
 
 # opam configuration
