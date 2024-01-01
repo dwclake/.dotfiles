@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # sudo kernelstub -a "i8042.dumbkbd=1 i915.enable_psr=0"
 
 alias vim="nvim"
+alias vivado="vivado-run"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
@@ -191,6 +192,12 @@ vmrss() {
     echo $output
 }
 
+vivado-run() {
+    cd ~/fpga
+    vivado&
+    cd ~
+}
+
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
@@ -199,6 +206,8 @@ vmrss() {
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # bun completions
 [ -s "/home/dwclake/.bun/_bun" ] && source "/home/dwclake/.bun/_bun"
