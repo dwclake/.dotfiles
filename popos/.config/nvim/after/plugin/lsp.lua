@@ -70,7 +70,7 @@ require'lspconfig.configs'.onyx = {
         root_dir = function(filename)
             local utils = require'lspconfig.util'
             return utils.search_ancestors(filename, function(path)
-                if utils.path.is_file(utils.path.join(path, "onyx-pkg.kdl")) then
+                if utils.path.is_file(utils.path.join(path, "onyx-lsp.ini")) then
                     return path
                 end
             end)
