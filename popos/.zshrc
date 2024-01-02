@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # sudo kernelstub -a "i8042.dumbkbd=1 i915.enable_psr=0"
+# instead of `sudo nano /path/to/file` use `sudo -e /path/to/file` after ensuring $EDITOR is something sane. Sudo will run your editor as your user on a temporary file which it will later copy over the actual file. This allows you to keep your editor configs on your user only and is arguably more secure.
 
 alias vim="nvim"
 alias dc="docker-compose"
