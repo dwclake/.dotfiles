@@ -118,7 +118,7 @@ export OSSCADPATH=$HOME/.local/oss-cad-suite
 export ODINPATH=$HOME/.local/odin
 export NVIMPATH=$HOME/.local/nvim/bin
 export SWIFTPATH=$HOME/.local/swift/usr/bin
-export PATH=$HOME/.local/go/bin:$GOROOT/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$PATH
+export PATH=$HOME/.local/go/bin:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$PATH
 
 export VISUAL=$NVIMPATH/nvim
 export EDITOR=$NVIMPATH/nvim
