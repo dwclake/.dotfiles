@@ -217,3 +217,5 @@ export PATH="$ONYX_PATH/bin:$PATH"
 # Wasmer
 export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
