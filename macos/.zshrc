@@ -205,3 +205,5 @@ export WASMER_DIR="/Users/dwclake/.wasmer"
 # Onyx config
 export ONYX_PATH="/Users/dwclake/.onyx"
 export PATH="$ONYX_PATH/bin:$PATH"
+
+[ -f "/Users/dwclake/.ghcup/env" ] && source "/Users/dwclake/.ghcup/env" # ghcup-env
