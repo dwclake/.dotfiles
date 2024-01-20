@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Logic 2
-Type=Application
-StartupNotify=true
-Comment=Launch Logic 2
-Exec=/home/dwclake/.local/logic/Logic-2.4.13-linux-x64.AppImage
-Icon=/home/dwclake/.local/share/applications/logic2.png
-StartupWMClass=logic2
