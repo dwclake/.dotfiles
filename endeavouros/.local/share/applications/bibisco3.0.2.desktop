@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Bibisco 3.0.2 Supporters Edition
-Type=Application
-StartupNotify=true
-Comment=Launch Bibisco
-Exec=/home/dwclake/.local/share/bibisco-linux-x64-3.0.2-SE/bibisco
-Icon=/home/dwclake/.local/share/bibisco-linux-x64-3.0.2-SE/resources/app/assets/icons/linux/bibisco-circle-hr.png
-StartupWMClass=bibisco

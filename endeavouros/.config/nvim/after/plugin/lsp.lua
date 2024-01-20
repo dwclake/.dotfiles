@@ -1,5 +1,4 @@
 local lsp = require('lsp-zero')
-local lspconfig = require('lspconfig')
 
 lsp.preset('recommended')
 
@@ -12,10 +11,9 @@ lsp.ensure_installed({
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select), 
 	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-	['<CR>'] = cmp.mapping.confirm({ select = false }),
-    ['<C-y'] = cmp.mapping.confirm({ select = false }),
+	['<C-y>'] = cmp.mapping.confirm({ select = false }),
 	['<C-Space>'] = cmp.mapping.complete(),
     ['<C-\\>'] = cmp.mapping(function() vim.fn.feedkeys(vim.api.nvim_replace_termcodes(vim.fn['copilot#Accept'](), true, true, true)) '' end),
     ['<Tab>'] = cmp.mapping(function(fallback)
@@ -52,15 +50,16 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
   vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
   vim.keymap.set("n", "<leader>c", function() vim.lsp.buf.code_action() end, opts)
-  vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set("n", "<leader>rr", function() vim.lsp.buf.references() end, opts)
+  vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-require'lspconfig'.ocamllsp.setup({})
 require'lspconfig'.gopls.setup({
   templateExtensions = "tmpl"
 })
+require'lspconfig'.ocamllsp.setup{}
+require'lspconfig'.elixirls.setup{}
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
 }
@@ -71,7 +70,7 @@ require'lspconfig.configs'.onyx = {
         root_dir = function(filename)
             local utils = require'lspconfig.util'
             return utils.search_ancestors(filename, function(path)
-                if utils.path.is_file(utils.path.join(path, "onyx-pkg.kdl")) then
+                if utils.path.is_file(utils.path.join(path, "onyx-lsp.ini")) then
                     return path
                 end
             end)
@@ -80,7 +79,6 @@ require'lspconfig.configs'.onyx = {
     }
 }
 require'lspconfig'.onyx.setup {}
-
 lsp.setup()
 
 vim.g.zig_fmt_autosave = 0

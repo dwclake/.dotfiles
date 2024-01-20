@@ -7,23 +7,23 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use 'github/copilot.vim'
-  use ('onyx-lang/onyx.vim')
-
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use 'github/copilot.vim'
+  use ('onyx-lang/onyx.vim')
+
   use ({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
-      config = function()
-        vim.cmd('colorscheme meh')
-      end
+	  config = function()
+	  	vim.cmd('colorscheme meh')
+	  end
   })
-  use ({'AlexvZyl/nordic.nvim'})
+  use ('AlexvZyl/nordic.nvim')
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/nvim-treesitter-context')
@@ -44,19 +44,19 @@ return require('packer').startup(function(use)
 
       })
   end}
-  use ('reasonml-editor/vim-reason-plus')
-  use ('jlcrochet/vim-crystal')
   use ('kdheepak/lazygit.nvim')
- 
-  use({
-    "kylechui/nvim-surround",
-    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-    config = function()
-        require("nvim-surround").setup({
+  use ('jlcrochet/vim-crystal')
+  use ('reasonml-editor/vim-reason-plus')
+
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
                 -- Configuration here, or leave empty to use defaults
-        })
-    end
-  })
+            })
+        end
+    })
 
   use {
       'VonHeikemen/lsp-zero.nvim',

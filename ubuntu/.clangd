@@ -1,6 +1,0 @@
-#CompileFlags:
-#  Add: [-std=gnu++23]
-#Compiler: /usr/bin/g++-13
-#CompileFlags:
-#  Add: [-std=c17]
-Compiler: /usr/bin/gcc-13

@@ -113,29 +113,33 @@ source $ZSH/oh-my-zsh.sh
 #objdump -d -Mintel .build/rex-c | less -> diassemble binary
 
 alias vim="nvim"
-alias vivado="vivado-run"
-alias chrome="google-chrome-stable"
 alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
-export GOPATH="$HOME/.local/share/go"
-export SWIFTPATH=$HOME/.local/share/swift/usr/bin
-export PATH="$HOME/.local/share/bibisco-linux-x64-3.0.2-SE:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$(go env GOPATH)/bin:$SWIFTPATH:$PATH"
+export GOROOT=$HOME/.local/go
+export GOPATH=$HOME/.local/share/go
+export ZIGPATH=$HOME/.local/zig
+export ZLSPATH=$HOME/.local/zls/zig-out/bin
+export OSSCADPATH=$HOME/.local/oss-cad-suite
+export ODINPATH=$HOME/.local/odin
+export NVIMPATH=$HOME/.local/nvim/bin
+export SWIFTPATH=$HOME/.local/swift/usr/bin
+export PATH=$HOME/.local/go/bin:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
 
-export SHELL="/usr/bin/zsh"
-export BROWSER='/usr/bin/google-chrome-stable'
-export VISUAL='/usr/bin/nvim'
-export EDITOR='/usr/bin/nvim'
+export VISUAL=$NVIMPATH/nvim
+export EDITOR=$NVIMPATH/nvim
+
+export PATH="$HOME/.local/share/bin:$PATH"
+
+export CC="/usr/bin/gcc"
+export CXX="/usr/bin/g++"
 
 #PROMPT_EOL_MARK=
 
-#[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
-
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+vs() {
+    cd /mnt/c/Users/devon/source/repos
+}
 
 tmsa() {
     tms && tmux attach-session -t "$1"
@@ -187,12 +191,6 @@ run() {
     fi
 }
 
-vivado-run() {
-    cd ~/fpga
-    vivado&
-    cd ~
-}
-
 vmrss() {
     output=($(grep 'VmRSS' "/proc/$1/status"))
     memory=$(echo "scale=2;${output[2]}/1024" | bc)
@@ -201,19 +199,16 @@ vmrss() {
     echo $output
 }
 
-# Wasmer
-export WASMER_DIR="/home/dwclake/.wasmer"
-[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
-
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-source "/opt/asdf-vm/asdf.sh"
-export PATH=/home/dwclake/.nimble/bin:$PATH
+. "$HOME/.asdf/asdf.sh"
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 
-DEVKITPRO=/opt/devkitpro
-DEVKITARM=/opt/devkitpro/devkitARM
-DEVKITPPC=/opt/devkitpro/devkitPPC
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # bun completions
 [ -s "/home/dwclake/.bun/_bun" ] && source "/home/dwclake/.bun/_bun"
@@ -224,3 +219,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Onyx config
 export ONYX_PATH="/home/dwclake/.onyx"
 export PATH="$ONYX_PATH/bin:$PATH"
+
+# Wasmer
+export WASMER_DIR="/home/dwclake/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+[ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env

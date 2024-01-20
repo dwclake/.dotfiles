@@ -1,6 +1,13 @@
 require('rose-pine').setup({
-	disable_italics = true
+	styles = {
+        transparency = true,
+        italic = false
+    },
 })
+
+--require('ruka').setup({
+--	disable_italics = true
+--})
 
 require('nordic').setup({
     on_palette = function(palette)
@@ -33,30 +40,36 @@ require('nordic').setup({
 function ColorMyPencils(color)
 	color = color or "meh"
 	vim.cmd.colorscheme(color)
- 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    vim.cmd(":highlight SignColumn guibg=none")	
-    vim.cmd(":highlight LineNr guibg=none")	
-    vim.cmd(":highlight GitSignsAdd guibg=none")	
-    vim.cmd(":highlight GitSignsDelete guibg=none")	
-    vim.cmd(":highlight GitSignsChange guibg=none")	
-    vim.cmd(":highlight GitSignsChangedelete guibg=none")	
-    vim.cmd(":highlight GitSignsTopdelete guibg=none")	
-    vim.cmd(":highlight GitSignsUntracked guibg=none")	
-    vim.cmd(":highlight GitSignsAddNr guibg=none")	
-    vim.cmd(":highlight GitSignsChangeNr guibg=none")	
-    vim.cmd(":highlight GitSignsDeleteNr guibg=none")	
-    vim.cmd(":highlight GitSignsChangedeleteNr guibg=none")	
-    vim.cmd(":highlight GitSignsTopdeleteNr guibg=none")	
-    vim.cmd(":highlight GitSignsUntrackedNr guibg=none")	
-    vim.cmd(":highlight GitSignsAddLn guibg=none")	
-    vim.cmd(":highlight GitSignsChangeLn guibg=none")	
-    vim.cmd(":highlight GitSignsChangedeleteLn guibg=none")	
-    vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
+
+    if color == "meh" then
+        vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+        vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+        vim.cmd(":highlight SignColumn guibg=none ctermbg=none")	
+        vim.cmd(":highlight StatusLine guibg=none ctermbg=none")	
+        vim.cmd(":highlight LineNr guibg=none")	
+        vim.cmd(":highlight WarningMsg guibg=none")	
+        vim.cmd(":highlight Error guibg=none")	
+        vim.cmd(":highlight DiffAdd guibg=none ctermbg=none")	
+        vim.cmd(":highlight DiffChange guibg=none ctermbg=none")	
+        vim.cmd(":highlight DiffDelete guibg=none ctermbg=none")	
+        vim.cmd(":highlight DiffText guibg=none ctermbg=none")	
+        vim.cmd(":highlight GitSignsAdd guibg=none")	
+        vim.cmd(":highlight GitSignsDelete guibg=none")	
+        vim.cmd(":highlight GitSignsChange guibg=none")	
+        vim.cmd(":highlight GitSignsChangedelete guibg=none")	
+        vim.cmd(":highlight GitSignsTopdelete guibg=none")	
+        vim.cmd(":highlight GitSignsUntracked guibg=none")	
+        vim.cmd(":highlight GitSignsAddNr guibg=none")	
+        vim.cmd(":highlight GitSignsChangeNr guibg=none")	
+        vim.cmd(":highlight GitSignsDeleteNr guibg=none")	
+        vim.cmd(":highlight GitSignsChangedeleteNr guibg=none")	
+        vim.cmd(":highlight GitSignsTopdeleteNr guibg=none")	
+        vim.cmd(":highlight GitSignsUntrackedNr guibg=none")	
+        vim.cmd(":highlight GitSignsAddLn guibg=none")	
+        vim.cmd(":highlight GitSignsChangeLn guibg=none")	
+        vim.cmd(":highlight GitSignsChangedeleteLn guibg=none")	
+        vim.cmd(":highlight GitSignsUntrackedLn guibg=none")	
+    end
 end
 
---ColorMyPencils("rose-pine")
---ColorMyPencils("nordic")
---ColorMyPencils("nord")
 ColorMyPencils("meh")
