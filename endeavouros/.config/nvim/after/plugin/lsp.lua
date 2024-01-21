@@ -79,6 +79,18 @@ require'lspconfig.configs'.onyx = {
     }
 }
 require'lspconfig'.onyx.setup {}
+--require'lspconfig'.hls.setup {
+--    settings = {
+--        haskell = {
+--            plugin = {
+--                stan = {
+--                    globalOn = {true}
+--                }
+--            }
+--        }
+--    }
+--}
+
 lsp.setup()
 
 vim.g.zig_fmt_autosave = 0
