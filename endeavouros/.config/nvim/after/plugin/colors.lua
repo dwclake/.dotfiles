@@ -1,7 +1,8 @@
 require('rose-pine').setup({
 	styles = {
         transparency = true,
-        italic = false
+        italic = false,
+        bold = false
     },
 })
 
@@ -72,4 +73,4 @@ function ColorMyPencils(color)
     end
 end
 
-ColorMyPencils("meh")
+ColorMyPencils("rose-pine-moon")
