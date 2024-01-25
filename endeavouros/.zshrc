@@ -117,26 +117,6 @@ alias dc="docker-compose"
 alias dc-e="docker-compose exec"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
-export GOROOT=$HOME/.local/go
-export GOPATH=$HOME/.local/share/go
-export ZIGPATH=$HOME/.local/zig
-export ZLSPATH=$HOME/.local/zls/zig-out/bin
-export OSSCADPATH=$HOME/.local/oss-cad-suite
-export ODINPATH=$HOME/.local/odin
-export NVIMPATH=$HOME/.local/nvim/bin
-export SWIFTPATH=$HOME/.local/swift/usr/bin
-export PATH=$HOME/.local/go/bin:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
-
-export VISUAL=$NVIMPATH/nvim
-export EDITOR=$NVIMPATH/nvim
-
-export PATH="$HOME/.local/share/bin:$PATH"
-
-export CC="/usr/bin/gcc"
-export CXX="/usr/bin/g++"
-
-#PROMPT_EOL_MARK=
-
 vs() {
     cd /mnt/c/Users/devon/source/repos
 }
