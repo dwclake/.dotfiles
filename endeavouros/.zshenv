@@ -1,6 +1,6 @@
 . "$HOME/.cargo/env"
 
-export GHCITUI="$HOME/.local/state/cabal/store/ghc-9.4.8/ghcitui-0.1.0.0-e-ghcitui-9f44da0f6675dc451605ff08f5826789ddcdd1614d90f7f90f80597d936da680/bin/ghcitui"
+export GHCITUI="$HOME/.local/state/cabal/store/ghc-9.4.8/ghcitui-0.1.0.0-e-ghcitui-9f44da0f6675dc451605ff08f5826789ddcdd1614d90f7f90f80597d936da680/bin"
 export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
 export NVIMPATH=/usr/bin/nvim
