@@ -1,5 +1,6 @@
 . "$HOME/.cargo/env"
 
+export GHCITUI="$HOME/.local/state/cabal/store/ghc-9.4.8/ghcitui-0.1.0.0-e-ghcitui-9f44da0f6675dc451605ff08f5826789ddcdd1614d90f7f90f80597d936da680/bin/ghcitui"
 export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
 export NVIMPATH=/usr/bin/nvim
@@ -7,7 +8,7 @@ export OSSCADPATH=$HOME/.local/oss-cad-suite
 export SWIFTPATH=$HOME/.local/swift/usr/bin
 export ZIGPATH=$HOME/.local/zig
 export ZLSPATH=$HOME/.local/zls/zig-out/bin
-export PATH=$HOME/.local/go/bin:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
+export PATH=$HOME/.local/go/bin:$GHCITUI:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
 
 export VISUAL=$NVIMPATH
 export EDITOR=$NVIMPATH
