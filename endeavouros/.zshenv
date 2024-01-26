@@ -2,15 +2,15 @@
 
 export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
-export NVIMPATH=$HOME/.local/nvim/bin
+export NVIMPATH=/usr/bin/nvim
 export OSSCADPATH=$HOME/.local/oss-cad-suite
 export SWIFTPATH=$HOME/.local/swift/usr/bin
 export ZIGPATH=$HOME/.local/zig
 export ZLSPATH=$HOME/.local/zls/zig-out/bin
 export PATH=$HOME/.local/go/bin:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
 
-export VISUAL=$NVIMPATH/nvim
-export EDITOR=$NVIMPATH/nvim
+export VISUAL=$NVIMPATH
+export EDITOR=$NVIMPATH
 
 export PATH="$HOME/.local/share/bin:$PATH"
 
@@ -45,3 +45,6 @@ export WASMER_DIR="/home/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
 [ -f "/home/dwclake/.ghcup/env" ] && source "/home/dwclake/.ghcup/env" # ghcup-env
+
+# DevkitPro
+
