@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 
   use 'github/copilot.vim'
   use ('onyx-lang/onyx.vim')
+  use ('apple/pkl-neovim')
 
   use ({
 	  'rose-pine/neovim',
