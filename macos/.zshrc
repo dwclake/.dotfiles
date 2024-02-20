@@ -109,9 +109,10 @@ alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
 
 export GOPATH="$HOME/.local/share/go"
 export OSSCADSUITEPATH="$HOME/.local/oss-cad-suite/bin"
+export QBEPATH="$HOME/.local/qbe/obj"
 export ZLSPATH="$HOME/.local/zls/zig-out/bin"
 export ZIGPATH="$HOME/.local/zig"
-export PATH=$HOME/.local/bin:"/opt/homebrew/opt/llvm@14/bin:$GOPATH/bin:$OSSCADSUITEPATH:$ZIGPATH:$ZLSPATH:$PATH"
+export PATH=$HOME/.local/bin:"/opt/homebrew/opt/llvm@14/bin:$GOPATH/bin:$OSSCADSUITEPATH:$QBEPATH:$ZIGPATH:$ZLSPATH:$PATH"
 
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
