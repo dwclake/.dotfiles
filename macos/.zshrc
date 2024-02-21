@@ -109,7 +109,7 @@ alias odin-run="odin run src -extra-linker-flags:\"-no-pie -ld_classic\""
 
 export GOPATH="$HOME/.local/share/go"
 export OSSCADSUITEPATH="$HOME/.local/oss-cad-suite/bin"
-export QBEPATH="$HOME/.local/qbe/obj"
+export QBEPATH="$HOME/.local/qbe"
 export ZLSPATH="$HOME/.local/zls/zig-out/bin"
 export ZIGPATH="$HOME/.local/zig"
 export PATH=$HOME/.local/bin:"/opt/homebrew/opt/llvm@14/bin:$GOPATH/bin:$OSSCADSUITEPATH:$QBEPATH:$ZIGPATH:$ZLSPATH:$PATH"
