@@ -123,14 +123,15 @@ export GOPATH=$HOME/.local/share/go
 export NVIMPATH=/usr/bin/nvim
 export OSSCADPATH=$HOME/.local/oss-cad-suite
 export SWIFTPATH=$HOME/.local/swift/usr/bin
+export QBEPATH=$HOME/.local/qbe
 export ZIGPATH=$HOME/.local/zig
 export ZLSPATH=$HOME/.local/zls/zig-out/bin
-export PATH=$HOME/.local/bin:$GHCITUI:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
+export PATH=$HOME/.local/bin:$GHCITUI:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$PATH
+export PATH=$OSSCADPATH/bin:$SWIFTPATH:$QBEPATH:$ZIGPATH:$ZLSPATH:$PATH
+export PATH="$HOME/.local/share/bin:$PATH"
 
 export VISUAL=$NVIMPATH
 export EDITOR=$NVIMPATH
-
-export PATH="$HOME/.local/share/bin:$PATH"
 
 export CC="/usr/bin/gcc"
 export CXX="/usr/bin/g++"
