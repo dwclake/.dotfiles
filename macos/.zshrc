@@ -170,7 +170,7 @@ build() {
     cmake --build .build --parallel 8
 }
 
-test() {
+testc() {
     if ! [ -f ${PWD}/CMakeLists.txt ]; then
         echo "Error: Current directory missing CMakeLists.txt"
         return 1
