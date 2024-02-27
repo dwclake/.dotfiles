@@ -122,10 +122,11 @@ export GOROOT=$HOME/.local/go
 export GOPATH=$HOME/.local/share/go
 export NVIMPATH=$HOME/.local/nvim/bin
 export OSSCADPATH=$HOME/.local/oss-cad-suite
+export SNAPPATH=/snap/bin
 export SWIFTPATH=$HOME/.local/swift/usr/bin
 export ZIGPATH=$HOME/.local/zig
 export ZLSPATH=$HOME/.local
-export PATH=$HOME/.local/go/bin:$GHCITUI:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
+export PATH=$HOME/.local/go/bin:$GHCITUI:$GOROOT/bin:$GOPATH/bin:$NVIMPATH:$SNAPPATH:$SWIFTPATH:$ODINPATH:$OSSCADPATH/bin:$ZIGPATH:$ZLSPATH:$PATH
 
 export VISUAL=$NVIMPATH
 export EDITOR=$NVIMPATH
