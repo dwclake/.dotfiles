@@ -6,9 +6,9 @@ require('rose-pine').setup({
     },
 })
 
-require('ruka').setup({
-	disable_italics = true
-})
+--require('ruka').setup({
+--	disable_italics = true
+--})
 
 require('nordic').setup({
     on_palette = function(palette)
