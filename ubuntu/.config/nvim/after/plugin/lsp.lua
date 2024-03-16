@@ -78,6 +78,7 @@ require'lspconfig.configs'.onyx = {
         settings = {}
     }
 }
+require'lspconfig'.gleam.setup {}
 require'lspconfig'.onyx.setup {}
 --require'lspconfig'.hls.setup {
 --    settings = {
