@@ -1,1 +1,1 @@
-/home/dwclake/git/learning/zigls/zigls.lua
+/home/dwclake/learning/zigls/zigls.lua
