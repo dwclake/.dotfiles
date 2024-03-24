@@ -1,4 +1,5 @@
 require("dwclake")
+require("zigls")
 
 vim.cmd(":set nofoldenable")	
 
