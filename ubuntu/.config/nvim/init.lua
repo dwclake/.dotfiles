@@ -1,5 +1,5 @@
 require("dwclake")
-require("zigls")
+require("ruka-ls")
 
 vim.cmd(":set nofoldenable")	
 
