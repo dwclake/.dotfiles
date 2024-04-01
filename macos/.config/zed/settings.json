@@ -12,7 +12,7 @@
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "buffer_font_height": 1.1,
+  "buffer_line_height": "comfortable",
   "buffer_font_family": "IntoneMono Nerd Font Mono",
   "buffer_font_features": {
     "calt": false
