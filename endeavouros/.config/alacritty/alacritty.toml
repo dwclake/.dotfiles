@@ -23,7 +23,7 @@ style = "Regular"
 
 [font.offset]
 #y = -4
-y = -3
+y = -2
 
 [shell]
 program = "/usr/bin/zsh"
