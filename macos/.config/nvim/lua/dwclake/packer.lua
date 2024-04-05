@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use ('onyx-lang/onyx.vim')
   use ('reasonml-editor/vim-reason-plus')
   use ('jlcrochet/vim-crystal')
+  use ('gleam-lang/gleam.vim')
 
   use ({
 	  'rose-pine/neovim',

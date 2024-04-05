@@ -82,6 +82,7 @@ require'lspconfig.configs'.onyx = {
     }
 }
 require'lspconfig'.onyx.setup {}
+require'lspconfig'.gleam.setup {}
 
 lsp.setup()
 
