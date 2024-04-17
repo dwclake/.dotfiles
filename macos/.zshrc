@@ -111,7 +111,7 @@ export GOPATH="$HOME/.local/share/go"
 export LLVMPATH="/opt/homebrew/opt/llvm"
 export OSSCADSUITEPATH="$HOME/.local/oss-cad-suite/bin"
 export QBEPATH="$HOME/.local/qbe"
-export ZLSPATH="$HOME/.local/zls/zig-out/bin"
+export ZLSPATH="$HOME/.local"
 export ZIGPATH="$HOME/.local/zig"
 export PATH="$HOME/.local/bin::$GOPATH/bin:$LLVMPATH/bin:$OSSCADSUITEPATH:$QBEPATH:$ZIGPATH:$ZLSPATH:$PATH"
 
