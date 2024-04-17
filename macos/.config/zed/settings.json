@@ -7,6 +7,10 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "auto_update_extensions": {
+    "zig": false,
+    "haskell": false
+  },
   "show_copilot_suggestions": false,
   "theme": "Rosé Pine Moon",
   "vim_mode": true,

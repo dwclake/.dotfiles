@@ -147,6 +147,7 @@ export WASMER_DIR="/Users/dwclake/.wasmer"
 export ONYX_PATH="/Users/dwclake/.onyx"
 export PATH="$ONYX_PATH/bin:$PATH"
 
+[ -f "/Users/dwclake/.ghcup/env" ] && source "/Users/dwclake/.ghcup/env" # ghcup-env
 
 tmsa() {
     tms && tmux attach-session -t "$1"
@@ -209,5 +210,3 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
-
-[ -f "/Users/dwclake/.ghcup/env" ] && . "/Users/dwclake/.ghcup/env" # ghcup-env
