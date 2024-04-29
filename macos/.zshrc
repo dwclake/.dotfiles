@@ -210,4 +210,4 @@ vmrss() {
     echo $output
 }
 
-[ -f "/Users/dwclake/.ghcup/env" ] && . "/Users/dwclake/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
