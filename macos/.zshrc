@@ -209,5 +209,3 @@ vmrss() {
     output[3]="MB"
     echo $output
 }
-
-[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
