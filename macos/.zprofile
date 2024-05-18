@@ -10,13 +10,6 @@ addToPathFront() {
     fi
 }
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-#export EMSDK_QUIET=1
-#source ~/emsdk/emsdk_env.sh
-
-eval "$(opam env)"
-
 addToPathFront "$HOME/.local/share/go/bin"
 addToPathFront "$HOME/.local"
 addToPathFront "$HOME/.local/zig"
@@ -32,5 +25,9 @@ export EDITOR="nvim"
 export CC="/opt/homebrew/bin/gcc-13"
 export CXX="/opt/homebrew/bin/g++-13"
 export TOOLCHAINS="swift"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$(opam env)"
 
 #PROMPT_EOL_MARK=
