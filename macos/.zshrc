@@ -13,36 +13,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
 
-addToPath() {
-    if [[ "$PATH" != "$1" ]]; then
-        export PATH = $PATH:$1  
-    fi
-}
-
-addToPathFront() {
-    if [[ "$PATH" != "$1" ]]; then
-        export PATH = $1:$PATH  
-    fi
-}
-
-addToPathFront "$HOME/.local/share/go/bin"
-addToPathFront "$HOME/.local"
-addToPathFront "$HOME/.local/zig"
-addToPathFront "$HOME/.local/nvim/bin"
-addToPath "/opt/homebrew/opt/llvm/bin"
-addToPath "$HOME/.local/oss-cad-suite/bin"
-addToPath "$HOME/.local/qbe"
-addToPath "$HOME/.local/bin"
-
-export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
-export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
-export EDITOR="nvim"
-export CC="/opt/homebrew/bin/gcc-13"
-export CXX="/opt/homebrew/bin/g++-13"
-export TOOLCHAINS="swift"
-
-#PROMPT_EOL_MARK=
-
 # opam configuration
 [[ ! -r /Users/dwclake/.opam/opam-init/init.zsh ]] || source /Users/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
@@ -56,7 +26,7 @@ export DEVKITARM="$DEVKITPRO/devkitARM"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-addToPathFront "$BUN_INSTALL/bin"
+export PATH="$PATH:$BUN_INSTALL/bin"
 
 # Wasmer
 export WASMER_DIR="/Users/dwclake/.wasmer"
@@ -64,7 +34,7 @@ export WASMER_DIR="/Users/dwclake/.wasmer"
 
 # Onyx config
 export ONYX_PATH="/Users/dwclake/.onyx"
-addToPath "$ONYX_PATH/bin"
+export PATH="$PATH:$ONYX_PATH/bin"
 
 tmsa() {
     tms && tmux attach-session -t "$1"
