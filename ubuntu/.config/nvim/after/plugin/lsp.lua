@@ -80,17 +80,6 @@ require'lspconfig.configs'.onyx = {
 }
 require'lspconfig'.gleam.setup {}
 require'lspconfig'.onyx.setup {}
---require'lspconfig'.hls.setup {
---    settings = {
---        haskell = {
---            plugin = {
---                stan = {
---                    globalOn = {true}
---                }
---            }
---        }
---    }
---}
 
 lsp.setup()
 

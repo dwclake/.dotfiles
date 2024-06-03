@@ -73,6 +73,8 @@ vmrss() {
     echo $output
 }
 
+export PATH="$PATH:$HOME/.local"
+
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
