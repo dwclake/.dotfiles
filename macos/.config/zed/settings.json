@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "auto_update_extensions": {
+    "zig": false
+  },
   "restore_on_startup": "none",
   "show_copilot_suggestions": false,
   "theme": "Rosé Pine Moon",
@@ -31,5 +34,5 @@
     "metrics": false
   },
   "relative_line_numbers": true,
-  "auto_update": true
+  "auto_update": false
 }
