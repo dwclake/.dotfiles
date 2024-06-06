@@ -23,8 +23,8 @@ addToPath "$HOME/.local/go/bin"
 export VISUAL="$HOME/.local/nvim/bin"
 export EDITOR="$HOME/.local/nvim/bin"
 
-export CC="/usr/bin/gcc"
-export CXX="/usr/bin/g++"
+export CC="/usr/bin/gcc-13"
+export CXX="/usr/bin/g++-13"
 
 eval "$(opam env)"
 
