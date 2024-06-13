@@ -10,6 +10,7 @@ addToPathFront() {
     fi
 }
 
+addToPathFront "$HOME/.local/swift/usr/bin"
 addToPathFront "$HOME/.local/share/go/bin"
 addToPathFront "$HOME/.local"
 addToPathFront "$HOME/.local/zig"
