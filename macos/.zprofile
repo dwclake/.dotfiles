@@ -21,6 +21,7 @@ addToPath "$HOME/.local/oss-cad-suite/bin"
 addToPath "$HOME/.local/qbe"
 addToPath "$HOME/.local/bin"
 
+export GOPATH="$HOME/.go"
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
 export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export EDITOR="nvim"
