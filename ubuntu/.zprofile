@@ -11,7 +11,7 @@ addToPathFront() {
 }
 
 addToPathFront "$HOME/.local/swift/usr/bin"
-addToPathFront "$HOME/.local/share/go/bin"
+addToPathFront "$HOME/.go/bin"
 addToPathFront "$HOME/.local"
 addToPathFront "$HOME/.local/zig"
 addToPathFront "$HOME/.local/nvim/bin"
@@ -21,6 +21,7 @@ addToPath "$HOME/.local/qbe"
 addToPath "$HOME/.local/bin"
 addToPath "$HOME/.local/go/bin"
 
+export GOPATH="$HOME/.go"
 export VISUAL="$HOME/.local/nvim/bin"
 export EDITOR="$HOME/.local/nvim/bin"
 
