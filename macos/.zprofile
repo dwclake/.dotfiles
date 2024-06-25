@@ -12,7 +12,7 @@ addToPathFront() {
 
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
 
-addToPathFront "$HOME/.local/share/go/bin"
+addToPathFront "$HOME/.go/bin"
 addToPathFront "$HOME/.local"
 addToPathFront "$HOME/.local/zig"
 addToPathFront "$HOME/.local/nvim/bin"
