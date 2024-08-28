@@ -12,6 +12,14 @@ addToPathFront() {
 
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
 
+export GOPATH="$HOME/.go"
+export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
+export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+export EDITOR="nvim"
+export CC="/opt/homebrew/bin/gcc-13"
+export CXX="/opt/homebrew/bin/g++-13"
+export TOOLCHAINS="swift"
+
 addToPathFront "$HOME/.go/bin"
 addToPathFront "$HOME/.local"
 addToPathFront "$HOME/.local/zig"
@@ -20,14 +28,6 @@ addToPath "/opt/homebrew/opt/llvm/bin"
 addToPath "$HOME/.local/oss-cad-suite/bin"
 addToPath "$HOME/.local/qbe"
 addToPath "$HOME/.local/bin"
-
-export GOPATH="$HOME/.go"
-export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
-export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
-export EDITOR="nvim"
-export CC="/opt/homebrew/bin/gcc-13"
-export CXX="/opt/homebrew/bin/g++-13"
-export TOOLCHAINS="swift"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
