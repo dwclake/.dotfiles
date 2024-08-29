@@ -10,7 +10,7 @@ addToPathFront() {
     fi
 }
 
-export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
+#export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
 
 export GOPATH="$HOME/.go"
 export CMAKE_EXE_LINKER_FLAGS="-no-pie -ld64"
