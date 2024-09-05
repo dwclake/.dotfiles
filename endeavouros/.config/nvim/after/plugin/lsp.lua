@@ -3,9 +3,12 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-	'tsserver',
+    'clangd',
 	'eslint',
+    'gopls',
+    'ocamllsp',
 	'rust_analyzer',
+    'zls'
 })
 
 local cmp = require('cmp')
