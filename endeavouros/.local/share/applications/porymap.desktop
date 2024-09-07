@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=porymap
-Type=Application
-StartupNotify=true
-Comment=Launch Porymap
-Exec=/home/dwclake/.local/porymap/porymap
-Icon=/home/dwclake/.local/porymap/resources/icons/porymap-icon-2.ico
-StartupWMClass=porymap
