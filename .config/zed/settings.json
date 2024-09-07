@@ -33,5 +33,5 @@
     "diagnostics": false,
     "metrics": false
   },
-  "relative_line_numbers": true,
+  "relative_line_numbers": true
 }
