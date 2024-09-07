@@ -49,8 +49,6 @@ return require('packer').startup(function(use)
   end}
   use ('kdheepak/lazygit.nvim')
   
-  --use {'neoclide/coc.nvim', branch = 'release'}
-
   use({
       "kylechui/nvim-surround",
       tag = "*",
