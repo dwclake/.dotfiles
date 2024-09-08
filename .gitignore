@@ -3,5 +3,6 @@
 *.sqlite3-wal
 *.sqlite3-shm
 *.hash
+*.mdb
 refresh_token
 packer_compiled.lua
