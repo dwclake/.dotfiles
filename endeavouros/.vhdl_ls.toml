@@ -1,4 +1,0 @@
-[libraries]
-IEEE.files = [
-  'tools/Xilinx/Vivado/2023.1/data/vhdl/src/distributable/std_logic_1164.vhd'
-]

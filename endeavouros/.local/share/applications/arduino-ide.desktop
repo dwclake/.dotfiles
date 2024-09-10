@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Arduino IDE
-Type=Application
-StartupNotify=true
-Comment=Launch Arduino IDE
-Exec=/home/dwclake/.local/arduino-ide/arduino-ide
-Icon=/home/dwclake/.local/arduino-ide/resources/app/resources/icons/512x512.png
-StartupWMClass=arduino-ide
