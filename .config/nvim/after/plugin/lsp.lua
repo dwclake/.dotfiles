@@ -4,6 +4,7 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
     'clangd',
+    'crystalline',
 	'eslint',
     'gopls',
     'ocamllsp',
