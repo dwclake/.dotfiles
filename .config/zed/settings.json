@@ -33,5 +33,12 @@
     "diagnostics": false,
     "metrics": false
   },
-  "relative_line_numbers": true
+  "relative_line_numbers": true,
+  "lsp": {
+    "zls": {
+      "binary": {
+        "path": "/Users/dwclake/.local/zls"
+      }
+    }
+  }
 }
