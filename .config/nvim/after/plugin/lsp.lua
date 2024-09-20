@@ -5,7 +5,6 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     'clangd',
     'crystalline',
-	'eslint',
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
