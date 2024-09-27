@@ -15,6 +15,9 @@
   "auto_update_extensions": {
     "zig": false
   },
+  "tabs": {
+    "file_icons": true
+  },
   "restore_on_startup": "none",
   "show_inline_completions": false,
   "theme": "Rosé Pine Moon",
