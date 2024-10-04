@@ -8,7 +8,7 @@ lsp.ensure_installed({
     'ocamllsp',
 	'rust_analyzer',
     'ts_ls',
-    'zls'
+    --'zls'
 })
 
 local cmp = require('cmp')
@@ -54,6 +54,7 @@ require'lspconfig'.crystalline.setup{
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
 }
+require'lspconfig'.zls.setup{}
 --require'lspconfig.configs'.onyx = {
 --    default_config = {
 --        cmd = { "onyx", "lsp" },
