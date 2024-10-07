@@ -7,9 +7,25 @@ lsp.ensure_installed({
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
-    'ts_ls',
-    --'zls'
+    'ts_ls'
 })
+
+local lspconfig = require('lspconfig')
+
+lspconfig.zls.setup{}
+lspconfig.ocamllsp.setup{}
+lspconfig.gopls.setup({
+  templateExtensions = "tmpl"
+})
+lspconfig.sourcekit.setup{
+    filetypes = {"swift"}
+}
+lspconfig.elixirls.setup{}
+--require'lspconfig'.crystalline.setup{
+--    cmd = {"/opt/homebrew/bin/crystalline"}
+--}
+--require'lspconfig'.onyx.setup {}
+--require'lspconfig'.gleam.setup {}
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -42,36 +58,6 @@ lsp.set_preferences({
 lsp.setup_nvim_cmp({
 	mapping = cmp_mappings
 })
-
-require'lspconfig'.ocamllsp.setup{}
---require'lspconfig'.elixirls.setup{}
-require'lspconfig'.gopls.setup({
-  templateExtensions = "tmpl"
-})
-require'lspconfig'.crystalline.setup{
-    cmd = {"/opt/homebrew/bin/crystalline"}
-}
-require'lspconfig'.sourcekit.setup{
-    filetypes = {"swift"}
-}
-require'lspconfig'.zls.setup{}
---require'lspconfig.configs'.onyx = {
---    default_config = {
---        cmd = { "onyx", "lsp" },
---        filetypes = { "onyx" },
---        root_dir = function(filename)
---            local utils = require'lspconfig.util'
---            return utils.search_ancestors(filename, function(path)
---                if utils.path.is_file(utils.path.join(path, "onyx-pkg.kdl")) then
---                    return path
---                end
---            end)
---        end;
---        settings = {}
---    }
---}
---require'lspconfig'.onyx.setup {}
---require'lspconfig'.gleam.setup {}
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
