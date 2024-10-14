@@ -3,7 +3,6 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-    'crystalline',
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
@@ -21,9 +20,9 @@ lspconfig.sourcekit.setup{
     filetypes = {"swift"}
 }
 lspconfig.elixirls.setup{}
---require'lspconfig'.crystalline.setup{
---    cmd = {"/opt/homebrew/bin/crystalline"}
---}
+require'lspconfig'.crystalline.setup{
+    cmd = {"/opt/homebrew/bin/crystalline"}
+}
 --require'lspconfig'.onyx.setup {}
 --require'lspconfig'.gleam.setup {}
 
