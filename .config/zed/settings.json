@@ -7,11 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "languages": {
-    "Zig": {
-      "show_inline_completions": false
-    }
-  },
   "auto_update_extensions": {
     "zig": false
   },
@@ -45,7 +40,7 @@
   "lsp": {
     "zls": {
       "binary": {
-        "path": "/Users/dwclake/.local/zls"
+        "path": "/Users/dwclake/.asdf/shims/zls"
       }
     }
   }
