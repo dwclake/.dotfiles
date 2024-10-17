@@ -1,19 +1,19 @@
 colors:
   primary:
-    background: "0x232136"
+    background: "0x2b2a38"
     foreground: "0xe0def4"
   cursor:
     text: "0xe0def4"
-    cursor: "0x56526e"
+    cursor: "0x635e80"
   vi_mode_cursor:
     text: "0xe0def4"
-    cursor: "0x56526e"
+    cursor: "0x635e80"
   line_indicator:
     foreground: None
     background: None
   selection:
     text: "0xe0def4"
-    background: "0x44415a"
+    background: "0x565373"
   normal:
     black: "0x393552"
     red: "0xeb6f92"
