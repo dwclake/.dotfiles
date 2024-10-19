@@ -24,7 +24,10 @@ x = 1
 y = 1
 
 [window]
-decorations = "Buttonless"
+decorations = "Transparent"
+opacity = 0.90
+blur = true
+dynamic_padding = true
 
 [window.dimensions]
 columns = 300
@@ -32,7 +35,7 @@ lines = 250
 
 [window.padding]
 x = 8
-y = 8
+y = 24
 
 [mouse]
 hide_when_typing = true
