@@ -24,7 +24,7 @@
                                     "key_code": "return_or_enter",
                                     "modifiers": { "mandatory": ["left_command"] }
                                 },
-                                "to": [{ "shell_command": "/Users/dwclake/.cargo/bin/alacritty" }],
+                                "to": [{ "shell_command": "/Users/dwclake/.cargo/bin/alacritty &" }],
                                 "type": "basic"
                             }
                         ]

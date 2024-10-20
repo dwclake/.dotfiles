@@ -6,3 +6,4 @@
 *.mdb
 refresh_token
 packer_compiled.lua
+.config/karabiner/automatic_backups
