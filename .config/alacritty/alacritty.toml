@@ -17,7 +17,7 @@ style = "Medium"
 
 [font.normal]
 family = "IntOneMono Nerd Font Mono" 
-#style = "Medium"
+style = "Regular"
 
 [font.offset]
 x = 1
@@ -25,7 +25,7 @@ y = 1
 
 [window]
 decorations = "Transparent"
-opacity = 0.90
+opacity = 0.9
 blur = true
 dynamic_padding = true
 

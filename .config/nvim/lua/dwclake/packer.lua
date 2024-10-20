@@ -14,9 +14,9 @@ return require('packer').startup(function(use)
   }
 
   use ('github/copilot.vim')
-  --use ('onyx-lang/onyx.vim')
   use ('reasonml-editor/vim-reason-plus')
   use ('jlcrochet/vim-crystal')
+  --use ('onyx-lang/onyx.vim')
   --use ('gleam-lang/gleam.vim')
 
   use ({

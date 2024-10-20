@@ -19,10 +19,10 @@ lspconfig.gopls.setup({
 lspconfig.sourcekit.setup{
     filetypes = {"swift"}
 }
-lspconfig.elixirls.setup{}
 require'lspconfig'.crystalline.setup{
     cmd = {"/opt/homebrew/bin/crystalline"}
 }
+--lspconfig.elixirls.setup{}
 --require'lspconfig'.onyx.setup {}
 --require'lspconfig'.gleam.setup {}
 

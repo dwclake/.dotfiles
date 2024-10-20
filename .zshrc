@@ -95,7 +95,3 @@ export PATH="$PATH:$BUN_INSTALL/bin"
 # Wasmer
 export WASMER_DIR="/Users/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
-
-# Onyx config
-export ONYX_PATH="/Users/dwclake/.onyx"
-export PATH="$PATH:$ONYX_PATH/bin"
