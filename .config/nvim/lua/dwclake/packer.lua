@@ -14,7 +14,6 @@ return require('packer').startup(function(use)
   }
 
   use 'github/copilot.vim'
-  use ('onyx-lang/onyx.vim')
   use ('gleam-lang/gleam.vim')
 
   use ({
@@ -24,7 +23,7 @@ return require('packer').startup(function(use)
 	  	vim.cmd('colorscheme meh')
 	  end
   })
-  use ('AlexvZyl/nordic.nvim')
+  --use ('AlexvZyl/nordic.nvim')
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/nvim-treesitter-context')

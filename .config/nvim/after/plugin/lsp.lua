@@ -4,12 +4,10 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
     'clangd',
-    'crystalline',
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
-    'ts_ls',
-    'zls'
+    'ts_ls'
 })
 
 local cmp = require('cmp')
@@ -67,23 +65,8 @@ require'lspconfig'.elixirls.setup{}
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
 }
-require'lspconfig.configs'.onyx = {
-    default_config = {
-        cmd = { "onyx", "lsp" },
-        filetypes = { "onyx" },
-        root_dir = function(filename)
-            local utils = require'lspconfig.util'
-            return utils.search_ancestors(filename, function(path)
-                if utils.path.is_file(utils.path.join(path, "onyx-lsp.ini")) then
-                    return path
-                end
-            end)
-        end;
-        settings = {}
-    }
-}
+require'lspconfig'.zls.setup{}
 require'lspconfig'.gleam.setup {}
-require'lspconfig'.onyx.setup {}
 
 lsp.setup()
 

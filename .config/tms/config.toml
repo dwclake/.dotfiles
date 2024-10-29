@@ -1,0 +1,15 @@
+[[search_dirs]]
+path = "/home/dwclake/personal"
+depth = 10
+
+[[search_dirs]]
+path = "/home/dwclake/university"
+depth = 10
+
+[[search_dirs]]
+path = "/home/dwclake/ruka-lang"
+depth = 10
+
+[[search_dirs]]
+path = "/home/dwclake/work"
+depth = 10
