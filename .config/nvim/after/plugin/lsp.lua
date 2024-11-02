@@ -3,6 +3,7 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
+    'clangd',
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
@@ -23,8 +24,7 @@ require'lspconfig'.crystalline.setup{
     cmd = {"/opt/homebrew/bin/crystalline"}
 }
 --lspconfig.elixirls.setup{}
---require'lspconfig'.onyx.setup {}
---require'lspconfig'.gleam.setup {}
+require'lspconfig'.gleam.setup {}
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
