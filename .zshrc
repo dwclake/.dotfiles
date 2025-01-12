@@ -74,6 +74,7 @@ vmrss() {
 }
 
 export PATH="$PATH:$HOME/.local"
+export PATH="$PATH:/snap/bin"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
