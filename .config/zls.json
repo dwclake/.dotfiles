@@ -1,3 +1,4 @@
 {
-    "enable_autofix": false
+    "enable_autofix": false,
+    "build_on_save": true
 }
