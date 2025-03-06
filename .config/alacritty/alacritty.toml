@@ -21,7 +21,7 @@ style = "Regular"
 
 [font.offset]
 x = 1
-y = 1
+y = 2
 
 [window]
 decorations = "Transparent"
