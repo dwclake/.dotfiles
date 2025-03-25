@@ -64,7 +64,9 @@ require'lspconfig'.elixirls.setup{}
 require'lspconfig'.sourcekit.setup{
     filetypes = {"swift"}
 }
-require'lspconfig'.zls.setup{}
+require'lspconfig'.zls.setup{
+    cmd = { "/home/dwclake/.asdf/shims/zls" }
+}
 require'lspconfig'.gleam.setup {}
 
 lsp.setup()
