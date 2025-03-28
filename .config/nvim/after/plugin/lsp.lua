@@ -12,13 +12,16 @@ lsp.ensure_installed({
 
 local lspconfig = require('lspconfig')
 
-lspconfig.ocamllsp.setup({})
+lspconfig.ocamllsp.setup{}
 lspconfig.gopls.setup({
   templateExtensions = "tmpl"
 })
-lspconfig.sourcekit.setup({
+lspconfig.sourcekit.setup{
     filetypes = {"swift"}
-})
+}
+require'lspconfig'.crystalline.setup{
+    cmd = {"/opt/homebrew/bin/crystalline"}
+}
 require'lspconfig'.gleam.setup {}
 
 local cmp = require('cmp')
