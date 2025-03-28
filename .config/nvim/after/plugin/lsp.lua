@@ -7,23 +7,18 @@ lsp.ensure_installed({
     'gopls',
     'ocamllsp',
 	'rust_analyzer',
-    'ts_ls'
+    'zls'
 })
 
 local lspconfig = require('lspconfig')
 
-lspconfig.zls.setup{}
-lspconfig.ocamllsp.setup{}
+lspconfig.ocamllsp.setup({})
 lspconfig.gopls.setup({
   templateExtensions = "tmpl"
 })
-lspconfig.sourcekit.setup{
+lspconfig.sourcekit.setup({
     filetypes = {"swift"}
-}
-require'lspconfig'.crystalline.setup{
-    cmd = {"/opt/homebrew/bin/crystalline"}
-}
---lspconfig.elixirls.setup{}
+})
 require'lspconfig'.gleam.setup {}
 
 local cmp = require('cmp')
