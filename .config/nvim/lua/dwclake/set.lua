@@ -30,6 +30,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "90"
 
+vim.opt.winborder = 'rounded'
+
 vim.diagnostic.config({
   virtual_text = true, -- Turn off inline diagnostics
 })
