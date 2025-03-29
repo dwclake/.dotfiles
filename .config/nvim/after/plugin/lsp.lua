@@ -12,17 +12,17 @@ lsp.ensure_installed({
 
 local lspconfig = require('lspconfig')
 
-lspconfig.ocamllsp.setup{}
+lspconfig.ocamllsp.setup({})
 lspconfig.gopls.setup({
   templateExtensions = "tmpl"
 })
-lspconfig.sourcekit.setup{
+lspconfig.sourcekit.setup({
     filetypes = {"swift"}
-}
-require'lspconfig'.crystalline.setup{
+})
+lspconfig.crystalline.setup({
     cmd = {"/opt/homebrew/bin/crystalline"}
-}
-require'lspconfig'.gleam.setup {}
+})
+lspconfig.gleam.setup({})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -77,7 +77,7 @@ vim.g.zig_fmt_autosave = 0
 vim.g.zig_enable_autofix = 0
 
 vim.diagnostic.config({
-    virtual_text = true,
+    virtual_lines = true,
     signs = true,
-    update_in_insert = true,
+    update_in_insert = true
 })
