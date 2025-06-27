@@ -27,9 +27,7 @@ return require('packer').startup(function(use)
   })
   use ('AlexvZyl/nordic.nvim')
 
-  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use ('nvim-treesitter/nvim-treesitter-context')
-  use ('nvim-treesitter/playground')
+  use {'nvim-treesitter/nvim-treesitter', branch = "main"}
   use {
       'theprimeagen/harpoon',
       branch = "harpoon2",
