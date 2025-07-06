@@ -4,4 +4,4 @@ crystal 1.16.0
 ruby 3.4.2
 zig 0.14.0
 zls 0.14.0
-gleam 1.10.0-rc1
+gleam 1.11.1
