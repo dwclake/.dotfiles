@@ -19,11 +19,11 @@ return require('packer').startup(function(use)
   use ('gleam-lang/gleam.vim')
 
   use ({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme meh')
-	  end
+    "rose-pine/neovim",
+	name = "rose-pine",
+	config = function()
+		vim.cmd("colorscheme rose-pine")
+	end
   })
   use ('AlexvZyl/nordic.nvim')
 
