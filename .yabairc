@@ -45,4 +45,4 @@ yabai -m config                                 \
 
 echo "yabai configuration loaded.."
 
-borders active_color=0xffbb5b44 inactive_color=0xff494d64 width=8.0 &
+#borders active_color=0xffbb5b44 inactive_color=0xff494d64 width=8.0 &
