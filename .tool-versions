@@ -2,6 +2,6 @@ erlang 27.3.2
 elixir 1.18.3-otp-27
 crystal 1.16.0
 ruby 3.4.2
-zig 0.14.0
+zig 0.15.1
 zls 0.14.0
 gleam 1.11.1
