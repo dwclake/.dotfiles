@@ -1,3 +1,3 @@
-local treesitter = require('nvim-treesitter')
+--local treesitter = require('nvim-treesitter')
 
-treesitter.install {'c', 'cpp', 'go', 'rust', 'zig', 'ocaml'}
+--treesitter.install {'c', 'cpp', 'go', 'rust', 'zig', 'ocaml'}
