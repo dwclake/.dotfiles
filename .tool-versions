@@ -1,7 +1,6 @@
-erlang 27.3.2
-elixir 1.18.3-otp-27
-crystal 1.16.0
-ruby 3.4.2
+erlang 28.0.2
+elixir 1.19.0-rc.0-otp-28
 zig 0.15.1
-zls 0.14.0
+zls 0.15.0
 gleam 1.11.1
+golang 1.25.1

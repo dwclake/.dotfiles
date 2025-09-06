@@ -80,7 +80,7 @@ vmrss() {
 # opam configuration
 [[ ! -r /Users/dwclake/.opam/opam-init/init.zsh ]] || source /Users/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-. $HOME/.asdf/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export DEVKITPRO="/opt/devkitpro"
 export DEVKITARM="$DEVKITPRO/devkitARM"
@@ -95,6 +95,3 @@ export PATH="$PATH:$BUN_INSTALL/bin"
 # Wasmer
 export WASMER_DIR="/Users/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/dwclake/.lmstudio/bin"
