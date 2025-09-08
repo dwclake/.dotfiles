@@ -36,8 +36,8 @@ lines = 250
 x = 8
 y = 24
 
-[mouse]
-hide_when_typing = true
+#[mouse]
+#hide_when_typing = true
 
 [general]
 import = ["~/.config/alacritty/themes/rose-pine/dist/rose-pine-moon.toml"]
