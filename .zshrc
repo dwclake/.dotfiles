@@ -95,3 +95,9 @@ export PATH="$PATH:$BUN_INSTALL/bin"
 # Wasmer
 export WASMER_DIR="/Users/dwclake/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/dwclake/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
