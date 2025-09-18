@@ -13,21 +13,25 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use 'github/copilot.vim'
+  use ('github/copilot.vim')
+  use ('reasonml-editor/vim-reason-plus')
+  use ('jlcrochet/vim-crystal')
   use ('gleam-lang/gleam.vim')
 
   use ({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-	  	vim.cmd('colorscheme meh')
-	  end
+    "rose-pine/neovim",
+	name = "rose-pine",
+	config = function()
+		vim.cmd("colorscheme rose-pine-moon")
+	end
   })
-  --use ('AlexvZyl/nordic.nvim')
+  use ('AlexvZyl/nordic.nvim')
 
-  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use ('nvim-treesitter/nvim-treesitter-context')
-  use ('nvim-treesitter/playground')
+  use {'nvim-treesitter/nvim-treesitter', run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
   use {
       'theprimeagen/harpoon',
       branch = "harpoon2",
@@ -45,22 +49,19 @@ return require('packer').startup(function(use)
       })
   end}
   use ('kdheepak/lazygit.nvim')
-  use ('jlcrochet/vim-crystal')
-  use ('reasonml-editor/vim-reason-plus')
+  
+  use({
+      "kylechui/nvim-surround",
+      tag = "*",
+      config = function() require("nvim-surround").setup({
 
-    use({
-        "kylechui/nvim-surround",
-        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-        config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
-        end
-    })
+      })
+    end
+  })
 
   use {
       'VonHeikemen/lsp-zero.nvim',
-      branch = 'v1.x',
+      branch = 'v3.x',
       requires = {
           -- LSP Support
           {'neovim/nvim-lspconfig'},             -- Required

@@ -73,13 +73,12 @@ vmrss() {
     echo $output
 }
 
-export PATH="$PATH:$HOME/.local"
+export PATH="$PATH:$HOME/.local:$HOME/.asdf/shims"
 export PATH="$PATH:/snap/bin"
 
 # opam configuration
 [[ ! -r /home/dwclake/.opam/opam-init/init.zsh ]] || source /home/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-. "$HOME/.asdf/asdf.sh"
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
