@@ -26,7 +26,6 @@ export EDITOR="nvim"
 #addToPathFront "$HOME/.local/nvim/bin"
 addToPath "/opt/homebrew/opt/llvm/bin"
 addToPath "$HOME/.local/oss-cad-suite/bin"
-addToPath "$HOME/.local/qbe"
 addToPath "$HOME/.local/bin"
 addToPath "$HOME/.asdf/installs/golang/1.25.1/bin"
 
