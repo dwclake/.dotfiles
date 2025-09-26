@@ -12,6 +12,13 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use ('lukas-reineke/indent-blankline.nvim', { config = function()
+      require("indent_blankline").setup ()
+  end })
+  use ('andrewferrier/wrapping.nvim', { config = function()
+      require("wrapping").setup()
+  end })
+
   use ('github/copilot.vim')
   use ('reasonml-editor/vim-reason-plus')
   use ('gleam-lang/gleam.vim')
