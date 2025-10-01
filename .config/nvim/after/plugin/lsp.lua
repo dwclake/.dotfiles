@@ -19,6 +19,7 @@ mason_lspconfig.setup({
             lspconfig.gopls.setup({
               templateExtensions = "tmpl"
             })
+            lspconfig.elixirls.setup({})
             lspconfig.sourcekit.setup({
                 filetypes = {"swift"}
             })
