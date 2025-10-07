@@ -87,7 +87,7 @@ hi! Type                              guifg=#dddddd gui=NONE  ctermfg=253
 hi! Underlined                        guifg=#88aaee gui=NONE          ctermfg=110
 hi! Visual              guibg=#afa08f guifg=#1f1f1f
 hi! WarningMsg                        guifg=#ccaa88
-hi! Whitespace          guibg=#1c1c1c guifg=#40485a gui=NONE
+hi! Whitespace          guibg=NONE guifg=#40485a gui=NONE
 hi! Folded              guibg=#24252a guifg=#88aabb           ctermbg=236   ctermfg=110
 hi! TabLineSel          guifg=#cc8877
 hi! link TabLine Folded
@@ -283,7 +283,7 @@ hi link gitmessengerEndOfBuffer   dkoPopupBlank
 " vim-indentguides
 " ============================================================================
 
-hi! IndentGuidesOdd   guibg=#252527
+hi! IndentGuidesOdd   guibg=NONE
 
 " ============================================================================
 " JavaScript

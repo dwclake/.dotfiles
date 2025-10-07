@@ -17,8 +17,6 @@ vim.opt.breakindentopt = "shift:4,min:20"
 vim.opt.linebreak = true
 vim.opt.columns = 90
 
--- aaaaaaaa aaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa a a aaaaaaa a aaaaa aa aaaaaaaa a aaaaaaaaaaaaaaaa
-
 vim.opt.smartindent = true
 
 vim.opt.swapfile = false
