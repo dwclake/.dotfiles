@@ -1,5 +1,5 @@
 [font]
-size = 15
+size = 16
 
 [font.bold]
 family = "IntOneMono Nerd Font Mono"
@@ -21,15 +21,15 @@ style = "Regular"
 x = 1
 y = 2
 
+[cursor]
+style = { blinking = "always" }
+blink_interval = 600
+
 [window]
 decorations = "Transparent"
 opacity = 1
 blur = true
 dynamic_padding = true
-
-[window.dimensions]
-columns = 300
-lines = 250
 
 [window.padding]
 x = 8
