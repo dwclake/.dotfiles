@@ -42,9 +42,6 @@
     "calt": false
   },
   "format_on_save": "off",
-  "copilot": {
-    "enabled": true
-  },
   "tab_size": 4,
   "ensure_final_newline_on_save": false,
   "git": {
