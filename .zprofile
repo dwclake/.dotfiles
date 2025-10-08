@@ -23,7 +23,7 @@ export EDITOR="nvim"
 
 #addToPathFront "$HOME/.local"
 #addToPathFront "$HOME/.local/zig"
-#addToPathFront "$HOME/.local/nvim/bin"
+addToPathFront "$HOME/.local/nvim/bin"
 addToPath "/opt/homebrew/opt/llvm/bin"
 addToPath "$HOME/.local/oss-cad-suite/bin"
 addToPath "$HOME/.local/bin"

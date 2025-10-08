@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
   }
 
   use ('lukas-reineke/indent-blankline.nvim', { config = function()
-      require("indent_blankline").setup ()
+      --require("indent_blankline").setup ()
   end })
 
   use ('github/copilot.vim')
@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
     "rose-pine/neovim",
 	name = "rose-pine",
 	config = function()
-		vim.cmd("colorscheme rose-pine-moon")
+		--vim.cmd("colorscheme rose-pine-moon")
 	end
   })
   use ('AlexvZyl/nordic.nvim')
@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
   use ('mbbill/undotree')
-  use {"akinsho/toggleterm.nvim", tag = "*", config = function() 
+  use {"akinsho/toggleterm.nvim", tag = "*", config = function()
       require("toggleterm").setup({
         float_opts = {
             border = "curved",
@@ -52,7 +52,7 @@ return require('packer').startup(function(use)
       })
   end}
   use ('kdheepak/lazygit.nvim')
-  
+
   use({
       "kylechui/nvim-surround",
       tag = "*",
