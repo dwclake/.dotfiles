@@ -22,8 +22,9 @@ x = 1
 y = 2
 
 [cursor]
-style = { blinking = "always" }
-blink_interval = 600
+style = { shape = "Block", blinking = "On" }
+blink_interval = 750
+blink_timeout = 5
 
 [window]
 decorations = "Transparent"
