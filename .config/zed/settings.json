@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "redact_private_values": true,
+  "redact_private_values": false,
   "diagnostics": {
     "inline": {
       "enabled": false
@@ -18,7 +18,7 @@
     "enabled": false
   },
   "use_on_type_format": false,
-  "soft_wrap": "preferred_line_length",
+  "soft_wrap": "none",
   "auto_signature_help": false,
   "edit_predictions": {
     "mode": "subtle"
