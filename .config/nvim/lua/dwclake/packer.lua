@@ -4,62 +4,62 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+    use {
+        'nvim-telescope/telescope.nvim', branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 
-  use ('lukas-reineke/indent-blankline.nvim', { config = function()
-      --require("indent_blankline").setup ()
-  end })
+    use ('lukas-reineke/indent-blankline.nvim', { config = function()
+        --require("indent_blankline").setup ()
+    end })
 
-  use ('github/copilot.vim')
-  use ('reasonml-editor/vim-reason-plus')
-  use ('gleam-lang/gleam.vim')
-  use ('jlcrochet/vim-crystal')
+    use ('github/copilot.vim')
+    use ('reasonml-editor/vim-reason-plus')
+    use ('gleam-lang/gleam.vim')
+    use ('jlcrochet/vim-crystal')
 
-  use ({
-    "rose-pine/neovim",
-	name = "rose-pine",
-	config = function()
-		--vim.cmd("colorscheme rose-pine-moon")
-	end
-  })
-  use ('AlexvZyl/nordic.nvim')
+    use ({
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            --vim.cmd("colorscheme rose-pine-moon")
+        end
+    })
+    use ('AlexvZyl/nordic.nvim')
 
-  use {'nvim-treesitter/nvim-treesitter', run = function()
-      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-      ts_update()
+    use {'nvim-treesitter/nvim-treesitter', run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        ts_update()
     end,
-  }
-  use {
-      'theprimeagen/harpoon',
-      branch = "harpoon2",
-      requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  use ('mbbill/undotree')
-  use {"akinsho/toggleterm.nvim", tag = "*", config = function()
-      require("toggleterm").setup({
+}
+use {
+    'theprimeagen/harpoon',
+    branch = "harpoon2",
+    requires = { {'nvim-lua/plenary.nvim'} }
+}
+use ('mbbill/undotree')
+use {"akinsho/toggleterm.nvim", tag = "*", config = function()
+    require("toggleterm").setup({
         float_opts = {
             border = "curved",
             width = 80,
             height = 30,
-            }
+        }
 
-      })
-  end}
-  use ('kdheepak/lazygit.nvim')
+    })
+end}
+use ('kdheepak/lazygit.nvim')
 
-  use({
-      "kylechui/nvim-surround",
-      tag = "*",
-      config = function() require("nvim-surround").setup({
+use({
+    "kylechui/nvim-surround",
+    tag = "*",
+    config = function() require("nvim-surround").setup({
 
-      })
-    end
+    })
+end
   })
 
   use {
@@ -85,16 +85,16 @@ return require('packer').startup(function(use)
       }
   }
 
-use ('nvim-tree/nvim-web-devicons')
+  use ('nvim-tree/nvim-web-devicons')
 
-use {
-    'lewis6991/gitsigns.nvim',
-    config = function()
-        require('gitsigns').setup()
-    end
-}
+  use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+          require('gitsigns').setup()
+      end
+  }
 
-use ('nvim-lualine/lualine.nvim')
-use ('windwp/nvim-autopairs')
+  use ('nvim-lualine/lualine.nvim')
+  use ('windwp/nvim-autopairs')
 
 end)
