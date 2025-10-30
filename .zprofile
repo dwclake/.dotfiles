@@ -19,10 +19,7 @@ export CMAKE_OSX_SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
 export EDITOR="nvim"
 #export CC="/opt/homebrew/bin/gcc-14"
 #export CXX="/opt/homebrew/bin/g++-14"
-#export TOOLCHAINS="swift"
 
-#addToPathFront "$HOME/.local"
-#addToPathFront "$HOME/.local/zig"
 addToPathFront "$HOME/.local/nvim/bin"
 addToPath "/opt/homebrew/opt/llvm/bin"
 addToPath "$HOME/.local/oss-cad-suite/bin"
@@ -32,5 +29,3 @@ addToPath "$HOME/.asdf/installs/golang/1.25.1/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(opam env)"
-
-#PROMPT_EOL_MARK=
