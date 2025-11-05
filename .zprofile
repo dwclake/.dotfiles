@@ -21,10 +21,10 @@ export EDITOR="nvim"
 #export CXX="/opt/homebrew/bin/g++-14"
 
 addToPathFront "$HOME/.local/nvim/bin"
+addToPathFront "$HOME/.local/bin/zls"
+addToPathFront "$HOME/.local/oss-cad-suite/bin"
+addToPathFront "$HOME/.asdf/installs/golang/1.25.1/bin"
 addToPath "/opt/homebrew/opt/llvm/bin"
-addToPath "$HOME/.local/oss-cad-suite/bin"
-addToPath "$HOME/.local/bin"
-addToPath "$HOME/.asdf/installs/golang/1.25.1/bin"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

@@ -11,9 +11,6 @@ source $ZSH/oh-my-zsh.sh
 # diskutil apfs deletecontainer disk0s4
 
 alias vim="nvim"
-alias swift-test="swift test --enable-experimental-swift-testing --disable-xctest"
-
-export PATH="$PATH:$HOME/.local"
 
 tmsa() {
     tms && tmux attach-session -t "$1"
@@ -79,6 +76,8 @@ vmrss() {
 
 # opam configuration
 [[ ! -r /Users/dwclake/.opam/opam-init/init.zsh ]] || source /Users/dwclake/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+export PATH="$HOME/.local/bin:$PATH"
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
