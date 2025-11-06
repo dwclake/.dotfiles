@@ -96,5 +96,6 @@ end
 
   use ('nvim-lualine/lualine.nvim')
   use ('windwp/nvim-autopairs')
+  use ('windwp/nvim-ts-autotag')
 
 end)
