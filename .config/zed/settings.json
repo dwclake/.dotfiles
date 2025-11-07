@@ -24,13 +24,13 @@
     "enabled": false
   },
   "use_on_type_format": false,
-  "soft_wrap": "none",
+  "soft_wrap": "preferred_line_length",
   "auto_signature_help": false,
   "edit_predictions": {
     "mode": "subtle"
   },
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
