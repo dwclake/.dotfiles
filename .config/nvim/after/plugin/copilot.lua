@@ -1,6 +1,6 @@
 vim.cmd(":Copilot disable")
 
---vim.keymap.set('i', '<C-Tab>', 'copilot#Accept("")', {
+--vim.keymap.set('i', '<M-Tab>', 'copilot#Accept("")', {
 --    expr = true,
 --    replace_keycodes = false
 --})
