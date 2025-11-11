@@ -54,12 +54,12 @@
     }
   },
   "inlay_hints": {
-    "show_value_hints": true,
+    "show_value_hints": false,
     "show_parameter_hints": true,
-    "show_other_hints": true,
+    "show_other_hints": false,
     "show_background": false,
     "show_type_hints": true,
-    "enabled": true
+    "enabled": false
   },
   "use_on_type_format": false,
   "soft_wrap": "preferred_line_length",
