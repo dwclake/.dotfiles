@@ -100,3 +100,4 @@ fpath=(/Users/dwclake/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+export PATH="/opt/homebrew/opt/node@24/bin:$PATH"

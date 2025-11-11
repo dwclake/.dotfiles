@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "hard_tabs": true,
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "preferred_line_length": 90,
   "ui_font_weight": 410.0,
   "buffer_font_weight": 410.0,
@@ -31,7 +34,7 @@
     "mode": "subtle"
   },
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
