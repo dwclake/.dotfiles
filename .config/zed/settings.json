@@ -11,12 +11,32 @@
 		"active_line_width": 4,
 		"line_width": 2
 	},
-	"show_signature_help_after_edits": true,
+	"show_signature_help_after_edits": false,
 	"search": {
 		"regex": true
 	},
 	"lsp": {
 		"vscode-css-language-server": {
+			"settings": {
+				"css": {
+					"lint": {
+						"unknownAtRules": "ignore"
+					}
+				}
+			}
+		},
+		"svelte-language-server": {
+			"settings": {
+				"vscode-css-language-server": {
+					"settings": {
+						"lint": {
+							"unknownAtRules": "ignore"
+						}
+					}
+				}
+			}
+		},
+		"eslint": {
 			"settings": {
 				"css": {
 					"lint": {
@@ -48,7 +68,7 @@
 	"buffer_font_weight": 410.0,
 	"project_panel": {
 		"hide_hidden": true,
-		"hide_root": true,
+		"hide_root": false,
 		"starts_open": true,
 		"auto_reveal_entries": true,
 		"file_icons": true,
@@ -74,7 +94,7 @@
 	},
 	"use_on_type_format": false,
 	"soft_wrap": "preferred_line_length",
-	"auto_signature_help": true,
+	"auto_signature_help": false,
 	"edit_predictions": {
 		"mode": "subtle"
 	},
@@ -91,8 +111,6 @@
 	"languages": {
 		"Zig": {
 			"show_edit_predictions": true
-		},
-		"CSS": {
 		}
 	},
 	"collaboration_panel": {
@@ -130,6 +148,6 @@
 		"diagnostics": false,
 		"metrics": false
 	},
-	"relative_line_numbers": true,
+	"relative_line_numbers": "enabled",
 	"wrap_guides": [80]
 }
