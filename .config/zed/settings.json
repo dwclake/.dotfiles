@@ -67,14 +67,14 @@
 	"ui_font_weight": 410.0,
 	"buffer_font_weight": 410.0,
 	"project_panel": {
-		"hide_hidden": true,
+		"hide_hidden": false,
 		"hide_root": false,
 		"starts_open": true,
 		"auto_reveal_entries": true,
 		"file_icons": true,
 		"folder_icons": true,
 		"entry_spacing": "standard",
-		"hide_gitignore": true,
+		"hide_gitignore": false,
 		"show_diagnostics": "errors"
 	},
 	"redact_private_values": false,
