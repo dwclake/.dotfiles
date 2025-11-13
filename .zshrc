@@ -101,4 +101,4 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
