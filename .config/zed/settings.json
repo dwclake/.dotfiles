@@ -28,12 +28,8 @@
 		},
 		"svelte-language-server": {
 			"settings": {
-				"vscode-css-language-server": {
-					"settings": {
-						"lint": {
-							"unknownAtRules": "ignore"
-						}
-					}
+				"lint": {
+					"unknownAtRules": "ignore"
 				}
 			}
 		},
