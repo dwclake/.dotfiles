@@ -8,6 +8,11 @@ mason_lspconfig.setup({
         'clangd',
         'gopls',
         'ocamllsp',
+        'svelte',
+        'ts_ls',
+        'tailwindcss',
+        'cssls',
+        'eslint',
         'rust_analyzer',
         'zls'
     },
@@ -27,6 +32,25 @@ mason_lspconfig.setup({
                 cmd = {"/opt/homebrew/bin/crystalline"}
             })
             lspconfig.gleam.setup({})
+            lspconfig.cssls.setup {
+                settings = {
+                    css = {
+                        lint = {
+                            unknownAtRules = "ignore"  -- other options: "warning", "error"
+                        }
+                    },
+                    scss = {
+                        lint = {
+                            unknownAtRules = "ignore"
+                        }
+                    },
+                    less = {
+                        lint = {
+                            unknownAtRules = "ignore"
+                        }
+                    }
+                }
+            }
         end
     }
 })
