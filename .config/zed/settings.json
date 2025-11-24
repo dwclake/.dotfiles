@@ -7,7 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"always_treat_brackets_as_autoclosed": true,
+	"use_autoclose": true,
+ "jsx_tag_auto_close": {
+  "enabled": true
+ },
+ "remove_trailing_whitespace_on_save": false,
+ "always_treat_brackets_as_autoclosed": false,
  "indent_guides": {
 		"active_line_width": 4,
 		"line_width": 2
@@ -64,7 +69,8 @@
 	"ui_font_weight": 410.0,
 	"buffer_font_weight": 410.0,
 	"project_panel": {
-		"hide_hidden": false,
+		"dock": "right",
+  "hide_hidden": false,
 		"hide_root": false,
 		"starts_open": true,
 		"auto_reveal_entries": true,
