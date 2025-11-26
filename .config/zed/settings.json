@@ -8,12 +8,12 @@
 // from the command palette or from `Zed` application menu.
 {
 	"use_autoclose": true,
- "jsx_tag_auto_close": {
-  "enabled": true
- },
- "remove_trailing_whitespace_on_save": false,
- "always_treat_brackets_as_autoclosed": false,
- "indent_guides": {
+	"jsx_tag_auto_close": {
+		"enabled": true
+	},
+	"remove_trailing_whitespace_on_save": true,
+	"always_treat_brackets_as_autoclosed": false,
+	"indent_guides": {
 		"active_line_width": 4,
 		"line_width": 2
 	},
@@ -64,13 +64,13 @@
 	},
 	"hard_tabs": true,
 	"multi_cursor_modifier": "alt",
-	"icon_theme": "Colored Zed Icons Theme Dark",
+	"icon_theme": "Zed (Default)",
 	"preferred_line_length": 90,
 	"ui_font_weight": 410.0,
 	"buffer_font_weight": 410.0,
 	"project_panel": {
 		"dock": "right",
-  "hide_hidden": false,
+		"hide_hidden": false,
 		"hide_root": false,
 		"starts_open": true,
 		"auto_reveal_entries": true,
@@ -117,6 +117,18 @@
 	"languages": {
 		"Zig": {
 			"show_edit_predictions": true
+		},
+		"Elixir": {
+			"language_servers": [
+				"elixir-ls",
+				"vscode-html-language-server"
+			]
+		},
+		"HEEX": {
+			"language_servers": [
+				"elixir-ls",
+				"vscode-html-language-server"
+			]
 		}
 	},
 	"collaboration_panel": {
@@ -141,7 +153,7 @@
 	"buffer_font_features": {
 		"calt": false
 	},
-	"format_on_save": "off",
+	"format_on_save": "on",
 	"tab_size": 4,
 	"ensure_final_newline_on_save": true,
 	"git": {
@@ -155,5 +167,6 @@
 		"metrics": false
 	},
 	"relative_line_numbers": "enabled",
-	"wrap_guides": [80]
+	"wrap_guides": [80],
+	"formatter": "prettier"
 }
