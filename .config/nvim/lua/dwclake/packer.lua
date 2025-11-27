@@ -21,6 +21,11 @@ return require('packer').startup(function(use)
     use ('gleam-lang/gleam.vim')
     use ('jlcrochet/vim-crystal')
 
+    use({
+        'prettier/vim-prettier',
+        ft = {'javascript', 'typescript', 'markdown', 'jsx', 'tsx', 'css', 'scss', 'less', 'svelte', 'html'}
+    })
+
     use ({
         "rose-pine/neovim",
         name = "rose-pine",
