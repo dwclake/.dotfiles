@@ -40,4 +40,4 @@ y = 24
 #hide_when_typing = true
 
 [general]
-import = ["~/.config/alacritty/themes/rose-pine/dist/rose-pine-moon.toml"]
+import = ["~/.config/alacritty/themes/rose-pine/dist/rose-pine.toml"]
