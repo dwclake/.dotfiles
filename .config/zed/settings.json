@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+	"toolbar": {
+		"code_actions": true
+	},
 	"use_autoclose": true,
 	"jsx_tag_auto_close": {
 		"enabled": true
@@ -119,16 +122,10 @@
 			"show_edit_predictions": true
 		},
 		"Elixir": {
-			"language_servers": [
-				"elixir-ls",
-				"vscode-html-language-server"
-			]
+			"language_servers": ["elixir-ls", "vscode-html-language-server"]
 		},
 		"HEEX": {
-			"language_servers": [
-				"elixir-ls",
-				"vscode-html-language-server"
-			]
+			"language_servers": ["elixir-ls", "vscode-html-language-server"]
 		}
 	},
 	"collaboration_panel": {

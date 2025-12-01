@@ -6,7 +6,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 
 vim.opt.textwidth = 0
 vim.opt.wrapmargin = 0
@@ -15,6 +15,8 @@ vim.opt.breakindent = true
 vim.opt.showbreak = "|—/ "
 vim.opt.breakindentopt = "shift:4,min:20"
 vim.opt.linebreak = true
+-- This causes errors on macbook pro display
+vim.opt.columns = 90
 
 vim.opt.smartindent = true
 
