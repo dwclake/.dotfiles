@@ -15,8 +15,6 @@ vim.opt.breakindent = true
 vim.opt.showbreak = "|—/ "
 vim.opt.breakindentopt = "shift:4,min:20"
 vim.opt.linebreak = true
--- This causes errors on macbook pro display
-vim.opt.columns = 90
 
 vim.opt.smartindent = true
 
