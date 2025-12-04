@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
 
     use({
         'prettier/vim-prettier',
-        ft = {'javascript', 'typescript', 'markdown', 'jsx', 'tsx', 'css', 'scss', 'less', 'svelte', 'html'}
+        ft = {'javascript', 'ex', 'elixir', 'eex', 'typescript', 'markdown', 'jsx', 'tsx', 'css', 'scss', 'less', 'svelte', 'html'}
     })
 
     use ({
