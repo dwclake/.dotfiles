@@ -153,7 +153,7 @@
 	},
 	"format_on_save": "on",
 	"tab_size": 4,
-	"ensure_final_newline_on_save": true,
+	"ensure_final_newline_on_save": false,
 	"git": {
 		"inline_blame": {
 			"show_commit_summary": true
