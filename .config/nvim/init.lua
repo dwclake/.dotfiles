@@ -1,13 +1,4 @@
 require("dwclake")
-require("ruka-ls")
+--require("ruka-ls")
 
 vim.cmd(":set nofoldenable")	
-
-vim.filetype.add {
-    extension = {
-        onyx = "onyx",
-    },
-    pattern = {
-        [".*onyx$"] = "onyx",
-    },
-}
