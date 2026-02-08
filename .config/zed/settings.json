@@ -106,6 +106,7 @@
 	"soft_wrap": "preferred_line_length",
 	"auto_signature_help": false,
 	"edit_predictions": {
+		"provider": "copilot",
 		"mode": "subtle",
 	},
 	"agent": {
@@ -114,9 +115,6 @@
 			"provider": "copilot_chat",
 			"model": "gpt-5-mini",
 		},
-	},
-	"features": {
-		"edit_prediction_provider": "copilot",
 	},
 	"languages": {
 		"Zig": {
@@ -127,6 +125,13 @@
 		},
 		"HEEX": {
 			"language_servers": ["elixir-ls", "vscode-html-language-server"],
+		},
+		"TypeScript": {
+			"format_on_save": "off",
+   "tab_size": 2,
+		},
+		"JavaScript": {
+			"tab_size": 2,
 		},
 	},
 	"collaboration_panel": {
@@ -140,7 +145,7 @@
 		"show_diagnostics": "errors",
 		"file_icons": true,
 	},
-	"restore_on_startup": "none",
+	"restore_on_startup": "empty_tab",
 	"show_edit_predictions": true,
 	"theme": "Zed Legacy: Rosé Pine",
 	"vim_mode": true,
@@ -151,7 +156,7 @@
 	"buffer_font_features": {
 		"calt": false,
 	},
-	"format_on_save": "on",
+	"format_on_save": "off",
 	"tab_size": 4,
 	"ensure_final_newline_on_save": false,
 	"git": {
