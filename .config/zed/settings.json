@@ -117,6 +117,11 @@
 		},
 	},
 	"languages": {
+		"TSX": {
+			"hard_tabs": true,
+			"format_on_save": "off",
+			"tab_size": 2
+		},
 		"Zig": {
 			"show_edit_predictions": true,
 		},
@@ -128,10 +133,13 @@
 		},
 		"TypeScript": {
 			"format_on_save": "off",
-   "tab_size": 2,
+			"tab_size": 2,
+			"hard_tabs": true,
 		},
 		"JavaScript": {
+			"format_on_save": "off",
 			"tab_size": 2,
+			"hard_tabs": true,
 		},
 	},
 	"collaboration_panel": {
@@ -157,7 +165,6 @@
 		"calt": false,
 	},
 	"format_on_save": "off",
-	"tab_size": 4,
 	"ensure_final_newline_on_save": false,
 	"git": {
 		"inline_blame": {
@@ -172,4 +179,5 @@
 	"relative_line_numbers": "enabled",
 	"wrap_guides": [80],
 	"formatter": "prettier",
+	"tab_size": 4
 }
