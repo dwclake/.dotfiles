@@ -7,7 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"colorize_brackets": true,
+	"debugger": {
+  "dock": "right"
+ },
+ "terminal": {
+  "dock": "right"
+ },
+ "colorize_brackets": true,
+	"document_symbols": "on",
 	"toolbar": {
 		"code_actions": true,
 	},
@@ -110,17 +117,19 @@
 		"mode": "subtle",
 	},
 	"agent": {
+		"button": true,
+		"dock": "left",
 		"default_profile": "ask",
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "gpt-5-mini",
+			"model": "gpt-5.2-codex",
 		},
 	},
 	"languages": {
 		"TSX": {
 			"hard_tabs": true,
 			"format_on_save": "off",
-			"tab_size": 2
+			"tab_size": 4
 		},
 		"Zig": {
 			"show_edit_predictions": true,
@@ -133,12 +142,12 @@
 		},
 		"TypeScript": {
 			"format_on_save": "off",
-			"tab_size": 2,
+			"tab_size": 4,
 			"hard_tabs": true,
 		},
 		"JavaScript": {
 			"format_on_save": "off",
-			"tab_size": 2,
+			"tab_size": 4,
 			"hard_tabs": true,
 		},
 	},
