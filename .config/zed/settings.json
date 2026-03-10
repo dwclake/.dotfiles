@@ -11,7 +11,7 @@
   "dock": "right"
  },
  "terminal": {
-  "dock": "right"
+  "dock": "left"
  },
  "colorize_brackets": true,
 	"document_symbols": "on",
