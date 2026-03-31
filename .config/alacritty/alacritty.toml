@@ -11,11 +11,11 @@ style = "Bold Italic"
 
 [font.italic]
 family = "IntOneMono Nerd Font Mono"
-style = "Medium"
+style = "Italic"
 
 [font.normal]
 family = "IntOneMono Nerd Font Mono"
-style = "Regular"
+style = "Medium"
 
 [font.offset]
 x = 1

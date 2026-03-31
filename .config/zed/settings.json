@@ -117,12 +117,31 @@
 		"mode": "subtle",
 	},
 	"agent": {
-		"button": true,
+		"favorite_models": [
+   {
+    "provider": "copilot_chat",
+    "model": "gemini-3.1-pro-preview",
+    "enable_thinking": false
+   },
+   {
+    "provider": "copilot_chat",
+    "model": "gpt-5.2-codex",
+    "enable_thinking": false
+   },
+   {
+    "provider": "copilot_chat",
+    "model": "claude-haiku-4.5",
+    "enable_thinking": false
+   }
+  ],
+  "button": true,
 		"dock": "left",
 		"default_profile": "ask",
 		"default_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-5.2-codex",
+			"effort": "high",
+   "enable_thinking": true,
+   "provider": "copilot_chat",
+			"model": "gemini-3.1-pro-preview",
 		},
 	},
 	"languages": {
