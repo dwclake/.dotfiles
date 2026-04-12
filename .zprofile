@@ -22,8 +22,8 @@ addToPath "$HOME/.local/bin"
 addToPath "$HOME/.local/go/bin"
 
 export GOPATH="$HOME/.go"
-export VISUAL="$HOME/.local/nvim/bin"
-export EDITOR="$HOME/.local/nvim/bin"
+export VISUAL="$HOME/.local/nvim/bin/nvim"
+export EDITOR="$HOME/.local/nvim/bin/nvim"
 
 export CC="/usr/bin/gcc-13"
 export CXX="/usr/bin/g++-13"
