@@ -7,7 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"colorize_brackets": true,
+	"debugger": {
+  "dock": "right"
+ },
+ "terminal": {
+  "dock": "left"
+ },
+ "colorize_brackets": true,
+	"document_symbols": "on",
 	"toolbar": {
 		"code_actions": true,
 	},
@@ -106,19 +113,43 @@
 	"soft_wrap": "preferred_line_length",
 	"auto_signature_help": false,
 	"edit_predictions": {
+		"provider": "copilot",
 		"mode": "subtle",
 	},
 	"agent": {
+		"favorite_models": [
+   {
+    "provider": "copilot_chat",
+    "model": "gemini-3.1-pro-preview",
+    "enable_thinking": false
+   },
+   {
+    "provider": "copilot_chat",
+    "model": "gpt-5.2-codex",
+    "enable_thinking": false
+   },
+   {
+    "provider": "copilot_chat",
+    "model": "claude-haiku-4.5",
+    "enable_thinking": false
+   }
+  ],
+  "button": true,
+		"dock": "left",
 		"default_profile": "ask",
 		"default_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-5-mini",
+			"effort": "high",
+   "enable_thinking": true,
+   "provider": "copilot_chat",
+			"model": "gemini-3.1-pro-preview",
 		},
 	},
-	"features": {
-		"edit_prediction_provider": "copilot",
-	},
 	"languages": {
+		"TSX": {
+			"hard_tabs": true,
+			"format_on_save": "off",
+			"tab_size": 4
+		},
 		"Zig": {
 			"show_edit_predictions": true,
 		},
@@ -127,6 +158,16 @@
 		},
 		"HEEX": {
 			"language_servers": ["elixir-ls", "vscode-html-language-server"],
+		},
+		"TypeScript": {
+			"format_on_save": "off",
+			"tab_size": 4,
+			"hard_tabs": true,
+		},
+		"JavaScript": {
+			"format_on_save": "off",
+			"tab_size": 4,
+			"hard_tabs": true,
 		},
 	},
 	"collaboration_panel": {
@@ -140,7 +181,7 @@
 		"show_diagnostics": "errors",
 		"file_icons": true,
 	},
-	"restore_on_startup": "none",
+	"restore_on_startup": "empty_tab",
 	"show_edit_predictions": true,
 	"theme": "Zed Legacy: Rosé Pine",
 	"vim_mode": true,
@@ -151,8 +192,7 @@
 	"buffer_font_features": {
 		"calt": false,
 	},
-	"format_on_save": "on",
-	"tab_size": 4,
+	"format_on_save": "off",
 	"ensure_final_newline_on_save": false,
 	"git": {
 		"inline_blame": {
@@ -167,4 +207,5 @@
 	"relative_line_numbers": "enabled",
 	"wrap_guides": [80],
 	"formatter": "prettier",
+	"tab_size": 4
 }

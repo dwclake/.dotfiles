@@ -41,8 +41,3 @@ y = 24
 
 [general]
 import = ["~/.config/alacritty/themes/rose-pine/dist/rose-pine.toml"]
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"
