@@ -3,13 +3,13 @@ path = "/home/dwclake/personal"
 depth = 10
 
 [[search_dirs]]
-path = "/home/dwclake/university"
-depth = 10
-
-[[search_dirs]]
 path = "/home/dwclake/ruka-lang"
 depth = 10
 
 [[search_dirs]]
-path = "/home/dwclake/work"
+path = "/home/dwclake/learning"
+depth = 10
+
+[[search_dirs]]
+path = "/home/dwclake/keros3ne"
 depth = 10
