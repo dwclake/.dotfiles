@@ -7,10 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"debugger": {
+	"outline_panel": {
+  "dock": "left"
+ },
+ "git_panel": {
+  "dock": "left"
+ },
+ "debugger": {
   "dock": "right"
  },
  "terminal": {
+  "flexible": false,
   "dock": "left"
  },
  "colorize_brackets": true,
@@ -117,15 +124,12 @@
 		"mode": "subtle",
 	},
 	"agent": {
-		"favorite_models": [
+		"sidebar_side": "right",
+  "flexible": false,
+  "favorite_models": [
    {
     "provider": "copilot_chat",
     "model": "gemini-3.1-pro-preview",
-    "enable_thinking": false
-   },
-   {
-    "provider": "copilot_chat",
-    "model": "gpt-5.2-codex",
     "enable_thinking": false
    },
    {
@@ -156,7 +160,7 @@
 		"Elixir": {
 			"language_servers": ["elixir-ls", "vscode-html-language-server"],
 		},
-		"HEEX": {
+		"HEEx": {
 			"language_servers": ["elixir-ls", "vscode-html-language-server"],
 		},
 		"TypeScript": {
@@ -169,9 +173,14 @@
 			"tab_size": 4,
 			"hard_tabs": true,
 		},
+		"Python": {
+			"hard_tabs": false,
+			"tab_size": 4
+		}
 	},
 	"collaboration_panel": {
-		"button": false,
+		"dock": "right",
+  "button": false,
 	},
 	"auto_update_extensions": {
 		"zig": true,

@@ -7,7 +7,18 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"debugger": {
+	"agent_servers": {
+  "claude-acp": {
+   "type": "registry"
+  }
+ },
+ "outline_panel": {
+  "dock": "left"
+ },
+ "git_panel": {
+  "dock": "left"
+ },
+ "debugger": {
   "dock": "right"
  },
  "terminal": {
@@ -72,8 +83,7 @@
 		"enabled": true,
 	},
 	"title_bar": {
-		"show_branch_icon": false,
-	},
+		},
 	"hard_tabs": true,
 	"multi_cursor_modifier": "alt",
 	"icon_theme": "Colored Zed Icons Theme Dark",
@@ -118,7 +128,8 @@
 		"mode": "subtle",
 	},
 	"agent": {
-		"flexible": false,
+		"sidebar_side": "right",
+  "flexible": false,
   "favorite_models": [
    {
     "provider": "copilot_chat",
@@ -172,7 +183,8 @@
 		}
 	},
 	"collaboration_panel": {
-		"button": false,
+		"dock": "right",
+  "button": false,
 	},
 	"auto_update_extensions": {
 		"zig": true,
