@@ -7,6 +7,8 @@
 # Docs at https://docs.warp.dev/terminal/windows/tab-configs
 
 name = "terminal: ruka-lang"
+title = "ruka-lang"
+color = "red"
 
 [[panes]]
 id = "main"

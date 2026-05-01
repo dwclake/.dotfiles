@@ -4,22 +4,22 @@ spacing = "normal"
 [appearance.themes]
 system_theme = false
 theme = {
-  custom = { name = "Rose-pine-moon", path = "/Users/dwclake/.warp/themes/rose-pine-warp/rose-pine-moon.yaml" },
+  custom = { name = "Rose-pine", path = "/Users/dwclake/.warp/themes/rose-pine-warp/rose-pine.yaml" },
 }
 
 [appearance.vertical_tabs]
 enabled = true
 display_granularity = "panes"
 view_mode = "compact"
-compact_subtitle = "branch"
-primary_info = "working_directory"
+compact_subtitle = "command"
+primary_info = "branch"
 
 [appearance.text]
 notebook_font_size = 14.0
 font_size = 16.0
 font_name = "IntoneMono Nerd Font Mono"
-font_weight = "normal"
-ai_font_name = "PT Serif"
+font_weight = "medium"
+ai_font_name = "Anthropic Serif Web"
 match_ai_font = false
 use_thin_strokes = "never"
 line_height_ratio = 1.2999999523162842
@@ -28,13 +28,29 @@ line_height_ratio = 1.2999999523162842
 app_icon = "classic_3"
 
 [appearance.panes]
-should_dim_inactive_panes = true
+should_dim_inactive_panes = false
+
+[appearance.window]
+override_opacity = 100
+override_blur = 1
+zoom_level = 100
+
+[appearance.full_screen_apps]
+alt_screen_padding = { custom = { uniform_padding = 2.0 } }
+
+[appearance.tabs]
+
+[appearance.tabs.header_toolbar_chip_selection]
+
+[appearance.tabs.header_toolbar_chip_selection.custom]
+left = ["tabs_panel", "tools_panel"]
+right = ["code_review", "notifications_mailbox"]
 
 [general]
 default_session_mode = "agent"
 login_item = false
 show_warning_before_quitting = true
-quit_on_last_window_closed = true
+quit_on_last_window_closed = false
 restore_session = false
 snackbar_enabled = false
 
@@ -48,7 +64,7 @@ auto_dismiss_composer_after_submit = true
 [agents.third_party.cli_agent_toolbar_chip_selection_setting]
 
 [agents.third_party.cli_agent_toolbar_chip_selection_setting.custom]
-left = ["file_attach", "voice_input", { context_chip = "git_diff_stats" }, "rich_input"]
+left = ["file_attach", { context_chip = "git_diff_stats" }, "rich_input"]
 right = [{ context_chip = "working_directory" }, { context_chip = "shell_git_branch" }, "settings"]
 
 [agents.warp_agent]
@@ -71,12 +87,22 @@ show_code_review_button = true
 show_project_explorer = true
 show_global_search = true
 open_file_editor = "env_editor"
+open_file_layout = "new_tab"
 
 [warp_drive]
-enabled = false
+enabled = true
 
 [notifications]
 toast_duration_secs = 8
+
+[notifications.preferences]
+is_agent_task_completed_enabled = true
+is_long_running_enabled = true
+is_needs_attention_enabled = true
+is_password_prompt_enabled = true
+long_running_threshold = 30
+mode = "dismissed"
+play_notification_sound = true
 
 [privacy]
 telemetry_enabled = false
@@ -129,3 +155,12 @@ is_settings_sync_enabled = true
 
 [keys]
 ctrl_tab_behavior_setting = "activate_prev_next_tab"
+
+[session]
+
+[session.working_directory_config]
+advanced_mode = true
+global = { custom_dir = "", mode = "previous_dir" }
+new_tab = { custom_dir = "", mode = "previous_dir" }
+new_window = { custom_dir = "", mode = "home_dir" }
+split_pane = { custom_dir = "", mode = "previous_dir" }

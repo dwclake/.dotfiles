@@ -1,4 +1,6 @@
-name = "worktree: ruka"
+name = "worktree: ruka-lang"
+title = "ruka"
+color = "red"
 
 [[panes]]
 commands = [

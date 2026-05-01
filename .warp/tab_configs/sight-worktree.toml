@@ -1,4 +1,6 @@
 name = "worktree: sight"
+title = "sight"
+color = "blue"
 
 [[panes]]
 commands = [
