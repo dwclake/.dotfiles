@@ -61,7 +61,7 @@ cloud_conversation_storage_enabled = true
 [agents.third_party]
 should_render_cli_agent_toolbar = true
 auto_dismiss_composer_after_submit = false
-auto_open_composer_on_cli_agent_start = true
+auto_open_composer_on_cli_agent_start = false
 
 [agents.third_party.cli_agent_toolbar_chip_selection_setting]
 
@@ -144,6 +144,7 @@ custom_secret_regex_list = [
 [text_editing]
 vim_mode_enabled = true
 vim_unnamed_system_clipboard = true
+code_editor_line_number_mode = "relative"
 
 [terminal]
 
