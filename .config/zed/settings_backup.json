@@ -7,7 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"outline_panel": {
+	"agent_servers": {
+  "claude-acp": {
+   "type": "registry"
+  }
+ },
+ "outline_panel": {
   "dock": "left"
  },
  "git_panel": {
@@ -20,7 +25,7 @@
   "flexible": false,
   "dock": "left"
  },
- "colorize_brackets": true,
+ "colorize_brackets": false,
 	"document_symbols": "on",
 	"toolbar": {
 		"code_actions": true,
@@ -78,8 +83,7 @@
 		"enabled": true,
 	},
 	"title_bar": {
-		"show_branch_icon": false,
-	},
+		},
 	"hard_tabs": true,
 	"multi_cursor_modifier": "alt",
 	"icon_theme": "Colored Zed Icons Theme Dark",
@@ -201,8 +205,8 @@
 	"buffer_font_features": {
 		"calt": false,
 	},
-	"format_on_save": "off",
-	"ensure_final_newline_on_save": false,
+	"format_on_save": "modifications",
+	"ensure_final_newline_on_save": true,
 	"git": {
 		"inline_blame": {
 			"show_commit_summary": true,
