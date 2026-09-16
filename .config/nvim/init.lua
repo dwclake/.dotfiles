@@ -1,4 +1,2 @@
-require("dwclake")
---require("ruka-ls")
-
-vim.cmd(":set nofoldenable")	
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
