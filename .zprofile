@@ -20,7 +20,7 @@ export EDITOR="nvim"
 #export CC="/opt/homebrew/bin/gcc-14"
 #export CXX="/opt/homebrew/bin/g++-14"
 
-addToPathFront "$HOME/.local/nvim/bin"
+#addToPathFront "$HOME/.local/nvim/bin"
 addToPathFront "$HOME/.local/bin/zls"
 addToPathFront "$HOME/.local/oss-cad-suite/bin"
 addToPathFront "$HOME/.asdf/installs/golang/1.26.2/bin"
