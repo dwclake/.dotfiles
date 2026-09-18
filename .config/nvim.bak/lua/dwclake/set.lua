@@ -16,6 +16,12 @@ vim.opt.showbreak = "|—/ "
 vim.opt.breakindentopt = "shift:4,min:20"
 vim.opt.linebreak = true
 
+vim.opt.colorcolumn = "80"
+
+vim.opt.winborder = "rounded"
+vim.opt.guicursor =
+	"n-v-c-sm:block-blinkwait300-blinkon700-blinkoff300,i-ci-ve:ver30-blinkwait300-blinkon700-blinkoff300,r-cr-o:hor25-blinkwait300-blinkon700-blinkoff300"
+
 vim.opt.smartindent = true
 
 vim.opt.swapfile = false
@@ -33,8 +39,3 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "80"
-
-vim.opt.winborder = 'rounded'
-vim.opt.guicursor = 'n-v-c-sm:block-blinkwait300-blinkon700-blinkoff300,i-ci-ve:ver30-blinkwait300-blinkon700-blinkoff300,r-cr-o:hor25-blinkwait300-blinkon700-blinkoff300'

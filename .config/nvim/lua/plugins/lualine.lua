@@ -65,7 +65,7 @@ return {
 					{ "branch", icon = "", color = { fg = colors.violet, gui = "bold" } },
 					{
 						"diff",
-						symbols = { added = " ", modified = "柳 ", removed = " " },
+						symbols = { added = "+ ", modified = "⋆ ", removed = "- " },
 						diff_color = {
 							added = { fg = colors.green },
 							modified = { fg = colors.orange },
@@ -73,6 +73,7 @@ return {
 						},
 						cond = conditions.hide_in_width,
 					},
+					{ "mode" },
 				},
 			},
 			inactive_sections = {
