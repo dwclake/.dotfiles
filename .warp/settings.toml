@@ -8,7 +8,7 @@ theme = {
 }
 
 [appearance.vertical_tabs]
-enabled = false
+enabled = true
 display_granularity = "panes"
 view_mode = "compact"
 compact_subtitle = "command"
