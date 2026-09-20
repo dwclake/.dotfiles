@@ -19,7 +19,7 @@ hide_title_bar_search_bar = false
 notebook_font_size = 14.0
 font_size = 16.0
 font_name = "IntoneMono Nerd Font Mono"
-font_weight = "medium"
+font_weight = "normal"
 ai_font_name = "Anthropic Serif Web"
 match_ai_font = false
 use_thin_strokes = "never"
@@ -32,7 +32,7 @@ app_icon = "classic_3"
 should_dim_inactive_panes = false
 
 [appearance.window]
-override_opacity = 88
+override_opacity = 100
 override_blur = 1
 zoom_level = 100
 
