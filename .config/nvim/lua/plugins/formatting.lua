@@ -13,7 +13,7 @@ return {
 						"none",
 						"--single-quote",
 						"--print-width",
-						"100",
+						"90",
 						-- "--no-semi",
 					},
 				},
