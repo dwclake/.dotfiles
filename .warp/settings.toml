@@ -187,6 +187,7 @@ vim_unnamed_system_clipboard = true
 code_editor_line_number_mode = "relative"
 
 [terminal]
+osc52_clipboard_access = "write_only"
 
 [terminal.input]
 alias_expansion_enabled = true
