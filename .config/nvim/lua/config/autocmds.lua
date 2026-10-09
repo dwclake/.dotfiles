@@ -6,14 +6,15 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
-vim.api.nvim_create_autocmd("VimEnter", {
-	nested = true,
-	callback = function()
-		if vim.fn.argc() == 0 then
-			vim.cmd("Neotree position=current dir=" .. vim.fn.getcwd())
-		end
-	end,
-})
+--vim.api.nvim_create_autocmd("VimEnter", {
+--	nested = true,
+--	callback = function()
+--		if vim.fn.argc() == 0 then
+--			--vim.cmd.Ex()
+--			vim.cmd("Neotree position=current dir=" .. vim.fn.getcwd())
+--		end
+--	end,
+--})
 
 --vim.api.nvim_create_autocmd("ColorScheme", {
 --  callback = function()

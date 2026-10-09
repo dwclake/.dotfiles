@@ -19,3 +19,6 @@ vim.opt.colorcolumn = "80"
 vim.opt.winborder = "rounded"
 vim.opt.guicursor =
 	"n-v-c-sm:block-blinkwait300-blinkon700-blinkoff300,i-ci-ve:ver30-blinkwait300-blinkon700-blinkoff300,r-cr-o:hor25-blinkwait300-blinkon700-blinkoff300"
+
+--vim.opt.listchars = { tab = "  ", nbsp = "+" }
+vim.opt.list = false
