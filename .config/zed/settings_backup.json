@@ -8,24 +8,24 @@
 // from the command palette or from `Zed` application menu.
 {
 	"agent_servers": {
-  "claude-acp": {
-   "type": "registry"
-  }
- },
- "outline_panel": {
-  "dock": "left"
- },
- "git_panel": {
-  "dock": "left"
- },
- "debugger": {
-  "dock": "right"
- },
- "terminal": {
-  "flexible": false,
-  "dock": "left"
- },
- "colorize_brackets": false,
+		"claude-acp": {
+			"type": "registry",
+		},
+	},
+	"outline_panel": {
+		"dock": "left",
+	},
+	"git_panel": {
+		"dock": "left",
+	},
+	"debugger": {
+		"dock": "right",
+	},
+	"terminal": {
+		"flexible": false,
+		"dock": "left",
+	},
+	"colorize_brackets": false,
 	"document_symbols": "on",
 	"toolbar": {
 		"code_actions": true,
@@ -82,8 +82,7 @@
 		"enable_preview_from_file_finder": false,
 		"enabled": true,
 	},
-	"title_bar": {
-		},
+	"title_bar": {},
 	"hard_tabs": true,
 	"multi_cursor_modifier": "alt",
 	"icon_theme": "Colored Zed Icons Theme Dark",
@@ -91,13 +90,13 @@
 	"ui_font_weight": 410.0,
 	"buffer_font_weight": 410.0,
 	"project_panel": {
+		"folder_indicator": "icon",
 		"dock": "right",
 		"hide_hidden": false,
 		"hide_root": false,
 		"starts_open": true,
 		"auto_reveal_entries": true,
 		"file_icons": true,
-		"folder_icons": true,
 		"entry_spacing": "standard",
 		"hide_gitignore": false,
 		"show_diagnostics": "errors",
@@ -129,26 +128,26 @@
 	},
 	"agent": {
 		"sidebar_side": "right",
-  "flexible": false,
-  "favorite_models": [
-   {
-    "provider": "copilot_chat",
-    "model": "gemini-3.1-pro-preview",
-    "enable_thinking": false
-   },
-   {
-    "provider": "copilot_chat",
-    "model": "claude-haiku-4.5",
-    "enable_thinking": false
-   }
-  ],
-  "button": true,
+		"flexible": false,
+		"favorite_models": [
+			{
+				"provider": "copilot_chat",
+				"model": "gemini-3.1-pro-preview",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "copilot_chat",
+				"model": "claude-haiku-4.5",
+				"enable_thinking": false,
+			},
+		],
+		"button": true,
 		"dock": "left",
 		"default_profile": "ask",
 		"default_model": {
 			"effort": "high",
-   "enable_thinking": true,
-   "provider": "copilot_chat",
+			"enable_thinking": true,
+			"provider": "copilot_chat",
 			"model": "gemini-3.1-pro-preview",
 		},
 	},
@@ -156,7 +155,7 @@
 		"TSX": {
 			"hard_tabs": true,
 			"format_on_save": "off",
-			"tab_size": 4
+			"tab_size": 4,
 		},
 		"Zig": {
 			"show_edit_predictions": true,
@@ -179,12 +178,12 @@
 		},
 		"Python": {
 			"hard_tabs": false,
-			"tab_size": 4
-		}
+			"tab_size": 4,
+		},
 	},
 	"collaboration_panel": {
 		"dock": "right",
-  "button": false,
+		"button": false,
 	},
 	"auto_update_extensions": {
 		"zig": true,
@@ -205,7 +204,7 @@
 	"buffer_font_features": {
 		"calt": false,
 	},
-	"format_on_save": "modifications",
+	"format_on_save": "on",
 	"ensure_final_newline_on_save": true,
 	"git": {
 		"inline_blame": {
@@ -220,5 +219,5 @@
 	"relative_line_numbers": "enabled",
 	"wrap_guides": [80],
 	"formatter": "prettier",
-	"tab_size": 4
+	"tab_size": 4,
 }
