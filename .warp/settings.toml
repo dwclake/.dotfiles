@@ -18,12 +18,12 @@ hide_title_bar_search_bar = false
 [appearance.text]
 notebook_font_size = 14.0
 font_size = 16.0
-font_name = "IntoneMono Nerd Font Mono Medium"
-font_weight = "medium"
+font_name = "IntoneMono NFM Medium"
+font_weight = "normal"
 ai_font_name = "Anthropic Serif Web"
 match_ai_font = false
 use_thin_strokes = "never"
-line_height_ratio = 1.399999976158142
+line_height_ratio = 1.2999999523162842
 
 [appearance.icon]
 app_icon = "classic_3"
