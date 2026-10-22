@@ -3,7 +3,7 @@ return {
 		"rose-pine/neovim",
 		name = "rose-pine",
 		opts = {
-			variant = "regular",
+			variant = "moon",
 			styles = {
 				bold = false,
 				italic = false,

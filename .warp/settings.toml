@@ -27,6 +27,7 @@ line_height_ratio = 1.2999999523162842
 
 [appearance.icon]
 app_icon = "classic_3"
+show_dock_icon = true
 
 [appearance.panes]
 should_dim_inactive_panes = false
