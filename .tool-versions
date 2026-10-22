@@ -2,3 +2,4 @@ erlang 28.0.2
 elixir 1.18.4-otp-28
 zig 0.17.0
 golang 1.26.2
+zls 0.17.0
