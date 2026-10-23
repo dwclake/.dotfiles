@@ -20,7 +20,7 @@ notebook_font_size = 14.0
 font_size = 16.0
 font_name = "IntoneMono NFM Medium"
 font_weight = "normal"
-ai_font_name = "Anthropic Serif Web"
+ai_font_name = "Anthropic Serif Text"
 match_ai_font = false
 use_thin_strokes = "never"
 line_height_ratio = 1.2999999523162842
@@ -56,6 +56,7 @@ show_warning_before_quitting = true
 quit_on_last_window_closed = false
 restore_session = false
 snackbar_enabled = false
+new_tab_placement = "after_current_tab"
 
 [agents]
 cloud_conversation_storage_enabled = true
@@ -206,7 +207,7 @@ ctrl_tab_behavior_setting = "activate_prev_next_tab"
 [session.working_directory_config]
 advanced_mode = true
 global = { custom_dir = "", mode = "previous_dir" }
-new_tab = { custom_dir = "", mode = "previous_dir" }
+new_tab = { custom_dir = "", mode = "home_dir" }
 new_window = { custom_dir = "", mode = "home_dir" }
 split_pane = { custom_dir = "", mode = "previous_dir" }
 

@@ -41,3 +41,9 @@
 --    end)
 --  end,
 --})
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "zig",
+	callback = function()
+		vim.b.autoformat = false
+	end,
+})

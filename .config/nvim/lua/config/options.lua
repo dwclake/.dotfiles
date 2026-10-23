@@ -22,3 +22,14 @@ vim.opt.guicursor =
 
 --vim.opt.listchars = { tab = "  ", nbsp = "+" }
 vim.opt.list = false
+
+vim.opt.signcolumn = "yes"
+
+vim.g.zig_fmt_autosave = 0
+vim.g.zig_enable_autofix = 0
+
+vim.diagnostic.config({
+	virtual_lines = true,
+	signs = true,
+	update_in_insert = true,
+})
